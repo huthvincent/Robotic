@@ -1,0 +1,59 @@
+{
+  "baseline_success_rate": 0.64,
+  "n_episodes": 150,
+  "n_replan_records": 4130,
+  "n_failed_episodes": 54,
+  "signal_quality": {
+    "bcoh_freshmean": {
+      "step_auroc": 0.5542650999968073,
+      "step_aurc": 0.40017431325328257,
+      "ep_auroc_max": 0.7314814814814815,
+      "ep_auroc_mean": 0.6942515432098766
+    },
+    "bcoh_distmean": {
+      "step_auroc": 0.5540540540540541,
+      "step_aurc": 0.3999527576171614,
+      "ep_auroc_max": 0.7318672839506173,
+      "ep_auroc_mean": 0.6952160493827161
+    },
+    "bcoh_distmin": {
+      "step_auroc": 0.5616829305853696,
+      "step_aurc": 0.39615139626367635,
+      "ep_auroc_max": 0.7409336419753086,
+      "ep_auroc_mean": 0.7235725308641975
+    },
+    "disp_all": {
+      "step_auroc": 0.5047927852805901,
+      "step_aurc": 0.427235534234483,
+      "ep_auroc_max": 0.5979938271604939,
+      "ep_auroc_mean": 0.5187114197530864
+    },
+    "disp_first": {
+      "step_auroc": 0.5336765001399147,
+      "step_aurc": 0.40925065934892246,
+      "ep_auroc_max": 0.5842978395061729,
+      "ep_auroc_mean": 0.5738811728395061
+    }
+  },
+  "gate_signal": "bcoh_distmean",
+  "guard": {
+    "p70.0": {
+      "threshold": 0.06721151620149608,
+      "success_rate": 0.62,
+      "intervention_rate": 0.2859800046500814,
+      "delta_vs_baseline": -0.020000000000000018
+    },
+    "p80.0": {
+      "threshold": 0.09143615067005167,
+      "success_rate": 0.6066666666666667,
+      "intervention_rate": 0.19245803633019085,
+      "delta_vs_baseline": -0.033333333333333326
+    },
+    "p90.0": {
+      "threshold": 0.14513025283813474,
+      "success_rate": 0.7066666666666667,
+      "intervention_rate": 0.09239794671229529,
+      "delta_vs_baseline": 0.06666666666666665
+    }
+  }
+}

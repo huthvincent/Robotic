@@ -1,0 +1,2108 @@
+{
+  "fiper_style": {
+    "pusht-strong:dev": {
+      "auroc_max": 0.514,
+      "prefix_w8": 0.478,
+      "defer_a03": {
+        "coverage": 0.79,
+        "retained": 0.639,
+        "false_defer": 0.208
+      }
+    },
+    "pusht-strong:s1000": {
+      "auroc_max": 0.653,
+      "prefix_w8": 0.622,
+      "defer_a03": {
+        "coverage": 0.57,
+        "retained": 0.671,
+        "false_defer": 0.321
+      }
+    },
+    "pusht-strong:s2000": {
+      "auroc_max": 0.601,
+      "prefix_w8": 0.532,
+      "defer_a03": {
+        "coverage": 0.74,
+        "retained": 0.613,
+        "false_defer": 0.218
+      }
+    },
+    "pusht-weak:nocrop": {
+      "auroc_max": 0.723,
+      "prefix_w8": 0.61,
+      "defer_a03": {
+        "coverage": 0.55,
+        "retained": 0.354,
+        "false_defer": 0.237
+      }
+    },
+    "square-weak:s1000": {
+      "auroc_max": 0.802,
+      "prefix_w8": 0.676,
+      "defer_a03": {
+        "coverage": 0.37,
+        "retained": 0.527,
+        "false_defer": 0.256
+      }
+    },
+    "square-weak:s2000": {
+      "auroc_max": 0.735,
+      "prefix_w8": 0.762,
+      "defer_a03": {
+        "coverage": 0.84,
+        "retained": 0.143,
+        "false_defer": 0.182
+      }
+    },
+    "pusht-weak:s3000": {
+      "auroc_max": 0.661,
+      "prefix_w8": 0.586,
+      "defer_a03": {
+        "coverage": 0.59,
+        "retained": 0.303,
+        "false_defer": 0.289
+      }
+    },
+    "pusht-weak:s4000": {
+      "auroc_max": 0.678,
+      "prefix_w8": 0.609,
+      "defer_a03": {
+        "coverage": 0.54,
+        "retained": 0.383,
+        "false_defer": 0.244
+      }
+    },
+    "can-strong:s1000": {
+      "auroc_max": 0.754,
+      "prefix_w8": 0.682,
+      "defer_a03": {
+        "coverage": 0.7,
+        "retained": 0.895,
+        "false_defer": 0.203
+      }
+    }
+  },
+  "actprobe_style": {
+    "pusht-strong:dev": {
+      "tce_max": 0.674,
+      "acm_max": 0.462,
+      "oracle_logistic_max": 0.602
+    },
+    "pusht-strong:s1000": {
+      "tce_max": 0.735,
+      "acm_max": 0.547,
+      "oracle_logistic_max": 0.696
+    },
+    "pusht-strong:s2000": {
+      "tce_max": 0.637,
+      "acm_max": 0.595,
+      "oracle_logistic_max": 0.718
+    },
+    "pusht-weak:nocrop": {
+      "tce_max": 0.598,
+      "acm_max": 0.658,
+      "oracle_logistic_max": 0.697
+    },
+    "square-weak:s1000": {
+      "tce_max": 0.506,
+      "acm_max": 0.17,
+      "oracle_logistic_max": 0.45
+    },
+    "square-weak:s2000": {
+      "tce_max": 0.362,
+      "acm_max": 0.115,
+      "oracle_logistic_max": 0.273
+    },
+    "pusht-weak:s3000": {
+      "tce_max": 0.69,
+      "acm_max": 0.617,
+      "oracle_logistic_max": 0.686
+    },
+    "pusht-weak:s4000": {
+      "tce_max": 0.583,
+      "acm_max": 0.635,
+      "oracle_logistic_max": 0.589
+    },
+    "can-strong:s1000": {
+      "tce_max": 0.858,
+      "acm_max": 0.181,
+      "oracle_logistic_max": 0.752
+    }
+  },
+  "tsnull": {
+    "pusht-strong:dev": {
+      "bcoh_distmin": {
+        "raw": 0.668,
+        "null_mean": 0.687,
+        "excess": -0.019
+      },
+      "ood_knn": {
+        "raw": 0.486,
+        "null_mean": 0.51,
+        "excess": -0.024
+      }
+    },
+    "pusht-strong:s1000": {
+      "bcoh_distmin": {
+        "raw": 0.731,
+        "null_mean": 0.686,
+        "excess": 0.046
+      },
+      "ood_knn": {
+        "raw": 0.625,
+        "null_mean": 0.528,
+        "excess": 0.097
+      }
+    },
+    "pusht-strong:s2000": {
+      "bcoh_distmin": {
+        "raw": 0.661,
+        "null_mean": 0.693,
+        "excess": -0.032
+      },
+      "ood_knn": {
+        "raw": 0.591,
+        "null_mean": 0.513,
+        "excess": 0.078
+      }
+    },
+    "pusht-weak:nocrop": {
+      "bcoh_distmin": {
+        "raw": 0.6,
+        "null_mean": 0.657,
+        "excess": -0.056
+      },
+      "ood_knn": {
+        "raw": 0.71,
+        "null_mean": 0.692,
+        "excess": 0.018
+      }
+    },
+    "square-weak:s1000": {
+      "bcoh_distmin": {
+        "raw": 0.534,
+        "null_mean": 0.64,
+        "excess": -0.107
+      },
+      "ood_knn": {
+        "raw": 0.891,
+        "null_mean": 0.98,
+        "excess": -0.089
+      }
+    },
+    "square-weak:s2000": {
+      "bcoh_distmin": {
+        "raw": 0.4,
+        "null_mean": 0.613,
+        "excess": -0.213
+      },
+      "ood_knn": {
+        "raw": 0.929,
+        "null_mean": 0.943,
+        "excess": -0.014
+      }
+    },
+    "pusht-weak:s3000": {
+      "bcoh_distmin": {
+        "raw": 0.704,
+        "null_mean": 0.602,
+        "excess": 0.102
+      },
+      "ood_knn": {
+        "raw": 0.627,
+        "null_mean": 0.634,
+        "excess": -0.007
+      }
+    },
+    "pusht-weak:s4000": {
+      "bcoh_distmin": {
+        "raw": 0.584,
+        "null_mean": 0.634,
+        "excess": -0.05
+      },
+      "ood_knn": {
+        "raw": 0.665,
+        "null_mean": 0.663,
+        "excess": 0.002
+      }
+    },
+    "can-strong:s1000": {
+      "bcoh_distmin": {
+        "raw": 0.866,
+        "null_mean": 0.822,
+        "excess": 0.043
+      },
+      "ood_knn": {
+        "raw": 0.684,
+        "null_mean": 0.987,
+        "excess": -0.304
+      }
+    }
+  },
+  "timeout_frontier": {
+    "pusht-strong:dev": [
+      {
+        "T0": 7,
+        "coverage": 0.01,
+        "retained": 1.0
+      },
+      {
+        "T0": 9,
+        "coverage": 0.04,
+        "retained": 1.0
+      },
+      {
+        "T0": 10,
+        "coverage": 0.05,
+        "retained": 1.0
+      },
+      {
+        "T0": 11,
+        "coverage": 0.08,
+        "retained": 1.0
+      },
+      {
+        "T0": 12,
+        "coverage": 0.11,
+        "retained": 1.0
+      },
+      {
+        "T0": 13,
+        "coverage": 0.13,
+        "retained": 1.0
+      },
+      {
+        "T0": 14,
+        "coverage": 0.13,
+        "retained": 1.0
+      },
+      {
+        "T0": 15,
+        "coverage": 0.19,
+        "retained": 1.0
+      },
+      {
+        "T0": 16,
+        "coverage": 0.21,
+        "retained": 1.0
+      },
+      {
+        "T0": 17,
+        "coverage": 0.25,
+        "retained": 1.0
+      },
+      {
+        "T0": 18,
+        "coverage": 0.31,
+        "retained": 1.0
+      },
+      {
+        "T0": 19,
+        "coverage": 0.33,
+        "retained": 1.0
+      },
+      {
+        "T0": 20,
+        "coverage": 0.35,
+        "retained": 1.0
+      },
+      {
+        "T0": 21,
+        "coverage": 0.37,
+        "retained": 1.0
+      },
+      {
+        "T0": 22,
+        "coverage": 0.42,
+        "retained": 1.0
+      },
+      {
+        "T0": 23,
+        "coverage": 0.45,
+        "retained": 1.0
+      },
+      {
+        "T0": 24,
+        "coverage": 0.5,
+        "retained": 1.0
+      },
+      {
+        "T0": 25,
+        "coverage": 0.52,
+        "retained": 1.0
+      },
+      {
+        "T0": 26,
+        "coverage": 0.54,
+        "retained": 1.0
+      },
+      {
+        "T0": 27,
+        "coverage": 0.55,
+        "retained": 1.0
+      },
+      {
+        "T0": 28,
+        "coverage": 0.55,
+        "retained": 1.0
+      },
+      {
+        "T0": 31,
+        "coverage": 0.57,
+        "retained": 1.0
+      },
+      {
+        "T0": 33,
+        "coverage": 0.62,
+        "retained": 1.0
+      },
+      {
+        "T0": 34,
+        "coverage": 0.62,
+        "retained": 1.0
+      }
+    ],
+    "pusht-strong:s1000": [
+      {
+        "T0": 7,
+        "coverage": 0.02,
+        "retained": 1.0
+      },
+      {
+        "T0": 8,
+        "coverage": 0.03,
+        "retained": 1.0
+      },
+      {
+        "T0": 9,
+        "coverage": 0.04,
+        "retained": 1.0
+      },
+      {
+        "T0": 10,
+        "coverage": 0.04,
+        "retained": 1.0
+      },
+      {
+        "T0": 12,
+        "coverage": 0.09,
+        "retained": 1.0
+      },
+      {
+        "T0": 13,
+        "coverage": 0.1,
+        "retained": 1.0
+      },
+      {
+        "T0": 14,
+        "coverage": 0.13,
+        "retained": 1.0
+      },
+      {
+        "T0": 15,
+        "coverage": 0.14,
+        "retained": 1.0
+      },
+      {
+        "T0": 16,
+        "coverage": 0.17,
+        "retained": 1.0
+      },
+      {
+        "T0": 17,
+        "coverage": 0.18,
+        "retained": 1.0
+      },
+      {
+        "T0": 18,
+        "coverage": 0.21,
+        "retained": 1.0
+      },
+      {
+        "T0": 19,
+        "coverage": 0.23,
+        "retained": 1.0
+      },
+      {
+        "T0": 20,
+        "coverage": 0.25,
+        "retained": 1.0
+      },
+      {
+        "T0": 21,
+        "coverage": 0.28,
+        "retained": 1.0
+      },
+      {
+        "T0": 22,
+        "coverage": 0.33,
+        "retained": 1.0
+      },
+      {
+        "T0": 23,
+        "coverage": 0.35,
+        "retained": 1.0
+      },
+      {
+        "T0": 24,
+        "coverage": 0.35,
+        "retained": 1.0
+      },
+      {
+        "T0": 25,
+        "coverage": 0.39,
+        "retained": 1.0
+      },
+      {
+        "T0": 26,
+        "coverage": 0.41,
+        "retained": 1.0
+      },
+      {
+        "T0": 27,
+        "coverage": 0.44,
+        "retained": 1.0
+      },
+      {
+        "T0": 28,
+        "coverage": 0.45,
+        "retained": 1.0
+      },
+      {
+        "T0": 29,
+        "coverage": 0.47,
+        "retained": 1.0
+      },
+      {
+        "T0": 30,
+        "coverage": 0.51,
+        "retained": 1.0
+      },
+      {
+        "T0": 31,
+        "coverage": 0.51,
+        "retained": 1.0
+      },
+      {
+        "T0": 32,
+        "coverage": 0.53,
+        "retained": 1.0
+      },
+      {
+        "T0": 33,
+        "coverage": 0.53,
+        "retained": 1.0
+      },
+      {
+        "T0": 34,
+        "coverage": 0.54,
+        "retained": 1.0
+      },
+      {
+        "T0": 35,
+        "coverage": 0.56,
+        "retained": 1.0
+      }
+    ],
+    "pusht-strong:s2000": [
+      {
+        "T0": 6,
+        "coverage": 0.01,
+        "retained": 1.0
+      },
+      {
+        "T0": 8,
+        "coverage": 0.01,
+        "retained": 1.0
+      },
+      {
+        "T0": 10,
+        "coverage": 0.03,
+        "retained": 1.0
+      },
+      {
+        "T0": 11,
+        "coverage": 0.05,
+        "retained": 1.0
+      },
+      {
+        "T0": 12,
+        "coverage": 0.07,
+        "retained": 1.0
+      },
+      {
+        "T0": 13,
+        "coverage": 0.11,
+        "retained": 1.0
+      },
+      {
+        "T0": 14,
+        "coverage": 0.15,
+        "retained": 1.0
+      },
+      {
+        "T0": 15,
+        "coverage": 0.17,
+        "retained": 1.0
+      },
+      {
+        "T0": 16,
+        "coverage": 0.2,
+        "retained": 1.0
+      },
+      {
+        "T0": 17,
+        "coverage": 0.21,
+        "retained": 1.0
+      },
+      {
+        "T0": 18,
+        "coverage": 0.23,
+        "retained": 1.0
+      },
+      {
+        "T0": 19,
+        "coverage": 0.25,
+        "retained": 1.0
+      },
+      {
+        "T0": 20,
+        "coverage": 0.27,
+        "retained": 1.0
+      },
+      {
+        "T0": 21,
+        "coverage": 0.31,
+        "retained": 1.0
+      },
+      {
+        "T0": 22,
+        "coverage": 0.34,
+        "retained": 1.0
+      },
+      {
+        "T0": 23,
+        "coverage": 0.36,
+        "retained": 1.0
+      },
+      {
+        "T0": 24,
+        "coverage": 0.41,
+        "retained": 1.0
+      },
+      {
+        "T0": 25,
+        "coverage": 0.43,
+        "retained": 1.0
+      },
+      {
+        "T0": 26,
+        "coverage": 0.45,
+        "retained": 1.0
+      },
+      {
+        "T0": 27,
+        "coverage": 0.47,
+        "retained": 1.0
+      },
+      {
+        "T0": 28,
+        "coverage": 0.48,
+        "retained": 1.0
+      },
+      {
+        "T0": 29,
+        "coverage": 0.5,
+        "retained": 1.0
+      },
+      {
+        "T0": 30,
+        "coverage": 0.5,
+        "retained": 1.0
+      },
+      {
+        "T0": 32,
+        "coverage": 0.51,
+        "retained": 1.0
+      },
+      {
+        "T0": 33,
+        "coverage": 0.53,
+        "retained": 1.0
+      },
+      {
+        "T0": 34,
+        "coverage": 0.55,
+        "retained": 1.0
+      },
+      {
+        "T0": 35,
+        "coverage": 0.58,
+        "retained": 1.0
+      }
+    ],
+    "pusht-weak:nocrop": [
+      {
+        "T0": 11,
+        "coverage": 0.01,
+        "retained": 1.0
+      },
+      {
+        "T0": 12,
+        "coverage": 0.01,
+        "retained": 1.0
+      },
+      {
+        "T0": 14,
+        "coverage": 0.04,
+        "retained": 1.0
+      },
+      {
+        "T0": 15,
+        "coverage": 0.05,
+        "retained": 1.0
+      },
+      {
+        "T0": 16,
+        "coverage": 0.05,
+        "retained": 1.0
+      },
+      {
+        "T0": 18,
+        "coverage": 0.09,
+        "retained": 1.0
+      },
+      {
+        "T0": 19,
+        "coverage": 0.09,
+        "retained": 1.0
+      },
+      {
+        "T0": 20,
+        "coverage": 0.11,
+        "retained": 1.0
+      },
+      {
+        "T0": 21,
+        "coverage": 0.11,
+        "retained": 1.0
+      },
+      {
+        "T0": 22,
+        "coverage": 0.12,
+        "retained": 1.0
+      },
+      {
+        "T0": 23,
+        "coverage": 0.12,
+        "retained": 1.0
+      },
+      {
+        "T0": 25,
+        "coverage": 0.15,
+        "retained": 1.0
+      },
+      {
+        "T0": 26,
+        "coverage": 0.15,
+        "retained": 1.0
+      },
+      {
+        "T0": 27,
+        "coverage": 0.18,
+        "retained": 1.0
+      },
+      {
+        "T0": 28,
+        "coverage": 0.18,
+        "retained": 1.0
+      },
+      {
+        "T0": 31,
+        "coverage": 0.19,
+        "retained": 1.0
+      },
+      {
+        "T0": 33,
+        "coverage": 0.23,
+        "retained": 1.0
+      },
+      {
+        "T0": 34,
+        "coverage": 0.24,
+        "retained": 1.0
+      },
+      {
+        "T0": 35,
+        "coverage": 0.25,
+        "retained": 1.0
+      }
+    ],
+    "square-weak:s1000": [
+      {
+        "T0": 15,
+        "coverage": 0.03,
+        "retained": 1.0
+      },
+      {
+        "T0": 16,
+        "coverage": 0.05,
+        "retained": 1.0
+      },
+      {
+        "T0": 17,
+        "coverage": 0.07,
+        "retained": 1.0
+      },
+      {
+        "T0": 18,
+        "coverage": 0.07,
+        "retained": 1.0
+      },
+      {
+        "T0": 19,
+        "coverage": 0.09,
+        "retained": 1.0
+      },
+      {
+        "T0": 20,
+        "coverage": 0.12,
+        "retained": 1.0
+      },
+      {
+        "T0": 21,
+        "coverage": 0.13,
+        "retained": 1.0
+      },
+      {
+        "T0": 22,
+        "coverage": 0.15,
+        "retained": 1.0
+      },
+      {
+        "T0": 23,
+        "coverage": 0.17,
+        "retained": 1.0
+      },
+      {
+        "T0": 24,
+        "coverage": 0.19,
+        "retained": 1.0
+      },
+      {
+        "T0": 25,
+        "coverage": 0.2,
+        "retained": 1.0
+      },
+      {
+        "T0": 26,
+        "coverage": 0.21,
+        "retained": 1.0
+      },
+      {
+        "T0": 27,
+        "coverage": 0.21,
+        "retained": 1.0
+      },
+      {
+        "T0": 29,
+        "coverage": 0.22,
+        "retained": 1.0
+      },
+      {
+        "T0": 30,
+        "coverage": 0.23,
+        "retained": 1.0
+      },
+      {
+        "T0": 31,
+        "coverage": 0.23,
+        "retained": 1.0
+      },
+      {
+        "T0": 34,
+        "coverage": 0.25,
+        "retained": 1.0
+      },
+      {
+        "T0": 35,
+        "coverage": 0.25,
+        "retained": 1.0
+      },
+      {
+        "T0": 39,
+        "coverage": 0.25,
+        "retained": 1.0
+      },
+      {
+        "T0": 43,
+        "coverage": 0.26,
+        "retained": 1.0
+      }
+    ],
+    "square-weak:s2000": [
+      {
+        "T0": 18,
+        "coverage": 0.01,
+        "retained": 1.0
+      },
+      {
+        "T0": 19,
+        "coverage": 0.04,
+        "retained": 1.0
+      },
+      {
+        "T0": 20,
+        "coverage": 0.05,
+        "retained": 1.0
+      },
+      {
+        "T0": 21,
+        "coverage": 0.07,
+        "retained": 1.0
+      },
+      {
+        "T0": 22,
+        "coverage": 0.09,
+        "retained": 1.0
+      },
+      {
+        "T0": 23,
+        "coverage": 0.11,
+        "retained": 1.0
+      },
+      {
+        "T0": 24,
+        "coverage": 0.11,
+        "retained": 1.0
+      },
+      {
+        "T0": 25,
+        "coverage": 0.11,
+        "retained": 1.0
+      },
+      {
+        "T0": 29,
+        "coverage": 0.12,
+        "retained": 1.0
+      },
+      {
+        "T0": 32,
+        "coverage": 0.13,
+        "retained": 1.0
+      },
+      {
+        "T0": 34,
+        "coverage": 0.13,
+        "retained": 1.0
+      },
+      {
+        "T0": 39,
+        "coverage": 0.14,
+        "retained": 1.0
+      },
+      {
+        "T0": 47,
+        "coverage": 0.15,
+        "retained": 1.0
+      }
+    ],
+    "pusht-weak:s3000": [
+      {
+        "T0": 8,
+        "coverage": 0.01,
+        "retained": 1.0
+      },
+      {
+        "T0": 10,
+        "coverage": 0.01,
+        "retained": 1.0
+      },
+      {
+        "T0": 12,
+        "coverage": 0.03,
+        "retained": 1.0
+      },
+      {
+        "T0": 13,
+        "coverage": 0.03,
+        "retained": 1.0
+      },
+      {
+        "T0": 14,
+        "coverage": 0.05,
+        "retained": 1.0
+      },
+      {
+        "T0": 15,
+        "coverage": 0.05,
+        "retained": 1.0
+      },
+      {
+        "T0": 16,
+        "coverage": 0.06,
+        "retained": 1.0
+      },
+      {
+        "T0": 17,
+        "coverage": 0.07,
+        "retained": 1.0
+      },
+      {
+        "T0": 18,
+        "coverage": 0.1,
+        "retained": 1.0
+      },
+      {
+        "T0": 19,
+        "coverage": 0.1,
+        "retained": 1.0
+      },
+      {
+        "T0": 22,
+        "coverage": 0.13,
+        "retained": 1.0
+      },
+      {
+        "T0": 23,
+        "coverage": 0.13,
+        "retained": 1.0
+      },
+      {
+        "T0": 25,
+        "coverage": 0.15,
+        "retained": 1.0
+      },
+      {
+        "T0": 26,
+        "coverage": 0.17,
+        "retained": 1.0
+      },
+      {
+        "T0": 27,
+        "coverage": 0.19,
+        "retained": 1.0
+      },
+      {
+        "T0": 28,
+        "coverage": 0.19,
+        "retained": 1.0
+      },
+      {
+        "T0": 29,
+        "coverage": 0.19,
+        "retained": 1.0
+      },
+      {
+        "T0": 31,
+        "coverage": 0.21,
+        "retained": 1.0
+      },
+      {
+        "T0": 33,
+        "coverage": 0.23,
+        "retained": 1.0
+      },
+      {
+        "T0": 34,
+        "coverage": 0.24,
+        "retained": 1.0
+      },
+      {
+        "T0": 35,
+        "coverage": 0.25,
+        "retained": 1.0
+      }
+    ],
+    "pusht-weak:s4000": [
+      {
+        "T0": 8,
+        "coverage": 0.01,
+        "retained": 1.0
+      },
+      {
+        "T0": 11,
+        "coverage": 0.03,
+        "retained": 1.0
+      },
+      {
+        "T0": 12,
+        "coverage": 0.04,
+        "retained": 1.0
+      },
+      {
+        "T0": 13,
+        "coverage": 0.05,
+        "retained": 1.0
+      },
+      {
+        "T0": 14,
+        "coverage": 0.05,
+        "retained": 1.0
+      },
+      {
+        "T0": 16,
+        "coverage": 0.07,
+        "retained": 1.0
+      },
+      {
+        "T0": 17,
+        "coverage": 0.08,
+        "retained": 1.0
+      },
+      {
+        "T0": 18,
+        "coverage": 0.09,
+        "retained": 1.0
+      },
+      {
+        "T0": 19,
+        "coverage": 0.1,
+        "retained": 1.0
+      },
+      {
+        "T0": 20,
+        "coverage": 0.12,
+        "retained": 1.0
+      },
+      {
+        "T0": 21,
+        "coverage": 0.13,
+        "retained": 1.0
+      },
+      {
+        "T0": 22,
+        "coverage": 0.14,
+        "retained": 1.0
+      },
+      {
+        "T0": 23,
+        "coverage": 0.14,
+        "retained": 1.0
+      },
+      {
+        "T0": 26,
+        "coverage": 0.17,
+        "retained": 1.0
+      },
+      {
+        "T0": 27,
+        "coverage": 0.17,
+        "retained": 1.0
+      },
+      {
+        "T0": 29,
+        "coverage": 0.19,
+        "retained": 1.0
+      },
+      {
+        "T0": 30,
+        "coverage": 0.2,
+        "retained": 1.0
+      },
+      {
+        "T0": 31,
+        "coverage": 0.22,
+        "retained": 1.0
+      },
+      {
+        "T0": 32,
+        "coverage": 0.23,
+        "retained": 1.0
+      },
+      {
+        "T0": 33,
+        "coverage": 0.23,
+        "retained": 1.0
+      },
+      {
+        "T0": 35,
+        "coverage": 0.27,
+        "retained": 1.0
+      }
+    ],
+    "can-strong:s1000": [
+      {
+        "T0": 11,
+        "coverage": 0.03,
+        "retained": 1.0
+      },
+      {
+        "T0": 12,
+        "coverage": 0.11,
+        "retained": 1.0
+      },
+      {
+        "T0": 13,
+        "coverage": 0.28,
+        "retained": 1.0
+      },
+      {
+        "T0": 14,
+        "coverage": 0.41,
+        "retained": 1.0
+      },
+      {
+        "T0": 15,
+        "coverage": 0.5,
+        "retained": 1.0
+      },
+      {
+        "T0": 16,
+        "coverage": 0.57,
+        "retained": 1.0
+      },
+      {
+        "T0": 17,
+        "coverage": 0.64,
+        "retained": 1.0
+      },
+      {
+        "T0": 18,
+        "coverage": 0.64,
+        "retained": 1.0
+      },
+      {
+        "T0": 20,
+        "coverage": 0.68,
+        "retained": 1.0
+      },
+      {
+        "T0": 21,
+        "coverage": 0.69,
+        "retained": 1.0
+      },
+      {
+        "T0": 22,
+        "coverage": 0.7,
+        "retained": 1.0
+      },
+      {
+        "T0": 23,
+        "coverage": 0.71,
+        "retained": 1.0
+      },
+      {
+        "T0": 24,
+        "coverage": 0.71,
+        "retained": 1.0
+      },
+      {
+        "T0": 27,
+        "coverage": 0.73,
+        "retained": 1.0
+      },
+      {
+        "T0": 30,
+        "coverage": 0.74,
+        "retained": 1.0
+      },
+      {
+        "T0": 32,
+        "coverage": 0.75,
+        "retained": 1.0
+      },
+      {
+        "T0": 35,
+        "coverage": 0.75,
+        "retained": 1.0
+      },
+      {
+        "T0": 37,
+        "coverage": 0.76,
+        "retained": 1.0
+      },
+      {
+        "T0": 41,
+        "coverage": 0.77,
+        "retained": 1.0
+      },
+      {
+        "T0": 45,
+        "coverage": 0.78,
+        "retained": 1.0
+      },
+      {
+        "T0": 46,
+        "coverage": 0.78,
+        "retained": 1.0
+      }
+    ]
+  },
+  "utility": {
+    "pusht-strong:dev": [
+      {
+        "alpha": 0.1,
+        "coverage": 0.89,
+        "retained": 0.664,
+        "false_defer": 0.073,
+        "fail_recall": 0.167,
+        "median_handoff": 0.75,
+        "replans_saved": 12.8,
+        "EU_pfb0.3": 0.624,
+        "EU_pfb0.6": 0.657,
+        "EU_pfb0.9": 0.69
+      },
+      {
+        "alpha": 0.2,
+        "coverage": 0.83,
+        "retained": 0.672,
+        "false_defer": 0.125,
+        "fail_recall": 0.241,
+        "median_handoff": 0.53,
+        "replans_saved": 16.4,
+        "EU_pfb0.3": 0.609,
+        "EU_pfb0.6": 0.66,
+        "EU_pfb0.9": 0.711
+      },
+      {
+        "alpha": 0.3,
+        "coverage": 0.7,
+        "retained": 0.724,
+        "false_defer": 0.208,
+        "fail_recall": 0.463,
+        "median_handoff": 0.53,
+        "replans_saved": 17.0,
+        "EU_pfb0.3": 0.597,
+        "EU_pfb0.6": 0.687,
+        "EU_pfb0.9": 0.777
+      },
+      {
+        "alpha": 0.4,
+        "coverage": 0.59,
+        "retained": 0.784,
+        "false_defer": 0.281,
+        "fail_recall": 0.648,
+        "median_handoff": 0.56,
+        "replans_saved": 18.0,
+        "EU_pfb0.3": 0.586,
+        "EU_pfb0.6": 0.709,
+        "EU_pfb0.9": 0.832
+      },
+      {
+        "alpha": 0.5,
+        "coverage": 0.51,
+        "retained": 0.763,
+        "false_defer": 0.396,
+        "fail_recall": 0.667,
+        "median_handoff": 0.44,
+        "replans_saved": 20.3,
+        "EU_pfb0.3": 0.536,
+        "EU_pfb0.6": 0.683,
+        "EU_pfb0.9": 0.83
+      }
+    ],
+    "pusht-strong:s1000": [
+      {
+        "alpha": 0.1,
+        "coverage": 0.95,
+        "retained": 0.566,
+        "false_defer": 0.036,
+        "fail_recall": 0.061,
+        "median_handoff": 0.79,
+        "replans_saved": 8.2,
+        "EU_pfb0.3": 0.553,
+        "EU_pfb0.6": 0.568,
+        "EU_pfb0.9": 0.583
+      },
+      {
+        "alpha": 0.2,
+        "coverage": 0.67,
+        "retained": 0.69,
+        "false_defer": 0.179,
+        "fail_recall": 0.53,
+        "median_handoff": 0.56,
+        "replans_saved": 16.6,
+        "EU_pfb0.3": 0.561,
+        "EU_pfb0.6": 0.66,
+        "EU_pfb0.9": 0.759
+      },
+      {
+        "alpha": 0.3,
+        "coverage": 0.58,
+        "retained": 0.678,
+        "false_defer": 0.298,
+        "fail_recall": 0.576,
+        "median_handoff": 0.43,
+        "replans_saved": 18.2,
+        "EU_pfb0.3": 0.519,
+        "EU_pfb0.6": 0.645,
+        "EU_pfb0.9": 0.771
+      },
+      {
+        "alpha": 0.4,
+        "coverage": 0.49,
+        "retained": 0.743,
+        "false_defer": 0.345,
+        "fail_recall": 0.712,
+        "median_handoff": 0.42,
+        "replans_saved": 19.4,
+        "EU_pfb0.3": 0.517,
+        "EU_pfb0.6": 0.67,
+        "EU_pfb0.9": 0.823
+      },
+      {
+        "alpha": 0.5,
+        "coverage": 0.37,
+        "retained": 0.75,
+        "false_defer": 0.5,
+        "fail_recall": 0.788,
+        "median_handoff": 0.35,
+        "replans_saved": 22.6,
+        "EU_pfb0.3": 0.466,
+        "EU_pfb0.6": 0.655,
+        "EU_pfb0.9": 0.845
+      }
+    ],
+    "pusht-strong:s2000": [
+      {
+        "alpha": 0.1,
+        "coverage": 0.83,
+        "retained": 0.624,
+        "false_defer": 0.103,
+        "fail_recall": 0.254,
+        "median_handoff": 0.56,
+        "replans_saved": 14.7,
+        "EU_pfb0.3": 0.569,
+        "EU_pfb0.6": 0.62,
+        "EU_pfb0.9": 0.671
+      },
+      {
+        "alpha": 0.2,
+        "coverage": 0.74,
+        "retained": 0.613,
+        "false_defer": 0.218,
+        "fail_recall": 0.317,
+        "median_handoff": 0.53,
+        "replans_saved": 17.6,
+        "EU_pfb0.3": 0.532,
+        "EU_pfb0.6": 0.61,
+        "EU_pfb0.9": 0.688
+      },
+      {
+        "alpha": 0.3,
+        "coverage": 0.63,
+        "retained": 0.653,
+        "false_defer": 0.287,
+        "fail_recall": 0.476,
+        "median_handoff": 0.47,
+        "replans_saved": 19.3,
+        "EU_pfb0.3": 0.522,
+        "EU_pfb0.6": 0.633,
+        "EU_pfb0.9": 0.744
+      },
+      {
+        "alpha": 0.4,
+        "coverage": 0.53,
+        "retained": 0.7,
+        "false_defer": 0.356,
+        "fail_recall": 0.619,
+        "median_handoff": 0.44,
+        "replans_saved": 19.5,
+        "EU_pfb0.3": 0.512,
+        "EU_pfb0.6": 0.653,
+        "EU_pfb0.9": 0.794
+      },
+      {
+        "alpha": 0.5,
+        "coverage": 0.41,
+        "retained": 0.721,
+        "false_defer": 0.494,
+        "fail_recall": 0.73,
+        "median_handoff": 0.33,
+        "replans_saved": 22.5,
+        "EU_pfb0.3": 0.473,
+        "EU_pfb0.6": 0.65,
+        "EU_pfb0.9": 0.827
+      }
+    ],
+    "pusht-weak:nocrop": [
+      {
+        "alpha": 0.1,
+        "coverage": 0.67,
+        "retained": 0.356,
+        "false_defer": 0.053,
+        "fail_recall": 0.42,
+        "median_handoff": 0.33,
+        "replans_saved": 24.2,
+        "EU_pfb0.3": 0.338,
+        "EU_pfb0.6": 0.437,
+        "EU_pfb0.9": 0.536
+      },
+      {
+        "alpha": 0.2,
+        "coverage": 0.6,
+        "retained": 0.378,
+        "false_defer": 0.105,
+        "fail_recall": 0.5,
+        "median_handoff": 0.29,
+        "replans_saved": 24.4,
+        "EU_pfb0.3": 0.347,
+        "EU_pfb0.6": 0.467,
+        "EU_pfb0.9": 0.587
+      },
+      {
+        "alpha": 0.3,
+        "coverage": 0.49,
+        "retained": 0.397,
+        "false_defer": 0.237,
+        "fail_recall": 0.607,
+        "median_handoff": 0.14,
+        "replans_saved": 26.7,
+        "EU_pfb0.3": 0.348,
+        "EU_pfb0.6": 0.501,
+        "EU_pfb0.9": 0.654
+      },
+      {
+        "alpha": 0.4,
+        "coverage": 0.43,
+        "retained": 0.359,
+        "false_defer": 0.395,
+        "fail_recall": 0.634,
+        "median_handoff": 0.08,
+        "replans_saved": 28.9,
+        "EU_pfb0.3": 0.325,
+        "EU_pfb0.6": 0.496,
+        "EU_pfb0.9": 0.667
+      },
+      {
+        "alpha": 0.5,
+        "coverage": 0.31,
+        "retained": 0.326,
+        "false_defer": 0.605,
+        "fail_recall": 0.723,
+        "median_handoff": 0.06,
+        "replans_saved": 30.0,
+        "EU_pfb0.3": 0.308,
+        "EU_pfb0.6": 0.515,
+        "EU_pfb0.9": 0.722
+      }
+    ],
+    "square-weak:s1000": [
+      {
+        "alpha": 0.1,
+        "coverage": 0.53,
+        "retained": 0.456,
+        "false_defer": 0.077,
+        "fail_recall": 0.613,
+        "median_handoff": 0.39,
+        "replans_saved": 28.6,
+        "EU_pfb0.3": 0.383,
+        "EU_pfb0.6": 0.524,
+        "EU_pfb0.9": 0.665
+      },
+      {
+        "alpha": 0.2,
+        "coverage": 0.49,
+        "retained": 0.452,
+        "false_defer": 0.154,
+        "fail_recall": 0.64,
+        "median_handoff": 0.38,
+        "replans_saved": 29.4,
+        "EU_pfb0.3": 0.374,
+        "EU_pfb0.6": 0.527,
+        "EU_pfb0.9": 0.68
+      },
+      {
+        "alpha": 0.3,
+        "coverage": 0.31,
+        "retained": 0.681,
+        "false_defer": 0.179,
+        "fail_recall": 0.865,
+        "median_handoff": 0.3,
+        "replans_saved": 31.7,
+        "EU_pfb0.3": 0.418,
+        "EU_pfb0.6": 0.625,
+        "EU_pfb0.9": 0.832
+      },
+      {
+        "alpha": 0.4,
+        "coverage": 0.27,
+        "retained": 0.725,
+        "false_defer": 0.256,
+        "fail_recall": 0.901,
+        "median_handoff": 0.23,
+        "replans_saved": 35.8,
+        "EU_pfb0.3": 0.415,
+        "EU_pfb0.6": 0.634,
+        "EU_pfb0.9": 0.853
+      },
+      {
+        "alpha": 0.5,
+        "coverage": 0.23,
+        "retained": 0.743,
+        "false_defer": 0.333,
+        "fail_recall": 0.919,
+        "median_handoff": 0.21,
+        "replans_saved": 37.0,
+        "EU_pfb0.3": 0.402,
+        "EU_pfb0.6": 0.633,
+        "EU_pfb0.9": 0.864
+      }
+    ],
+    "square-weak:s2000": [
+      {
+        "alpha": 0.1,
+        "coverage": 0.38,
+        "retained": 0.386,
+        "false_defer": 0.0,
+        "fail_recall": 0.727,
+        "median_handoff": 0.04,
+        "replans_saved": 39.6,
+        "EU_pfb0.3": 0.333,
+        "EU_pfb0.6": 0.519,
+        "EU_pfb0.9": 0.705
+      },
+      {
+        "alpha": 0.2,
+        "coverage": 0.32,
+        "retained": 0.438,
+        "false_defer": 0.045,
+        "fail_recall": 0.789,
+        "median_handoff": 0.02,
+        "replans_saved": 39.3,
+        "EU_pfb0.3": 0.344,
+        "EU_pfb0.6": 0.548,
+        "EU_pfb0.9": 0.752
+      },
+      {
+        "alpha": 0.3,
+        "coverage": 0.23,
+        "retained": 0.5,
+        "false_defer": 0.227,
+        "fail_recall": 0.867,
+        "median_handoff": 0.0,
+        "replans_saved": 42.4,
+        "EU_pfb0.3": 0.346,
+        "EU_pfb0.6": 0.577,
+        "EU_pfb0.9": 0.808
+      },
+      {
+        "alpha": 0.4,
+        "coverage": 0.19,
+        "retained": 0.552,
+        "false_defer": 0.273,
+        "fail_recall": 0.898,
+        "median_handoff": 0.0,
+        "replans_saved": 43.7,
+        "EU_pfb0.3": 0.348,
+        "EU_pfb0.6": 0.591,
+        "EU_pfb0.9": 0.834
+      },
+      {
+        "alpha": 0.5,
+        "coverage": 0.15,
+        "retained": 0.591,
+        "false_defer": 0.409,
+        "fail_recall": 0.93,
+        "median_handoff": 0.0,
+        "replans_saved": 44.2,
+        "EU_pfb0.3": 0.344,
+        "EU_pfb0.6": 0.599,
+        "EU_pfb0.9": 0.854
+      }
+    ],
+    "pusht-weak:s3000": [
+      {
+        "alpha": 0.1,
+        "coverage": 0.99,
+        "retained": 0.255,
+        "false_defer": 0.0,
+        "fail_recall": 0.009,
+        "median_handoff": 0.06,
+        "replans_saved": 34.0,
+        "EU_pfb0.3": 0.255,
+        "EU_pfb0.6": 0.258,
+        "EU_pfb0.9": 0.261
+      },
+      {
+        "alpha": 0.2,
+        "coverage": 0.75,
+        "retained": 0.286,
+        "false_defer": 0.158,
+        "fail_recall": 0.286,
+        "median_handoff": 0.06,
+        "replans_saved": 27.4,
+        "EU_pfb0.3": 0.289,
+        "EU_pfb0.6": 0.364,
+        "EU_pfb0.9": 0.44
+      },
+      {
+        "alpha": 0.3,
+        "coverage": 0.73,
+        "retained": 0.294,
+        "false_defer": 0.158,
+        "fail_recall": 0.312,
+        "median_handoff": 0.03,
+        "replans_saved": 27.6,
+        "EU_pfb0.3": 0.296,
+        "EU_pfb0.6": 0.377,
+        "EU_pfb0.9": 0.458
+      },
+      {
+        "alpha": 0.4,
+        "coverage": 0.63,
+        "retained": 0.309,
+        "false_defer": 0.237,
+        "fail_recall": 0.42,
+        "median_handoff": 0.06,
+        "replans_saved": 26.9,
+        "EU_pfb0.3": 0.306,
+        "EU_pfb0.6": 0.417,
+        "EU_pfb0.9": 0.528
+      },
+      {
+        "alpha": 0.5,
+        "coverage": 0.57,
+        "retained": 0.326,
+        "false_defer": 0.263,
+        "fail_recall": 0.482,
+        "median_handoff": 0.1,
+        "replans_saved": 26.7,
+        "EU_pfb0.3": 0.315,
+        "EU_pfb0.6": 0.444,
+        "EU_pfb0.9": 0.573
+      }
+    ],
+    "pusht-weak:s4000": [
+      {
+        "alpha": 0.1,
+        "coverage": 0.68,
+        "retained": 0.363,
+        "false_defer": 0.098,
+        "fail_recall": 0.404,
+        "median_handoff": 0.24,
+        "replans_saved": 26.7,
+        "EU_pfb0.3": 0.343,
+        "EU_pfb0.6": 0.439,
+        "EU_pfb0.9": 0.535
+      },
+      {
+        "alpha": 0.2,
+        "coverage": 0.62,
+        "retained": 0.366,
+        "false_defer": 0.171,
+        "fail_recall": 0.459,
+        "median_handoff": 0.22,
+        "replans_saved": 26.9,
+        "EU_pfb0.3": 0.341,
+        "EU_pfb0.6": 0.455,
+        "EU_pfb0.9": 0.569
+      },
+      {
+        "alpha": 0.3,
+        "coverage": 0.55,
+        "retained": 0.354,
+        "false_defer": 0.293,
+        "fail_recall": 0.514,
+        "median_handoff": 0.18,
+        "replans_saved": 28.1,
+        "EU_pfb0.3": 0.33,
+        "EU_pfb0.6": 0.465,
+        "EU_pfb0.9": 0.6
+      },
+      {
+        "alpha": 0.4,
+        "coverage": 0.49,
+        "retained": 0.365,
+        "false_defer": 0.341,
+        "fail_recall": 0.569,
+        "median_handoff": 0.11,
+        "replans_saved": 29.0,
+        "EU_pfb0.3": 0.332,
+        "EU_pfb0.6": 0.485,
+        "EU_pfb0.9": 0.638
+      },
+      {
+        "alpha": 0.5,
+        "coverage": 0.42,
+        "retained": 0.381,
+        "false_defer": 0.415,
+        "fail_recall": 0.642,
+        "median_handoff": 0.11,
+        "replans_saved": 28.8,
+        "EU_pfb0.3": 0.334,
+        "EU_pfb0.6": 0.508,
+        "EU_pfb0.9": 0.682
+      }
+    ],
+    "can-strong:s1000": [
+      {
+        "alpha": 0.1,
+        "coverage": 0.85,
+        "retained": 0.844,
+        "false_defer": 0.085,
+        "fail_recall": 0.375,
+        "median_handoff": 0.24,
+        "replans_saved": 33.5,
+        "EU_pfb0.3": 0.762,
+        "EU_pfb0.6": 0.807,
+        "EU_pfb0.9": 0.852
+      },
+      {
+        "alpha": 0.2,
+        "coverage": 0.73,
+        "retained": 0.927,
+        "false_defer": 0.144,
+        "fail_recall": 0.75,
+        "median_handoff": 0.24,
+        "replans_saved": 30.9,
+        "EU_pfb0.3": 0.758,
+        "EU_pfb0.6": 0.839,
+        "EU_pfb0.9": 0.92
+      },
+      {
+        "alpha": 0.3,
+        "coverage": 0.65,
+        "retained": 0.928,
+        "false_defer": 0.237,
+        "fail_recall": 0.781,
+        "median_handoff": 0.19,
+        "replans_saved": 36.4,
+        "EU_pfb0.3": 0.708,
+        "EU_pfb0.6": 0.813,
+        "EU_pfb0.9": 0.918
+      },
+      {
+        "alpha": 0.4,
+        "coverage": 0.49,
+        "retained": 0.973,
+        "false_defer": 0.398,
+        "fail_recall": 0.938,
+        "median_handoff": 0.16,
+        "replans_saved": 38.0,
+        "EU_pfb0.3": 0.63,
+        "EU_pfb0.6": 0.783,
+        "EU_pfb0.9": 0.936
+      },
+      {
+        "alpha": 0.5,
+        "coverage": 0.45,
+        "retained": 0.97,
+        "false_defer": 0.449,
+        "fail_recall": 0.938,
+        "median_handoff": 0.15,
+        "replans_saved": 38.3,
+        "EU_pfb0.3": 0.602,
+        "EU_pfb0.6": 0.766,
+        "EU_pfb0.9": 0.931
+      }
+    ]
+  },
+  "cal_robust": {
+    "pusht-strong:dev": {
+      "10": {
+        "fp_mean": 0.188,
+        "fp_sd": 0.096
+      },
+      "20": {
+        "fp_mean": 0.202,
+        "fp_sd": 0.061
+      },
+      "40": {
+        "fp_mean": 0.211,
+        "fp_sd": 0.047
+      },
+      "97": {
+        "fp_mean": 0.208,
+        "fp_sd": 0.0
+      }
+    },
+    "pusht-strong:s1000": {
+      "10": {
+        "fp_mean": 0.2,
+        "fp_sd": 0.125
+      },
+      "20": {
+        "fp_mean": 0.239,
+        "fp_sd": 0.094
+      },
+      "40": {
+        "fp_mean": 0.282,
+        "fp_sd": 0.04
+      },
+      "73": {
+        "fp_mean": 0.298,
+        "fp_sd": 0.0
+      }
+    },
+    "pusht-strong:s2000": {
+      "10": {
+        "fp_mean": 0.232,
+        "fp_sd": 0.089
+      },
+      "20": {
+        "fp_mean": 0.258,
+        "fp_sd": 0.073
+      },
+      "40": {
+        "fp_mean": 0.275,
+        "fp_sd": 0.054
+      },
+      "87": {
+        "fp_mean": 0.287,
+        "fp_sd": 0.0
+      }
+    },
+    "pusht-weak:nocrop": {
+      "10": {
+        "fp_mean": 0.192,
+        "fp_sd": 0.114
+      },
+      "20": {
+        "fp_mean": 0.237,
+        "fp_sd": 0.0
+      },
+      "40": {
+        "fp_mean": 0.237,
+        "fp_sd": 0.0
+      },
+      "19": {
+        "fp_mean": 0.237,
+        "fp_sd": 0.0
+      }
+    },
+    "square-weak:s1000": {
+      "10": {
+        "fp_mean": 0.206,
+        "fp_sd": 0.059
+      },
+      "20": {
+        "fp_mean": 0.179,
+        "fp_sd": 0.0
+      },
+      "40": {
+        "fp_mean": 0.179,
+        "fp_sd": 0.0
+      },
+      "18": {
+        "fp_mean": 0.179,
+        "fp_sd": 0.0
+      }
+    },
+    "square-weak:s2000": {
+      "10": {
+        "fp_mean": 0.242,
+        "fp_sd": 0.021
+      },
+      "20": {
+        "fp_mean": 0.227,
+        "fp_sd": 0.0
+      },
+      "40": {
+        "fp_mean": 0.227,
+        "fp_sd": 0.0
+      },
+      "12": {
+        "fp_mean": 0.227,
+        "fp_sd": 0.0
+      }
+    },
+    "pusht-weak:s3000": {
+      "10": {
+        "fp_mean": 0.155,
+        "fp_sd": 0.075
+      },
+      "20": {
+        "fp_mean": 0.158,
+        "fp_sd": 0.0
+      },
+      "40": {
+        "fp_mean": 0.158,
+        "fp_sd": 0.0
+      },
+      "19": {
+        "fp_mean": 0.158,
+        "fp_sd": 0.0
+      }
+    },
+    "pusht-weak:s4000": {
+      "10": {
+        "fp_mean": 0.272,
+        "fp_sd": 0.066
+      },
+      "20": {
+        "fp_mean": 0.287,
+        "fp_sd": 0.013
+      },
+      "40": {
+        "fp_mean": 0.293,
+        "fp_sd": 0.0
+      },
+      "23": {
+        "fp_mean": 0.293,
+        "fp_sd": 0.0
+      }
+    },
+    "can-strong:s1000": {
+      "10": {
+        "fp_mean": 0.228,
+        "fp_sd": 0.131
+      },
+      "20": {
+        "fp_mean": 0.237,
+        "fp_sd": 0.071
+      },
+      "40": {
+        "fp_mean": 0.235,
+        "fp_sd": 0.047
+      },
+      "123": {
+        "fp_mean": 0.237,
+        "fp_sd": 0.0
+      }
+    }
+  },
+  "taxonomy": {
+    "pusht-strong:dev": {
+      "oscillating": {
+        "n": 5,
+        "bcoh_distmin": 0.765,
+        "stac_mmd": 0.825,
+        "ood_knn": 0.613
+      },
+      "near_miss": {
+        "n": 39,
+        "bcoh_distmin": 0.693,
+        "stac_mmd": 0.666,
+        "ood_knn": 0.476
+      },
+      "other": {
+        "n": 3,
+        "bcoh_distmin": 0.677,
+        "stac_mmd": 0.684,
+        "ood_knn": 0.847
+      },
+      "stalled": {
+        "n": 7,
+        "bcoh_distmin": 0.454,
+        "stac_mmd": 0.747,
+        "ood_knn": 0.301
+      }
+    },
+    "pusht-strong:s1000": {
+      "near_miss": {
+        "n": 47,
+        "bcoh_distmin": 0.736,
+        "stac_mmd": 0.697,
+        "ood_knn": 0.629
+      },
+      "oscillating": {
+        "n": 8,
+        "bcoh_distmin": 0.917,
+        "stac_mmd": 0.887,
+        "ood_knn": 0.632
+      },
+      "stalled": {
+        "n": 4,
+        "bcoh_distmin": 0.512,
+        "stac_mmd": 0.812,
+        "ood_knn": 0.67
+      },
+      "other": {
+        "n": 7,
+        "bcoh_distmin": 0.617,
+        "stac_mmd": 0.881,
+        "ood_knn": 0.561
+      }
+    },
+    "pusht-strong:s2000": {
+      "other": {
+        "n": 4,
+        "bcoh_distmin": 0.523,
+        "stac_mmd": 0.509,
+        "ood_knn": 0.779
+      },
+      "near_miss": {
+        "n": 54,
+        "bcoh_distmin": 0.657,
+        "stac_mmd": 0.63,
+        "ood_knn": 0.572
+      },
+      "oscillating": {
+        "n": 5,
+        "bcoh_distmin": 0.816,
+        "stac_mmd": 0.834,
+        "ood_knn": 0.648
+      }
+    },
+    "pusht-weak:nocrop": {
+      "near_miss": {
+        "n": 31,
+        "bcoh_distmin": 0.688,
+        "stac_mmd": 0.705,
+        "ood_knn": 0.634
+      },
+      "oscillating": {
+        "n": 14,
+        "bcoh_distmin": 0.692,
+        "stac_mmd": 0.942,
+        "ood_knn": 0.707
+      },
+      "stalled": {
+        "n": 25,
+        "bcoh_distmin": 0.449,
+        "stac_mmd": 0.944,
+        "ood_knn": 0.734
+      },
+      "other": {
+        "n": 42,
+        "bcoh_distmin": 0.595,
+        "stac_mmd": 0.873,
+        "ood_knn": 0.754
+      }
+    },
+    "pusht-weak:s3000": {
+      "other": {
+        "n": 47,
+        "bcoh_distmin": 0.721,
+        "stac_mmd": 0.831,
+        "ood_knn": 0.65
+      },
+      "near_miss": {
+        "n": 26,
+        "bcoh_distmin": 0.735,
+        "stac_mmd": 0.709,
+        "ood_knn": 0.565
+      },
+      "stalled": {
+        "n": 25,
+        "bcoh_distmin": 0.585,
+        "stac_mmd": 0.839,
+        "ood_knn": 0.681
+      },
+      "oscillating": {
+        "n": 14,
+        "bcoh_distmin": 0.801,
+        "stac_mmd": 0.814,
+        "ood_knn": 0.571
+      }
+    },
+    "pusht-weak:s4000": {
+      "other": {
+        "n": 45,
+        "bcoh_distmin": 0.613,
+        "stac_mmd": 0.752,
+        "ood_knn": 0.642
+      },
+      "near_miss": {
+        "n": 28,
+        "bcoh_distmin": 0.622,
+        "stac_mmd": 0.655,
+        "ood_knn": 0.564
+      },
+      "stalled": {
+        "n": 26,
+        "bcoh_distmin": 0.429,
+        "stac_mmd": 0.825,
+        "ood_knn": 0.769
+      },
+      "oscillating": {
+        "n": 10,
+        "bcoh_distmin": 0.754,
+        "stac_mmd": 0.824,
+        "ood_knn": 0.785
+      }
+    }
+  }
+}

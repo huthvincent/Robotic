@@ -1,0 +1,18 @@
+{
+  "baseline_sr": 0.64,
+  "n_episodes": 500,
+  "gate": "bcoh_distmin",
+  "rows": [
+    {
+      "pct": 90.0,
+      "recovery": "committed",
+      "threshold": 0.11783564835786821,
+      "success": 0.642,
+      "delta": 0.0020000000000000018,
+      "intervention": 0.10297757974397058,
+      "hurt": 94,
+      "helped": 95,
+      "p": 1.0
+    }
+  ]
+}

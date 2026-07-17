@@ -1,0 +1,865 @@
+{
+  "n_episodes": 6,
+  "success_rate": 0.5,
+  "n_cal_success_eps": 2,
+  "n_test_eps": 3,
+  "n_test_fail": 2,
+  "signals": {
+    "bcoh_distmin": {
+      "ep_auroc_max": 1.0,
+      "ep_auroc_max_ci": [
+        1.0,
+        1.0
+      ],
+      "ep_auroc_mean": 1.0,
+      "ep_auroc_mean_ci": [
+        1.0,
+        1.0
+      ],
+      "tpr_at_fpr": {
+        "0.05": 1.0,
+        "0.1": 1.0,
+        "0.2": 1.0
+      },
+      "step_aurc": 0.8118063009684349,
+      "conformal_defer": {
+        "0.05": {
+          "tau": 0.16123925149440765,
+          "coverage": 0.3333333333333333,
+          "false_defer_on_success": 0.0,
+          "defer_on_fail": 1.0,
+          "retained_success": 1.0,
+          "earliness_frac": 0.375
+        },
+        "0.1": {
+          "tau": 0.16123925149440765,
+          "coverage": 0.3333333333333333,
+          "false_defer_on_success": 0.0,
+          "defer_on_fail": 1.0,
+          "retained_success": 1.0,
+          "earliness_frac": 0.375
+        },
+        "0.15": {
+          "tau": 0.16123925149440765,
+          "coverage": 0.3333333333333333,
+          "false_defer_on_success": 0.0,
+          "defer_on_fail": 1.0,
+          "retained_success": 1.0,
+          "earliness_frac": 0.375
+        },
+        "0.2": {
+          "tau": 0.16123925149440765,
+          "coverage": 0.3333333333333333,
+          "false_defer_on_success": 0.0,
+          "defer_on_fail": 1.0,
+          "retained_success": 1.0,
+          "earliness_frac": 0.375
+        },
+        "0.3": {
+          "tau": 0.16123925149440765,
+          "coverage": 0.3333333333333333,
+          "false_defer_on_success": 0.0,
+          "defer_on_fail": 1.0,
+          "retained_success": 1.0,
+          "earliness_frac": 0.375
+        },
+        "0.4": {
+          "tau": 0.16123925149440765,
+          "coverage": 0.3333333333333333,
+          "false_defer_on_success": 0.0,
+          "defer_on_fail": 1.0,
+          "retained_success": 1.0,
+          "earliness_frac": 0.375
+        },
+        "0.5": {
+          "tau": 0.16123925149440765,
+          "coverage": 0.3333333333333333,
+          "false_defer_on_success": 0.0,
+          "defer_on_fail": 1.0,
+          "retained_success": 1.0,
+          "earliness_frac": 0.375
+        }
+      }
+    },
+    "bcoh_distmean": {
+      "ep_auroc_max": 1.0,
+      "ep_auroc_max_ci": [
+        1.0,
+        1.0
+      ],
+      "ep_auroc_mean": 1.0,
+      "ep_auroc_mean_ci": [
+        1.0,
+        1.0
+      ],
+      "tpr_at_fpr": {
+        "0.05": 1.0,
+        "0.1": 1.0,
+        "0.2": 1.0
+      },
+      "step_aurc": 0.8104443693259975,
+      "conformal_defer": {
+        "0.05": {
+          "tau": 0.16639003157615662,
+          "coverage": 0.3333333333333333,
+          "false_defer_on_success": 0.0,
+          "defer_on_fail": 1.0,
+          "retained_success": 1.0,
+          "earliness_frac": 0.1388888888888889
+        },
+        "0.1": {
+          "tau": 0.16639003157615662,
+          "coverage": 0.3333333333333333,
+          "false_defer_on_success": 0.0,
+          "defer_on_fail": 1.0,
+          "retained_success": 1.0,
+          "earliness_frac": 0.1388888888888889
+        },
+        "0.15": {
+          "tau": 0.16639003157615662,
+          "coverage": 0.3333333333333333,
+          "false_defer_on_success": 0.0,
+          "defer_on_fail": 1.0,
+          "retained_success": 1.0,
+          "earliness_frac": 0.1388888888888889
+        },
+        "0.2": {
+          "tau": 0.16639003157615662,
+          "coverage": 0.3333333333333333,
+          "false_defer_on_success": 0.0,
+          "defer_on_fail": 1.0,
+          "retained_success": 1.0,
+          "earliness_frac": 0.1388888888888889
+        },
+        "0.3": {
+          "tau": 0.16639003157615662,
+          "coverage": 0.3333333333333333,
+          "false_defer_on_success": 0.0,
+          "defer_on_fail": 1.0,
+          "retained_success": 1.0,
+          "earliness_frac": 0.1388888888888889
+        },
+        "0.4": {
+          "tau": 0.16639003157615662,
+          "coverage": 0.3333333333333333,
+          "false_defer_on_success": 0.0,
+          "defer_on_fail": 1.0,
+          "retained_success": 1.0,
+          "earliness_frac": 0.1388888888888889
+        },
+        "0.5": {
+          "tau": 0.16639003157615662,
+          "coverage": 0.3333333333333333,
+          "false_defer_on_success": 0.0,
+          "defer_on_fail": 1.0,
+          "retained_success": 1.0,
+          "earliness_frac": 0.1388888888888889
+        }
+      }
+    },
+    "bcoh_freshmean": {
+      "ep_auroc_max": 1.0,
+      "ep_auroc_max_ci": [
+        1.0,
+        1.0
+      ],
+      "ep_auroc_mean": 1.0,
+      "ep_auroc_mean_ci": [
+        1.0,
+        1.0
+      ],
+      "tpr_at_fpr": {
+        "0.05": 1.0,
+        "0.1": 1.0,
+        "0.2": 1.0
+      },
+      "step_aurc": 0.8140902026593309,
+      "conformal_defer": {
+        "0.05": {
+          "tau": 0.16635361313819885,
+          "coverage": 0.3333333333333333,
+          "false_defer_on_success": 0.0,
+          "defer_on_fail": 1.0,
+          "retained_success": 1.0,
+          "earliness_frac": 0.375
+        },
+        "0.1": {
+          "tau": 0.16635361313819885,
+          "coverage": 0.3333333333333333,
+          "false_defer_on_success": 0.0,
+          "defer_on_fail": 1.0,
+          "retained_success": 1.0,
+          "earliness_frac": 0.375
+        },
+        "0.15": {
+          "tau": 0.16635361313819885,
+          "coverage": 0.3333333333333333,
+          "false_defer_on_success": 0.0,
+          "defer_on_fail": 1.0,
+          "retained_success": 1.0,
+          "earliness_frac": 0.375
+        },
+        "0.2": {
+          "tau": 0.16635361313819885,
+          "coverage": 0.3333333333333333,
+          "false_defer_on_success": 0.0,
+          "defer_on_fail": 1.0,
+          "retained_success": 1.0,
+          "earliness_frac": 0.375
+        },
+        "0.3": {
+          "tau": 0.16635361313819885,
+          "coverage": 0.3333333333333333,
+          "false_defer_on_success": 0.0,
+          "defer_on_fail": 1.0,
+          "retained_success": 1.0,
+          "earliness_frac": 0.375
+        },
+        "0.4": {
+          "tau": 0.16635361313819885,
+          "coverage": 0.3333333333333333,
+          "false_defer_on_success": 0.0,
+          "defer_on_fail": 1.0,
+          "retained_success": 1.0,
+          "earliness_frac": 0.375
+        },
+        "0.5": {
+          "tau": 0.16635361313819885,
+          "coverage": 0.3333333333333333,
+          "false_defer_on_success": 0.0,
+          "defer_on_fail": 1.0,
+          "retained_success": 1.0,
+          "earliness_frac": 0.375
+        }
+      }
+    },
+    "stac_chamfer": {
+      "ep_auroc_max": 1.0,
+      "ep_auroc_max_ci": [
+        1.0,
+        1.0
+      ],
+      "ep_auroc_mean": 1.0,
+      "ep_auroc_mean_ci": [
+        1.0,
+        1.0
+      ],
+      "tpr_at_fpr": {
+        "0.05": 1.0,
+        "0.1": 1.0,
+        "0.2": 1.0
+      },
+      "step_aurc": 0.8113670331560467,
+      "conformal_defer": {
+        "0.05": {
+          "tau": 0.1644018590450287,
+          "coverage": 0.3333333333333333,
+          "false_defer_on_success": 0.0,
+          "defer_on_fail": 1.0,
+          "retained_success": 1.0,
+          "earliness_frac": 0.2777777777777778
+        },
+        "0.1": {
+          "tau": 0.1644018590450287,
+          "coverage": 0.3333333333333333,
+          "false_defer_on_success": 0.0,
+          "defer_on_fail": 1.0,
+          "retained_success": 1.0,
+          "earliness_frac": 0.2777777777777778
+        },
+        "0.15": {
+          "tau": 0.1644018590450287,
+          "coverage": 0.3333333333333333,
+          "false_defer_on_success": 0.0,
+          "defer_on_fail": 1.0,
+          "retained_success": 1.0,
+          "earliness_frac": 0.2777777777777778
+        },
+        "0.2": {
+          "tau": 0.1644018590450287,
+          "coverage": 0.3333333333333333,
+          "false_defer_on_success": 0.0,
+          "defer_on_fail": 1.0,
+          "retained_success": 1.0,
+          "earliness_frac": 0.2777777777777778
+        },
+        "0.3": {
+          "tau": 0.1644018590450287,
+          "coverage": 0.3333333333333333,
+          "false_defer_on_success": 0.0,
+          "defer_on_fail": 1.0,
+          "retained_success": 1.0,
+          "earliness_frac": 0.2777777777777778
+        },
+        "0.4": {
+          "tau": 0.1644018590450287,
+          "coverage": 0.3333333333333333,
+          "false_defer_on_success": 0.0,
+          "defer_on_fail": 1.0,
+          "retained_success": 1.0,
+          "earliness_frac": 0.2777777777777778
+        },
+        "0.5": {
+          "tau": 0.1644018590450287,
+          "coverage": 0.3333333333333333,
+          "false_defer_on_success": 0.0,
+          "defer_on_fail": 1.0,
+          "retained_success": 1.0,
+          "earliness_frac": 0.2777777777777778
+        }
+      }
+    },
+    "stac_energy": {
+      "ep_auroc_max": 1.0,
+      "ep_auroc_max_ci": [
+        1.0,
+        1.0
+      ],
+      "ep_auroc_mean": 1.0,
+      "ep_auroc_mean_ci": [
+        1.0,
+        1.0
+      ],
+      "tpr_at_fpr": {
+        "0.05": 1.0,
+        "0.1": 1.0,
+        "0.2": 1.0
+      },
+      "step_aurc": 0.8161041363306498,
+      "conformal_defer": {
+        "0.05": {
+          "tau": 0.3248196542263031,
+          "coverage": 0.3333333333333333,
+          "false_defer_on_success": 0.0,
+          "defer_on_fail": 1.0,
+          "retained_success": 1.0,
+          "earliness_frac": 0.2777777777777778
+        },
+        "0.1": {
+          "tau": 0.3248196542263031,
+          "coverage": 0.3333333333333333,
+          "false_defer_on_success": 0.0,
+          "defer_on_fail": 1.0,
+          "retained_success": 1.0,
+          "earliness_frac": 0.2777777777777778
+        },
+        "0.15": {
+          "tau": 0.3248196542263031,
+          "coverage": 0.3333333333333333,
+          "false_defer_on_success": 0.0,
+          "defer_on_fail": 1.0,
+          "retained_success": 1.0,
+          "earliness_frac": 0.2777777777777778
+        },
+        "0.2": {
+          "tau": 0.3248196542263031,
+          "coverage": 0.3333333333333333,
+          "false_defer_on_success": 0.0,
+          "defer_on_fail": 1.0,
+          "retained_success": 1.0,
+          "earliness_frac": 0.2777777777777778
+        },
+        "0.3": {
+          "tau": 0.3248196542263031,
+          "coverage": 0.3333333333333333,
+          "false_defer_on_success": 0.0,
+          "defer_on_fail": 1.0,
+          "retained_success": 1.0,
+          "earliness_frac": 0.2777777777777778
+        },
+        "0.4": {
+          "tau": 0.3248196542263031,
+          "coverage": 0.3333333333333333,
+          "false_defer_on_success": 0.0,
+          "defer_on_fail": 1.0,
+          "retained_success": 1.0,
+          "earliness_frac": 0.2777777777777778
+        },
+        "0.5": {
+          "tau": 0.3248196542263031,
+          "coverage": 0.3333333333333333,
+          "false_defer_on_success": 0.0,
+          "defer_on_fail": 1.0,
+          "retained_success": 1.0,
+          "earliness_frac": 0.2777777777777778
+        }
+      }
+    },
+    "disp_all": {
+      "ep_auroc_max": 1.0,
+      "ep_auroc_max_ci": [
+        1.0,
+        1.0
+      ],
+      "ep_auroc_mean": 1.0,
+      "ep_auroc_mean_ci": [
+        1.0,
+        1.0
+      ],
+      "tpr_at_fpr": {
+        "0.05": 1.0,
+        "0.1": 1.0,
+        "0.2": 1.0
+      },
+      "step_aurc": 0.79449618919718,
+      "conformal_defer": {
+        "0.05": {
+          "tau": 0.04751434177160263,
+          "coverage": 1.0,
+          "false_defer_on_success": 0.0,
+          "defer_on_fail": 0.0,
+          "retained_success": 0.3333333333333333,
+          "earliness_frac": NaN
+        },
+        "0.1": {
+          "tau": 0.04751434177160263,
+          "coverage": 1.0,
+          "false_defer_on_success": 0.0,
+          "defer_on_fail": 0.0,
+          "retained_success": 0.3333333333333333,
+          "earliness_frac": NaN
+        },
+        "0.15": {
+          "tau": 0.04751434177160263,
+          "coverage": 1.0,
+          "false_defer_on_success": 0.0,
+          "defer_on_fail": 0.0,
+          "retained_success": 0.3333333333333333,
+          "earliness_frac": NaN
+        },
+        "0.2": {
+          "tau": 0.04751434177160263,
+          "coverage": 1.0,
+          "false_defer_on_success": 0.0,
+          "defer_on_fail": 0.0,
+          "retained_success": 0.3333333333333333,
+          "earliness_frac": NaN
+        },
+        "0.3": {
+          "tau": 0.04751434177160263,
+          "coverage": 1.0,
+          "false_defer_on_success": 0.0,
+          "defer_on_fail": 0.0,
+          "retained_success": 0.3333333333333333,
+          "earliness_frac": NaN
+        },
+        "0.4": {
+          "tau": 0.04751434177160263,
+          "coverage": 1.0,
+          "false_defer_on_success": 0.0,
+          "defer_on_fail": 0.0,
+          "retained_success": 0.3333333333333333,
+          "earliness_frac": NaN
+        },
+        "0.5": {
+          "tau": 0.04751434177160263,
+          "coverage": 1.0,
+          "false_defer_on_success": 0.0,
+          "defer_on_fail": 0.0,
+          "retained_success": 0.3333333333333333,
+          "earliness_frac": NaN
+        }
+      }
+    },
+    "disp_first": {
+      "ep_auroc_max": 1.0,
+      "ep_auroc_max_ci": [
+        1.0,
+        1.0
+      ],
+      "ep_auroc_mean": 0.5,
+      "ep_auroc_mean_ci": [
+        0.0,
+        1.0
+      ],
+      "tpr_at_fpr": {
+        "0.05": 1.0,
+        "0.1": 1.0,
+        "0.2": 1.0
+      },
+      "step_aurc": 0.7927238302233425,
+      "conformal_defer": {
+        "0.05": {
+          "tau": 0.04223499819636345,
+          "coverage": 1.0,
+          "false_defer_on_success": 0.0,
+          "defer_on_fail": 0.0,
+          "retained_success": 0.3333333333333333,
+          "earliness_frac": NaN
+        },
+        "0.1": {
+          "tau": 0.04223499819636345,
+          "coverage": 1.0,
+          "false_defer_on_success": 0.0,
+          "defer_on_fail": 0.0,
+          "retained_success": 0.3333333333333333,
+          "earliness_frac": NaN
+        },
+        "0.15": {
+          "tau": 0.04223499819636345,
+          "coverage": 1.0,
+          "false_defer_on_success": 0.0,
+          "defer_on_fail": 0.0,
+          "retained_success": 0.3333333333333333,
+          "earliness_frac": NaN
+        },
+        "0.2": {
+          "tau": 0.04223499819636345,
+          "coverage": 1.0,
+          "false_defer_on_success": 0.0,
+          "defer_on_fail": 0.0,
+          "retained_success": 0.3333333333333333,
+          "earliness_frac": NaN
+        },
+        "0.3": {
+          "tau": 0.04223499819636345,
+          "coverage": 1.0,
+          "false_defer_on_success": 0.0,
+          "defer_on_fail": 0.0,
+          "retained_success": 0.3333333333333333,
+          "earliness_frac": NaN
+        },
+        "0.4": {
+          "tau": 0.04223499819636345,
+          "coverage": 1.0,
+          "false_defer_on_success": 0.0,
+          "defer_on_fail": 0.0,
+          "retained_success": 0.3333333333333333,
+          "earliness_frac": NaN
+        },
+        "0.5": {
+          "tau": 0.04223499819636345,
+          "coverage": 1.0,
+          "false_defer_on_success": 0.0,
+          "defer_on_fail": 0.0,
+          "retained_success": 0.3333333333333333,
+          "earliness_frac": NaN
+        }
+      }
+    },
+    "ood_knn": {
+      "ep_auroc_max": 0.5,
+      "ep_auroc_max_ci": [
+        0.0,
+        1.0
+      ],
+      "ep_auroc_mean": 0.0,
+      "ep_auroc_mean_ci": [
+        0.0,
+        0.0
+      ],
+      "tpr_at_fpr": {
+        "0.05": 0.5,
+        "0.1": 0.5,
+        "0.2": 0.5
+      },
+      "step_aurc": 0.8630399640557624,
+      "conformal_defer": {
+        "0.05": {
+          "tau": 0.8036991953849792,
+          "coverage": 0.0,
+          "false_defer_on_success": 1.0,
+          "defer_on_fail": 1.0,
+          "retained_success": NaN,
+          "earliness_frac": 0.0
+        },
+        "0.1": {
+          "tau": 0.8036991953849792,
+          "coverage": 0.0,
+          "false_defer_on_success": 1.0,
+          "defer_on_fail": 1.0,
+          "retained_success": NaN,
+          "earliness_frac": 0.0
+        },
+        "0.15": {
+          "tau": 0.8036991953849792,
+          "coverage": 0.0,
+          "false_defer_on_success": 1.0,
+          "defer_on_fail": 1.0,
+          "retained_success": NaN,
+          "earliness_frac": 0.0
+        },
+        "0.2": {
+          "tau": 0.8036991953849792,
+          "coverage": 0.0,
+          "false_defer_on_success": 1.0,
+          "defer_on_fail": 1.0,
+          "retained_success": NaN,
+          "earliness_frac": 0.0
+        },
+        "0.3": {
+          "tau": 0.8036991953849792,
+          "coverage": 0.0,
+          "false_defer_on_success": 1.0,
+          "defer_on_fail": 1.0,
+          "retained_success": NaN,
+          "earliness_frac": 0.0
+        },
+        "0.4": {
+          "tau": 0.8036991953849792,
+          "coverage": 0.0,
+          "false_defer_on_success": 1.0,
+          "defer_on_fail": 1.0,
+          "retained_success": NaN,
+          "earliness_frac": 0.0
+        },
+        "0.5": {
+          "tau": 0.8036991953849792,
+          "coverage": 0.0,
+          "false_defer_on_success": 1.0,
+          "defer_on_fail": 1.0,
+          "retained_success": NaN,
+          "earliness_frac": 0.0
+        }
+      }
+    },
+    "fused_max": {
+      "ep_auroc_max": 0.5,
+      "ep_auroc_max_ci": [
+        0.0,
+        1.0
+      ],
+      "ep_auroc_mean": 0.0,
+      "ep_auroc_mean_ci": [
+        0.0,
+        0.0
+      ],
+      "tpr_at_fpr": {
+        "0.05": 0.5,
+        "0.1": 0.5,
+        "0.2": 0.5
+      },
+      "step_aurc": 0.8640041047784158,
+      "conformal_defer": {
+        "0.05": {
+          "tau": 5.721524025557167,
+          "coverage": 0.0,
+          "false_defer_on_success": 1.0,
+          "defer_on_fail": 1.0,
+          "retained_success": NaN,
+          "earliness_frac": 0.0
+        },
+        "0.1": {
+          "tau": 5.721524025557167,
+          "coverage": 0.0,
+          "false_defer_on_success": 1.0,
+          "defer_on_fail": 1.0,
+          "retained_success": NaN,
+          "earliness_frac": 0.0
+        },
+        "0.15": {
+          "tau": 5.721524025557167,
+          "coverage": 0.0,
+          "false_defer_on_success": 1.0,
+          "defer_on_fail": 1.0,
+          "retained_success": NaN,
+          "earliness_frac": 0.0
+        },
+        "0.2": {
+          "tau": 5.721524025557167,
+          "coverage": 0.0,
+          "false_defer_on_success": 1.0,
+          "defer_on_fail": 1.0,
+          "retained_success": NaN,
+          "earliness_frac": 0.0
+        },
+        "0.3": {
+          "tau": 5.721524025557167,
+          "coverage": 0.0,
+          "false_defer_on_success": 1.0,
+          "defer_on_fail": 1.0,
+          "retained_success": NaN,
+          "earliness_frac": 0.0
+        },
+        "0.4": {
+          "tau": 5.721524025557167,
+          "coverage": 0.0,
+          "false_defer_on_success": 1.0,
+          "defer_on_fail": 1.0,
+          "retained_success": NaN,
+          "earliness_frac": 0.0
+        },
+        "0.5": {
+          "tau": 5.721524025557167,
+          "coverage": 0.0,
+          "false_defer_on_success": 1.0,
+          "defer_on_fail": 1.0,
+          "retained_success": NaN,
+          "earliness_frac": 0.0
+        }
+      }
+    },
+    "bcoh_distmin_k2": {
+      "ep_auroc_max": 1.0,
+      "ep_auroc_max_ci": [
+        1.0,
+        1.0
+      ],
+      "ep_auroc_mean": 1.0,
+      "ep_auroc_mean_ci": [
+        1.0,
+        1.0
+      ],
+      "tpr_at_fpr": {
+        "0.05": 1.0,
+        "0.1": 1.0,
+        "0.2": 1.0
+      },
+      "step_aurc": 0.8110693693259975,
+      "conformal_defer": {
+        "0.05": {
+          "tau": 0.16391086876392363,
+          "coverage": 0.3333333333333333,
+          "false_defer_on_success": 0.0,
+          "defer_on_fail": 1.0,
+          "retained_success": 1.0,
+          "earliness_frac": 0.375
+        },
+        "0.1": {
+          "tau": 0.16391086876392363,
+          "coverage": 0.3333333333333333,
+          "false_defer_on_success": 0.0,
+          "defer_on_fail": 1.0,
+          "retained_success": 1.0,
+          "earliness_frac": 0.375
+        },
+        "0.15": {
+          "tau": 0.16391086876392363,
+          "coverage": 0.3333333333333333,
+          "false_defer_on_success": 0.0,
+          "defer_on_fail": 1.0,
+          "retained_success": 1.0,
+          "earliness_frac": 0.375
+        },
+        "0.2": {
+          "tau": 0.16391086876392363,
+          "coverage": 0.3333333333333333,
+          "false_defer_on_success": 0.0,
+          "defer_on_fail": 1.0,
+          "retained_success": 1.0,
+          "earliness_frac": 0.375
+        },
+        "0.3": {
+          "tau": 0.16391086876392363,
+          "coverage": 0.3333333333333333,
+          "false_defer_on_success": 0.0,
+          "defer_on_fail": 1.0,
+          "retained_success": 1.0,
+          "earliness_frac": 0.375
+        },
+        "0.4": {
+          "tau": 0.16391086876392363,
+          "coverage": 0.3333333333333333,
+          "false_defer_on_success": 0.0,
+          "defer_on_fail": 1.0,
+          "retained_success": 1.0,
+          "earliness_frac": 0.375
+        },
+        "0.5": {
+          "tau": 0.16391086876392363,
+          "coverage": 0.3333333333333333,
+          "false_defer_on_success": 0.0,
+          "defer_on_fail": 1.0,
+          "retained_success": 1.0,
+          "earliness_frac": 0.375
+        }
+      }
+    },
+    "bcoh_distmin_k4": {
+      "ep_auroc_max": 1.0,
+      "ep_auroc_max_ci": [
+        1.0,
+        1.0
+      ],
+      "ep_auroc_mean": 1.0,
+      "ep_auroc_mean_ci": [
+        1.0,
+        1.0
+      ],
+      "tpr_at_fpr": {
+        "0.05": 1.0,
+        "0.1": 1.0,
+        "0.2": 1.0
+      },
+      "step_aurc": 0.8109639829091357,
+      "conformal_defer": {
+        "0.05": {
+          "tau": 0.1617921397089958,
+          "coverage": 0.3333333333333333,
+          "false_defer_on_success": 0.0,
+          "defer_on_fail": 1.0,
+          "retained_success": 1.0,
+          "earliness_frac": 0.375
+        },
+        "0.1": {
+          "tau": 0.1617921397089958,
+          "coverage": 0.3333333333333333,
+          "false_defer_on_success": 0.0,
+          "defer_on_fail": 1.0,
+          "retained_success": 1.0,
+          "earliness_frac": 0.375
+        },
+        "0.15": {
+          "tau": 0.1617921397089958,
+          "coverage": 0.3333333333333333,
+          "false_defer_on_success": 0.0,
+          "defer_on_fail": 1.0,
+          "retained_success": 1.0,
+          "earliness_frac": 0.375
+        },
+        "0.2": {
+          "tau": 0.1617921397089958,
+          "coverage": 0.3333333333333333,
+          "false_defer_on_success": 0.0,
+          "defer_on_fail": 1.0,
+          "retained_success": 1.0,
+          "earliness_frac": 0.375
+        },
+        "0.3": {
+          "tau": 0.1617921397089958,
+          "coverage": 0.3333333333333333,
+          "false_defer_on_success": 0.0,
+          "defer_on_fail": 1.0,
+          "retained_success": 1.0,
+          "earliness_frac": 0.375
+        },
+        "0.4": {
+          "tau": 0.1617921397089958,
+          "coverage": 0.3333333333333333,
+          "false_defer_on_success": 0.0,
+          "defer_on_fail": 1.0,
+          "retained_success": 1.0,
+          "earliness_frac": 0.375
+        },
+        "0.5": {
+          "tau": 0.1617921397089958,
+          "coverage": 0.3333333333333333,
+          "false_defer_on_success": 0.0,
+          "defer_on_fail": 1.0,
+          "retained_success": 1.0,
+          "earliness_frac": 0.375
+        }
+      }
+    }
+  },
+  "cal_size_stability_alpha0.1": {
+    "10": {
+      "tau_mean": 0.16123925149440765,
+      "tau_std": 0.0,
+      "fp_mean": 0.0,
+      "fp_std": 0.0
+    },
+    "20": {
+      "tau_mean": 0.16123925149440765,
+      "tau_std": 0.0,
+      "fp_mean": 0.0,
+      "fp_std": 0.0
+    },
+    "2": {
+      "tau_mean": 0.16123925149440765,
+      "tau_std": 0.0,
+      "fp_mean": 0.0,
+      "fp_std": 0.0
+    }
+  }
+}

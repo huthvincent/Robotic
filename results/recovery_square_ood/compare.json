@@ -1,0 +1,31 @@
+{
+  "baseline_sr": 0.22666666666666666,
+  "n_episodes": 150,
+  "gate": "ood_knn",
+  "seed_offset": 0,
+  "threshold_override": null,
+  "rows": [
+    {
+      "pct": 90.0,
+      "recovery": "committed",
+      "threshold": 4.449346733093262,
+      "success": 0.22666666666666666,
+      "delta": 0.0,
+      "intervention": 0.10065379352288277,
+      "hurt": 8,
+      "helped": 8,
+      "p": 1.0
+    },
+    {
+      "pct": 90.0,
+      "recovery": "consensus",
+      "threshold": 4.449346733093262,
+      "success": 0.26666666666666666,
+      "delta": 0.04000000000000001,
+      "intervention": 0.1159397796057737,
+      "hurt": 4,
+      "helped": 10,
+      "p": 0.1795654296875
+    }
+  ]
+}

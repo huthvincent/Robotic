@@ -1,0 +1,73 @@
+{
+  "baseline_sr": 0.6066666666666667,
+  "n_episodes": 150,
+  "gate": "bcoh_distmin",
+  "rows": [
+    {
+      "recovery": "committed",
+      "pct": 86.0,
+      "threshold": 0.09456773579120635,
+      "success": 0.5733333333333334,
+      "delta": -0.033333333333333326,
+      "intervention": 0.1355269213069489,
+      "hurt": 32,
+      "helped": 27,
+      "p": 0.6029232012571503
+    },
+    {
+      "recovery": "committed",
+      "pct": 90.0,
+      "threshold": 0.11958847716450699,
+      "success": 0.6666666666666666,
+      "delta": 0.05999999999999994,
+      "intervention": 0.09265944645006016,
+      "hurt": 20,
+      "helped": 29,
+      "p": 0.2528697301676033
+    },
+    {
+      "recovery": "committed",
+      "pct": 94.0,
+      "threshold": 0.16059935122728344,
+      "success": 0.6133333333333333,
+      "delta": 0.006666666666666599,
+      "intervention": 0.058503079109426814,
+      "hurt": 29,
+      "helped": 30,
+      "p": 1.0
+    },
+    {
+      "recovery": "consensus",
+      "pct": 86.0,
+      "threshold": 0.09456773579120635,
+      "success": 0.58,
+      "delta": -0.026666666666666727,
+      "intervention": 0.1369740376007162,
+      "hurt": 35,
+      "helped": 31,
+      "p": 0.7122308826373508
+    },
+    {
+      "recovery": "consensus",
+      "pct": 90.0,
+      "threshold": 0.11958847716450699,
+      "success": 0.6533333333333333,
+      "delta": 0.046666666666666634,
+      "intervention": 0.09295175023651844,
+      "hurt": 28,
+      "helped": 35,
+      "p": 0.4499625362902225
+    },
+    {
+      "recovery": "consensus",
+      "pct": 94.0,
+      "threshold": 0.16059935122728344,
+      "success": 0.6133333333333333,
+      "delta": 0.006666666666666599,
+      "intervention": 0.05436802973977695,
+      "hurt": 31,
+      "helped": 32,
+      "p": 1.0
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "baseline_sr": 0.648,
+  "n_episodes": 1500,
+  "gate": "bcoh_distmin",
+  "seed_offset": 500,
+  "threshold_override": 0.11783564835786821,
+  "rows": [
+    {
+      "pct": 90.0,
+      "recovery": "committed",
+      "threshold": 0.11783564835786821,
+      "success": 0.6506666666666666,
+      "delta": 0.002666666666666595,
+      "intervention": 0.09687559084893174,
+      "hurt": 278,
+      "helped": 282,
+      "p": 0.8991346865422066
+    }
+  ]
+}

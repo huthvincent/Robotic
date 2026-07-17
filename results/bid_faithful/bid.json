@@ -1,0 +1,14 @@
+{
+  "bid": {
+    "sr": 0.07333333333333333,
+    "n": 150
+  },
+  "closed_loop_1": {
+    "sr": 0.05333333333333334,
+    "n": 150
+  },
+  "receding_baseline_ref": {
+    "sr": 0.523,
+    "note": "seed1000 300-ep collection"
+  }
+}

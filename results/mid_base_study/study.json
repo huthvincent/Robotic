@@ -1,0 +1,73 @@
+{
+  "evals": {
+    "020000": 0.16,
+    "040000": 0.16,
+    "060000": 0.16,
+    "last": 0.26
+  },
+  "selected": "last",
+  "baseline_sr": 0.245,
+  "n_episodes": 200,
+  "rows": [
+    {
+      "pct": 85.0,
+      "recovery": "committed",
+      "sr": 0.18,
+      "delta": -0.065,
+      "intervention": 0.16341080849850279,
+      "helped": 22,
+      "hurt": 35,
+      "p": 0.11116111910399348
+    },
+    {
+      "pct": 85.0,
+      "recovery": "consensus",
+      "sr": 0.265,
+      "delta": 0.020000000000000018,
+      "intervention": 0.1483402489626556,
+      "helped": 27,
+      "hurt": 23,
+      "p": 0.6718110337653656
+    },
+    {
+      "pct": 90.0,
+      "recovery": "committed",
+      "sr": 0.25,
+      "delta": 0.0050000000000000044,
+      "intervention": 0.10484813084112149,
+      "helped": 25,
+      "hurt": 24,
+      "p": 1.0
+    },
+    {
+      "pct": 90.0,
+      "recovery": "consensus",
+      "sr": 0.22,
+      "delta": -0.024999999999999994,
+      "intervention": 0.08790577420281528,
+      "helped": 24,
+      "hurt": 29,
+      "p": 0.5831321542611763
+    },
+    {
+      "pct": 93.0,
+      "recovery": "committed",
+      "sr": 0.23,
+      "delta": -0.014999999999999986,
+      "intervention": 0.07093124456048738,
+      "helped": 21,
+      "hurt": 24,
+      "p": 0.765991824244793
+    },
+    {
+      "pct": 93.0,
+      "recovery": "consensus",
+      "sr": 0.19,
+      "delta": -0.05499999999999999,
+      "intervention": 0.0688631221719457,
+      "helped": 24,
+      "hurt": 35,
+      "p": 0.19252645776146274
+    }
+  ]
+}

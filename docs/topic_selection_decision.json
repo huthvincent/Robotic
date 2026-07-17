@@ -1,0 +1,258 @@
+{
+  "summary": "Survey 2024-2026 robot-learning literature and pick the highest-AAAI-hit-probability topic feasible on a single H200 (sim-only, ~5 weeks)",
+  "agentCount": 6,
+  "logs": [
+    "Survey complete: 5/5 lenses returned findings"
+  ],
+  "result": {
+    "winner": {
+      "overall_rationale": "Across all five lenses the compute-optimal shape is a test-time layer over a frozen policy (train the base a few times, evaluate many cheap variants), which fits one H200 in 4-5 weeks and enables the multi-seed, multi-benchmark, heavy-ablation rigor AAAI rewards. The dossier is emphatic about what is SATURATED and must be avoided as a headline: entropy/uncertainty-driven adaptive chunk length (AAC/PACE/DVAC/AutoHorizon/HiPolicy/SCALE), best-of-N / verifier-free selection (BID, MG-Select, VOTE, TAS), chunk-boundary smoothing (RTC, temporal ensemble), trained-verifier best-of-N (RoboMonkey), score composition (GPC), one-step/few-step distillation (FlowPolicy/MIP/DMPO), plain runtime failure detection (FIPER, ActProbe, VLA-FAIL, VLAConf), and activation/VLM steering (VLS, COAST, CAG). The genuinely open, repeatedly-named seams are: (1) CLOSING THE LOOP — rich failure/shift detection exists but almost nobody triggers a training-free recovery and reports success-rate deltas; (2) CALIBRATION + PHASE/CONTACT-AWARENESS of the trigger signal (admitted AUROC ~0.71, ignores compounding error); (3) COMPOSITION/INTERACTION of horizon-adaptation vs selection vs abort (unstudied); (4) the MIP 'iterative-computation' mechanism (which states benefit, per-state adaptive NFE) and (5) geometric/viewpoint fragility repair at test time. My winner sits squarely in (1)+(2)+(3): a calibrated, phase-aware per-step trigger that DECIDES among a small menu of training-free recovery actions (re-sample committed to a single mode, extend deliberation compute, or abstain/hold), evaluated for both calibration AND downstream success-rate deltas, across >=2 benchmarks x >=3 seeds on frozen DP and flow policies. It is decision-theoretic (a policy over interventions), architecture-agnostic, cheap (inference-only ablations), and each rejected alternative is either more saturated or more fragile. I bias hard toward this because it is defensible against reviewers on every axis they punish: it is not a new detector alone (it acts), not a new selector alone (it gates and can abstain), not adaptive-horizon-by-entropy (the signal is calibrated and drives a menu, not just chunk length), and the honest 'when it hurts / abstain' analysis is itself a rigor contribution.",
+      "ranked_candidates": [
+        {
+          "name": "GUARD: Gated Uncertainty-Aware Recovery at Deployment (calibrated trigger -> menu of training-free recoveries over frozen DP/flow policies)",
+          "one_line": "A calibrated, phase/contact-aware per-step signal that closes the monitor->act loop by selecting among training-free recovery actions (mode-committed re-sample, extra deliberation, or abstain/hold), reporting both calibration and success-rate deltas.",
+          "novelty_score": 8,
+          "feasibility_score": 9,
+          "hitprob_score": 8,
+          "value_score": 9,
+          "rationale": "This directly fills the single most-cited open gap ('rich detection exists, nobody closes the loop with SR deltas') while dodging every watchout: it is not a bare detector (FIPER/ActProbe), not best-of-N selection (BID/MG-Select), not entropy->chunk-length (AAC/PACE/DVAC), and not VLM/activation steering (VLS/COAST/CAG). The contributions are a calibrated+phase-aware trigger (the axis the failure-detection papers explicitly admit is unsolved, AUROC~0.71), a decision rule that maps that trigger to a SMALL menu of training-free interventions including an ABSTAIN/hold action, and the first fair composition study of trigger-gated recovery vs uniform intervention. Everything is inference-only over 2-4 frozen base checkpoints, so >=3 seeds x >=2 benchmarks x heavy ablations fit one H200 in 5 weeks. Real value is deployment-time robustness without retraining or new data.",
+          "key_risk": "The trigger's calibration must demonstrably beat the entropy/variance signals the crowd already uses AND the recovery must yield real SR gains over BID+RTC head-to-head; if the calibrated signal only ties existing signals and recovery gains are within seed noise, the paper collapses to 'yet another gate.' Mitigation: pre-register the calibration metric (per-state ECE / risk-coverage) as a standalone contribution so the paper stands even if SR deltas are modest, and pick tasks (Push-T, Robomimic Square/Transport, LIBERO-Long) with known compounding-error failures where recovery has headroom."
+        },
+        {
+          "name": "WHEN-2-STEP: a verifier-free per-state diagnostic of WHERE iterative computation helps, turned into adaptive-NFE over frozen policies (MIP mechanism)",
+          "one_line": "Operationalize the 'Much Ado About Noising'/MIP open question by building a per-state 1-step-vs-2-step disagreement diagnostic that predicts where an extra denoising/iteration step matters, then spend NFE adaptively.",
+          "novelty_score": 8,
+          "feasibility_score": 8,
+          "hitprob_score": 7,
+          "value_score": 7,
+          "rationale": "MIP (arXiv 2512.01809, Dec 2025) explicitly leaves open WHY iterative computation helps and WHERE, and untested under adaptive/test-time-compute. A verifier-free per-state diagnostic (1-step vs 2-step prediction disagreement, or intermediate-denoising variance) that both EXPLAINS and LOCALIZES the need, then converts to per-state adaptive NFE, differentiates from ELASTIC/DASIP (which allocate compute without explaining the need) and from MG-Select (which selects candidates). Cheap: MIP-style bases train in <1h/task; all variants are inference-time. Strong rigor story via the 'Beyond Binary Success' protocol.",
+          "key_risk": "Adaptive-NFE is a crowded neighborhood (ELASTIC/DASIP/E-TTS); reviewers may read 'per-state step count' as another allocation rule despite the mechanistic framing, and the paper leans on a very recent (Dec 2025) result that may get scooped or contested before Aug 2026. Mitigation: lead with the DIAGNOSTIC/mechanism as the headline contribution (analysis paper with a method rider), not the allocation; but this raises framing risk for a method-venue like AAAI."
+        },
+        {
+          "name": "SHIFT-FIX: test-time repair of viewpoint / initial-state fragility on LIBERO-Plus/PRO via a per-step geometric shift detector + targeted correction",
+          "one_line": "Attack the largest, least-addressed VLA failure (viewpoint/initial-state sensitivity, 95%->below 30%) with a per-step shift score that triggers a cheap geometric test-time correction, evaluated across LIBERO-Plus + LIBERO-PRO.",
+          "novelty_score": 7,
+          "feasibility_score": 7,
+          "hitprob_score": 7,
+          "value_score": 8,
+          "rationale": "LIBERO-Plus shows models collapse under viewpoint/initial-state shift while existing test-time fixes (MG-Select, CAG, COAST, GuideVLA) almost all target LANGUAGE/object grounding, leaving geometric fragility comparatively open. High application value and honest, dramatic motivation. Fits the box as a test-time layer on 1-2 OpenVLA-OFT or diffusion-policy fine-tunes.",
+          "key_risk": "A convincing training-free correction for viewpoint shift is technically hard (no ground-truth extrinsics at test time) and may require encoder-side changes that break the train-few constraint; also the VLA fine-tune loop can eat week 1 and the robustness-benchmark niche (LIBERO-Plus/PRO/CF/Para) is filling fast. Mitigation: fall back to a diffusion/flow policy base and frame the correction as detection+abstain if active repair underperforms — but that weakens the novelty to detection-only."
+        },
+        {
+          "name": "TESTBED: a compute-matched, multi-seed unifying benchmark of the test-time execution family across >=2 policy families and >=2 sim benchmarks, plus one small novel calibrated signal",
+          "one_line": "The fair head-to-head the field visibly lacks: TE vs BID vs RTC vs entropy-horizon vs verifier-free selection vs failure-abort on a shared harness, multi-seed, with a success-vs-compute Pareto frontier.",
+          "novelty_score": 6,
+          "feasibility_score": 8,
+          "hitprob_score": 6,
+          "value_score": 8,
+          "rationale": "Every lens flags that no paper fairly compares the test-time execution family under matched compute with multiple seeds across policy families; each method picks its own base/baselines and rarely reports seeds. A rigorous Pareto study is genuinely useful, reviewer-friendly on the rigor axis, and maximally feasible (all inference-only). Pairing it with one small calibrated-signal method avoids pure-survey framing.",
+          "key_risk": "AAAI is a method venue; a benchmark/analysis-dominant paper risks 'not enough new method' desk-reject in the two-phase review, and standing up BID+RTC+a horizon method+a verifier-free method on a shared harness can burn ~1-2 weeks of integration with real repro friction. Mitigation: only viable if the paired novel component is strong enough to be the headline — which is exactly what GUARD promotes it to, so GUARD dominates this option."
+        }
+      ],
+      "winner": {
+        "method_name": "GUARD: Gated Uncertainty-Aware Recovery at Deployment",
+        "folder_slug": "guard-testtime-recovery",
+        "problem": "Modern generative visuomotor policies (Diffusion Policy, flow/consistency policies, action-chunking transformers) fail at deployment through compounding error and chunk-boundary mode-jumps, and a rich 2025-2026 literature can now DETECT these failures at runtime (FIPER, ActProbe, VLA-FAIL, VLAConf). But detection is inert: almost no method CLOSES THE LOOP by triggering a training-free recovery and honestly reporting the resulting success-rate change. Worse, the detection signals everyone reuses (action entropy, denoising variance, attention confidence) are weakly calibrated (failure AUROC ~0.71) and ignore compounding error and contact-rich phases, so naive 'intervene when uncertain' both fires at the wrong times and offers no principled choice of WHAT to do. The open problem: a calibrated, phase/contact-aware per-step trigger that decides, at deployment, whether to (a) commit-and-continue, (b) re-sample the chunk committed to a single action mode, (c) spend extra deliberation compute, or (d) abstain/hold — over a FROZEN policy, with gains shown in success rate AND in calibration, not detection AUROC alone.",
+        "core_idea": "GUARD wraps any frozen chunked generative policy with three inference-only components. (1) CALIBRATED PHASE-AWARE TRIGGER s_t in [0,1]: combine (i) a backward-coherence term measuring disagreement between the currently-executing chunk and a freshly sampled chunk on their overlapping horizon (mode-jump / boundary risk), (ii) an OOD term = distance in the policy's own observation-embedding space to a small buffer of embeddings from SUCCESSFUL calibration rollouts (RND-style, no failure data needed), and (iii) a contact/phase gate = a cheap scalar (predicted end-effector speed valley or gripper-state transition) that up-weights the trigger in contact-rich phases where compounding error bites. Fuse via a 3-parameter logistic whose threshold is set by CONFORMAL CALIBRATION on ~20-50 successful calibration rollouts to guarantee a target intervention rate / risk-coverage tradeoff — this is the calibration the field admits is missing, and it is validated as calibrated (ECE, risk-coverage curves), not just used. (2) RECOVERY MENU (all training-free, frozen base): A0 commit-and-continue; A1 MODE-COMMITTED RE-SAMPLE — draw K chunks, cluster them (k-means on the first H action steps), pick the cluster whose mode is most coherent with the already-committed prefix, and execute its medoid (this explicitly commits to ONE mode at the seam, the cited mode-jump failure nobody directly repairs, and is distinct from BID's backward+forward-contrast scoring and from RTC inpainting); A2 EXTRA DELIBERATION — increase denoising steps / integration substeps for this control step only; A3 ABSTAIN/HOLD — freeze at the last safe pose (short receding-horizon re-plan) rather than execute an OOD action. (3) GATING POLICY: a tiny, mostly-rules-based map from (s_t, which term dominates) to the menu — high boundary term -> A1, high OOD term -> A2 then A3 if still high, contact-gated -> prefer A1/A3 — with a learned-threshold variant (logistic regression on calibration rollouts, <1k params, no policy retraining) as an ablation. The paper's thesis: a properly CALIBRATED, PHASE-AWARE trigger lets a SMALL menu of training-free recoveries convert detection into success, and the abstain option makes the system honest about when NOT to act.",
+        "why_novel": "Against the explicit watchouts: (1) NOT entropy/variance->chunk-length (AAC/PACE/DVAC/AutoHorizon/HiPolicy/SCALE) — GUARD does not schedule chunk length; it selects among heterogeneous recovery actions including abstain, driven by a fused calibrated signal, and its headline metric is success-and-calibration, not horizon. (2) NOT best-of-N / verifier-free selection (BID, MG-Select, VOTE, TAS) — GUARD is GATED (most steps do nothing, A0) and mode-COMMITTED via clustering with an abstain branch, whereas BID scores every chunk by backward-coherence+forward-contrast every step and MG-Select does masked-KL best-of-N every step; GUARD also needs no weak reference policy and no external verifier. (3) NOT chunk-boundary smoothing (RTC/temporal ensemble) — GUARD explicitly commits to a single discrete mode at the seam instead of averaging/inpainting across modes, and only when triggered. (4) NOT a plain detector (FIPER/ActProbe/VLA-FAIL) — GUARD ACTS and reports success-rate deltas, the exact monitor->act gap the dossier says nobody has closed. (5) NOT trained-verifier scaling (RoboMonkey) or VLM/activation steering (VLS/COAST/CAG) — no verifier training, no VLM, no steering vectors. The two things reviewers can least attack: the trigger is validated AS CALIBRATED (an axis the failure-detection papers concede is open), and the first controlled COMPOSITION/INTERACTION study of trigger-gated recovery vs uniform intervention (also flagged unstudied).",
+        "baselines": [
+          "Diffusion Policy (CNN + Transformer, official real-stanford/diffusion_policy) as the primary frozen base",
+          "FlowPolicy or a rectified-flow policy as the second, heterogeneous frozen base (tests cross-family transfer of the signal)",
+          "Closed-loop / open-loop fixed receding-horizon execution (naive lower/upper reference)",
+          "Temporal Ensembling (ACT-style) — training-free smoothing baseline",
+          "Bidirectional Decoding (BID, YuejiangLIU public repo) — the strongest training-free sample-selection competitor",
+          "Real-Time Chunking (RTC, in LeRobot) — the strongest training-free boundary competitor",
+          "FIPER (public, NeurIPS 2025) used as a DETECT-only baseline: same trigger budget, no recovery, to isolate the value of closing the loop",
+          "Uniform-intervention ablation: always apply A1 (or A2) every step, to prove GATING (not the action) is what helps"
+        ],
+        "benchmarks": [
+          "Push-T (gym-pusht / lerobot reference checkpoint) — canonical single-task multimodality + mode-jump probe",
+          "Robomimic Lift/Can/Square/Transport (ph, and mh for a shift slice) — most-cited stable published numbers",
+          "LIBERO (Spatial/Object/Goal/Long) — multi-task/language suite; LIBERO-Long is the compounding-error stress task (third benchmark to exceed the >=2 bar)"
+        ],
+        "metrics": [
+          "Task success rate (Robomimic/LIBERO) and max target-coverage>=95% success (Push-T), mean+/-std over >=3 training seeds x 50 env inits, avg of last 10 checkpoints (the published DP protocol)",
+          "Delta-success vs each baseline with confidence intervals via the 'Beyond Binary Success' statistically-rigorous comparison protocol",
+          "Trigger CALIBRATION: expected calibration error (ECE) and risk-coverage / selective-risk curves for s_t predicting per-step failure, plus failure AUROC vs entropy/variance baselines (must beat ~0.71)",
+          "Intervention rate (fraction of steps not A0) and per-action usage breakdown, to show sparsity",
+          "Compute cost: extra NFE / wall-clock per episode and a success-vs-compute Pareto frontier vs BID (N=64) and RTC",
+          "Abstain quality: success-rate on retained (non-abstained) episodes vs abstain rate (selective prediction)"
+        ],
+        "experiment_matrix": "Bases: {Diffusion Policy, one flow policy} trained once per (task, seed) for 3 seeds. Tasks: Push-T; Robomimic {Lift, Can, Square, Transport} ph (+ Square/Transport mh as a distribution-shift slice); LIBERO {Spatial, Object, Goal, Long}. That is ~9-11 tasks x 2 bases x 3 seeds of BASE training (~60 short training runs, days on H200 since each is ~1-3 GPU-h and eval is CPU-sim over 192 threads). Methods evaluated at INFERENCE over those frozen checkpoints: {open-loop, closed-loop-fixed-H, TemporalEnsemble, BID, RTC, FIPER-detect-only, GUARD, GUARD-uniform-intervention}. Each method x task x base x 3 seeds x 50 env inits. All non-base methods are training-free rollouts, so the full grid is cheap and re-runnable. Report per-task tables + aggregate + Pareto plots.",
+        "ablations": [
+          "Remove each trigger term (boundary-coherence / OOD-embedding / contact-phase gate) to show all three matter",
+          "Rules-based gating vs tiny learned-threshold gating (does learning the map help?)",
+          "Menu ablation: A1-only, A2-only, A1+A3 (no extra compute), full menu — isolates which recovery drives gains",
+          "Conformal calibration ON vs OFF (fixed threshold) — quantifies the value of calibration",
+          "Trigger-gated (GUARD) vs uniform intervention at matched intervention BUDGET — proves gating, not the action",
+          "Composition study: horizon-adaptation x selection x abort applied together vs alone (do they interfere? does adapting horizon miscalibrate the trigger?)",
+          "Cross-family transfer: does the same signal/threshold work on the flow policy as on DP without re-tuning?",
+          "Sensitivity to K (re-sample count) and calibration-set size (20 vs 50 successful rollouts)",
+          "OOD/shift stress: Robomimic-mh and LIBERO-Long as harder slices where recovery should help most"
+        ],
+        "est_compute": "Base training: ~60 runs x ~0.5-2 H200-GPU-h = ~30-90 GPU-h (a few days wall-clock, overlappable). Inference eval: each method-variant rollout set (task x base x 3 seeds x 50 inits) is CPU-sim-bound and parallelizes over 192 threads; GUARD adds only K extra forward passes on triggered steps (sparse), so full inference grid is single-digit GPU-days spread over weeks. Total comfortably within one H200 x 4-5 weeks with headroom for re-runs. Peak VRAM is tiny (DP/flow << 143 GB); the box is CPU/eval-throughput bound, which the 192 threads absorb.",
+        "risks_mitigations": [
+          "Risk: calibrated trigger only ties entropy/variance and recovery SR delta is within seed noise. Mitigation: pre-register calibration (ECE, risk-coverage) as a standalone contribution so the paper stands on the calibration+composition result even if SR gains are modest; choose tasks with known compounding-error/mode-jump headroom (Push-T, Square/Transport, LIBERO-Long).",
+          "Risk: baseline repro friction (BID/RTC/FIPER on a shared harness). Mitigation: budget week 1 to stand them up on a common frozen DP checkpoint; use lerobot for RTC and the official BID/FIPER repos; pin robosuite/MuJoCo/gymnasium versions early (known lerobot Push-T success-rate breakage under gymnasium v1.0).",
+          "Risk: reviewer reads GUARD as 'another gate.' Mitigation: foreground (i) validated calibration vs the admitted ~0.71 AUROC ceiling, (ii) the abstain/selective-risk analysis, and (iii) the composition study — three things none of the cited methods provide; and show head-to-head SR wins over BID+RTC, not just over open-loop.",
+          "Risk: mode-committed re-sample (A1) collides conceptually with BID. Mitigation: implement BID exactly and beat it head-to-head; emphasize GUARD only fires on triggered steps and commits via clustering+abstain (no weak reference, no per-step scoring), and ablate GUARD-A1-only vs BID at matched compute.",
+          "Risk: overclaiming real-world robustness. Mitigation: scope every claim to simulation/offline; frame as an ML decision-theoretic method evaluated on robot benchmarks (matches AAAI-2026 precedents SemanticVLA/EfficientFlow).",
+          "Risk: two-phase desk-reject for looking thin. Mitigation: submit with >=3 seeds x 3 benchmarks and full ablation tables so the first read looks complete and non-incremental before the Sept 24 phase-1 cut."
+        ],
+        "paper_outline": [
+          "1. Introduction: detection is solved, action is not — the monitor->act gap; GUARD closes it with a calibrated, phase-aware trigger over a small training-free recovery menu including abstain.",
+          "2. Related Work: test-time execution control (BID, RTC, TE), adaptive horizon (AAC/PACE/DVAC) and why we differ, runtime failure detection (FIPER/ActProbe/VLA-FAIL) and why detection-only is insufficient, test-time scaling (ELASTIC/DASIP/GPC).",
+          "3. Preliminaries: chunked generative policies, chunk-boundary mode-jump, compounding error, calibration/conformal background.",
+          "4. Method: (4.1) three trigger terms and their fusion; (4.2) conformal calibration to a target risk-coverage; (4.3) the recovery menu A0-A3 and the gating policy; (4.4) why the trigger is validated as calibrated, not merely used.",
+          "5. Experimental Setup: frozen DP + flow bases, Push-T + Robomimic + LIBERO, DP protocol (3 seeds x 50 inits, last-10-ckpt avg), 'Beyond Binary Success' statistics, baselines.",
+          "6. Results: main success-rate tables with CIs; calibration (ECE, risk-coverage, AUROC vs entropy/variance); success-vs-compute Pareto vs BID/RTC; head-to-head vs FIPER-detect-only proving the loop-closing value.",
+          "7. Ablations & Analysis: trigger terms, calibration on/off, menu components, gated-vs-uniform, composition/interaction, cross-family transfer, abstain/selective-risk, K and calibration-set-size sensitivity.",
+          "8. Limitations & Honest Scope: sim/offline only, where GUARD abstains or fails, no hardware claims.",
+          "9. Conclusion: a calibrated, phase-aware trigger turns inert failure detection into deployment-time success without retraining."
+        ],
+        "minimal_viable_result": "In under a day on the H200: take ONE already-trained frozen Diffusion Policy checkpoint on Push-T (or use the lerobot reference checkpoint). Implement only the boundary-coherence trigger term (freshly-sampled-vs-executing chunk disagreement on the overlap) and only recovery A1 (mode-committed re-sample: draw K=16 chunks, k-means on first H steps, execute the medoid of the cluster most coherent with the committed prefix), gated by a single fixed threshold. Evaluate over 200-500 Push-T episodes: (a) does the trigger's per-step score separate about-to-fail from benign steps (risk-coverage curve better than action-entropy on the same rollouts), and (b) does triggered A1 raise coverage-success vs plain closed-loop execution while firing on only a small fraction of steps? A positive on both — a better-than-entropy risk-coverage curve plus a non-trivial success bump at low intervention rate on a single task — validates the core 'calibrated trigger + mode-committed recovery closes the loop' thesis before committing to the full multi-benchmark, multi-seed build-out."
+      }
+    },
+    "n_lenses": 5
+  },
+  "workflowProgress": [
+    {
+      "type": "workflow_phase",
+      "index": 1,
+      "title": "Survey"
+    },
+    {
+      "type": "workflow_phase",
+      "index": 2,
+      "title": "Synthesize"
+    },
+    {
+      "type": "workflow_agent",
+      "index": 1,
+      "label": "survey:policy-methods",
+      "phaseIndex": 1,
+      "phaseTitle": "Survey",
+      "agentId": "aa0f94a7b955e0481",
+      "model": "claude-opus-4-8",
+      "state": "done",
+      "startedAt": 1783273477962,
+      "queuedAt": 1783273477939,
+      "attempt": 1,
+      "lastToolName": "StructuredOutput",
+      "lastToolSummary": "Modern imitation-learning visuomotor policies for robot man…",
+      "promptPreview": "You are a robotics ML research scout. Use web search (load WebSearch/WebFetch via ToolSearch) to survey the CURRENT literature; do not rely only on training memory (knowledge moves fast; it is July 2026). Be concrete, cite paper titles + venue/year, and be precise about what already exists so we can find a real novelty gap.\n\n\nHARD CONSTRAINTS the chosen topic MUST satisfy:\n- Compute: exactly ONE N…",
+      "lastProgressAt": 1783273782885,
+      "tokens": 51522,
+      "toolCalls": 24,
+      "durationMs": 304923,
+      "resultPreview": "{\"lens\":\"Modern imitation-learning visuomotor policies for robot manipulation (Diffusion Policy, flow-matching / consistency / one-step policies, ACT / action-chunking transformers), their known failure modes (compounding error, temporal consistency / chunk-boundary discontinuity, multimodality collapse, data efficiency, robustness to visual/dynamics shift, inference latency), and the standard sim…"
+    },
+    {
+      "type": "workflow_agent",
+      "index": 2,
+      "label": "survey:test-time-methods",
+      "phaseIndex": 1,
+      "phaseTitle": "Survey",
+      "agentId": "a2ddd185817ae2ed9",
+      "model": "claude-opus-4-8",
+      "state": "done",
+      "startedAt": 1783273477963,
+      "queuedAt": 1783273477939,
+      "attempt": 1,
+      "lastToolName": "StructuredOutput",
+      "lastToolSummary": "Test-time / inference-time / training-free improvements to …",
+      "promptPreview": "You are a robotics ML research scout. Use web search (load WebSearch/WebFetch via ToolSearch) to survey the CURRENT literature; do not rely only on training memory (knowledge moves fast; it is July 2026). Be concrete, cite paper titles + venue/year, and be precise about what already exists so we can find a real novelty gap.\n\n\nHARD CONSTRAINTS the chosen topic MUST satisfy:\n- Compute: exactly ONE N…",
+      "lastProgressAt": 1783273708177,
+      "tokens": 49617,
+      "toolCalls": 23,
+      "durationMs": 230214,
+      "resultPreview": "{\"lens\":\"Test-time / inference-time / training-free improvements to robot action-chunk EXECUTION (temporal ensembling, BID, receding-horizon/adaptive replanning, uncertainty/consistency-based action selection, inference sampling+guidance, self-verification, OOD/failure detection at deployment), 2024-2026.\",\"key_findings\":[\"The field splits into 5 mechanism families. (1) SMOOTHING/BOUNDARY methods:…"
+    },
+    {
+      "type": "workflow_agent",
+      "index": 3,
+      "label": "survey:benchmarks-feasibility",
+      "phaseIndex": 1,
+      "phaseTitle": "Survey",
+      "agentId": "aae831ea3e86aae84",
+      "model": "claude-opus-4-8",
+      "state": "done",
+      "startedAt": 1783273477963,
+      "queuedAt": 1783273477939,
+      "attempt": 1,
+      "lastToolName": "StructuredOutput",
+      "lastToolSummary": "Benchmarks and baselines feasible on ONE H200 (143GB), sim-…",
+      "promptPreview": "You are a robotics ML research scout. Use web search (load WebSearch/WebFetch via ToolSearch) to survey the CURRENT literature; do not rely only on training memory (knowledge moves fast; it is July 2026). Be concrete, cite paper titles + venue/year, and be precise about what already exists so we can find a real novelty gap.\n\n\nHARD CONSTRAINTS the chosen topic MUST satisfy:\n- Compute: exactly ONE N…",
+      "lastProgressAt": 1783273748572,
+      "tokens": 50404,
+      "toolCalls": 23,
+      "durationMs": 270609,
+      "resultPreview": "{\"lens\":\"Benchmarks and baselines feasible on ONE H200 (143GB), sim-only, ~4-5 weeks, AAAI-2027. Focus: setups where a base policy is trained a handful of times, then MANY test-time/ablation variants are evaluated cheaply. Comparing robomimic, Push-T, LIBERO, Meta-World, ManiSkill3, RoboCasa for install-cleanliness, per-task GPU-hours, and availability of standard published success numbers.\",\"key_…"
+    },
+    {
+      "type": "workflow_agent",
+      "index": 4,
+      "label": "survey:aaai-fit",
+      "phaseIndex": 1,
+      "phaseTitle": "Survey",
+      "agentId": "a31762fddbc1d9b35",
+      "model": "claude-opus-4-8",
+      "state": "done",
+      "startedAt": 1783273477963,
+      "queuedAt": 1783273477940,
+      "attempt": 1,
+      "lastToolName": "StructuredOutput",
+      "lastToolSummary": "AAAI robot-learning / embodied-AI publishing patterns for a…",
+      "promptPreview": "You are a robotics ML research scout. Use web search (load WebSearch/WebFetch via ToolSearch) to survey the CURRENT literature; do not rely only on training memory (knowledge moves fast; it is July 2026). Be concrete, cite paper titles + venue/year, and be precise about what already exists so we can find a real novelty gap.\n\n\nHARD CONSTRAINTS the chosen topic MUST satisfy:\n- Compute: exactly ONE N…",
+      "lastProgressAt": 1783273718740,
+      "tokens": 49987,
+      "toolCalls": 21,
+      "durationMs": 240777,
+      "resultPreview": "{\"lens\":\"AAAI robot-learning / embodied-AI publishing patterns for a sim-only, single-H200 method paper targeting AAAI-2027 (full paper ~July 28, 2026). Focus: which robot-learning methods land at AAAI vs CoRL/RSS/ICRA, whether sim-only is acceptable, review criteria and rejection reasons, and framing that maximizes acceptance odds under a one-GPU, ~4-5 week, no-real-robot constraint.\",\"key_findin…"
+    },
+    {
+      "type": "workflow_agent",
+      "index": 5,
+      "label": "survey:vla-route",
+      "phaseIndex": 1,
+      "phaseTitle": "Survey",
+      "agentId": "a8cb2cae66c44c4ca",
+      "model": "claude-opus-4-8",
+      "state": "done",
+      "startedAt": 1783273477964,
+      "queuedAt": 1783273477940,
+      "attempt": 1,
+      "lastToolName": "StructuredOutput",
+      "lastToolSummary": "VLA fine-tuning route (OpenVLA / OpenVLA-OFT / pi0-style) f…",
+      "promptPreview": "You are a robotics ML research scout. Use web search (load WebSearch/WebFetch via ToolSearch) to survey the CURRENT literature; do not rely only on training memory (knowledge moves fast; it is July 2026). Be concrete, cite paper titles + venue/year, and be precise about what already exists so we can find a real novelty gap.\n\n\nHARD CONSTRAINTS the chosen topic MUST satisfy:\n- Compute: exactly ONE N…",
+      "lastProgressAt": 1783273660340,
+      "tokens": 40871,
+      "toolCalls": 16,
+      "durationMs": 182376,
+      "resultPreview": "{\"lens\":\"VLA fine-tuning route (OpenVLA / OpenVLA-OFT / pi0-style) fine-tuned + evaluated on LIBERO on ONE H200, for AAAI-2027. Verdict: feasible on this box, but the winning framing is a cheap TEST-TIME / lightweight method layered on 1-2 base fine-tunes, targeting the robustness/language-grounding gap rather than standard-LIBERO success rate (which is saturated). A pure \\\"train a better VLA\\\" pa…"
+    },
+    {
+      "type": "workflow_agent",
+      "index": 6,
+      "label": "synthesize:decision",
+      "phaseIndex": 2,
+      "phaseTitle": "Synthesize",
+      "agentId": "a08aba2d3235d71cc",
+      "model": "claude-opus-4-8",
+      "state": "done",
+      "startedAt": 1783273782922,
+      "queuedAt": 1783273782888,
+      "attempt": 1,
+      "lastToolName": "StructuredOutput",
+      "lastToolSummary": "Across all five lenses the compute-optimal shape is a test-…",
+      "promptPreview": "You are a senior robot-learning researcher and AAAI area chair choosing a paper topic to MAXIMIZE AAAI-2027 acceptance probability under strict constraints.\n\n\nHARD CONSTRAINTS the chosen topic MUST satisfy:\n- Compute: exactly ONE NVIDIA H200 (143 GB), 192 CPU threads, 375 GB RAM. No multi-GPU, no cluster.\n- No physical robot. Evaluation must be in simulation or on offline robot datasets only.\n- Wa…",
+      "lastProgressAt": 1783273940374,
+      "tokens": 56658,
+      "toolCalls": 3,
+      "durationMs": 157452,
+      "resultPreview": "{\"overall_rationale\":\"Across all five lenses the compute-optimal shape is a test-time layer over a frozen policy (train the base a few times, evaluate many cheap variants), which fits one H200 in 4-5 weeks and enables the multi-seed, multi-benchmark, heavy-ablation rigor AAAI rewards. The dossier is emphatic about what is SATURATED and must be avoided as a headline: entropy/uncertainty-driven adap…"
+    }
+  ],
+  "totalTokens": 299059,
+  "totalToolCalls": 110
+}

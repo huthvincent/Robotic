@@ -1,0 +1,110 @@
+{
+  "signal": "bcoh_distmin",
+  "policies": {
+    "signal_a0.1": {
+      "coverage": 0.8333333333333334,
+      "retained_sr": 0.624,
+      "false_defer": 0.10344827586206896,
+      "defer_on_fail": 0.25396825396825395,
+      "median_handoff_frac": 0.5555555555555556,
+      "mean_replans_saved_per_deferred_fail": 14.6875
+    },
+    "signal_a0.2": {
+      "coverage": 0.74,
+      "retained_sr": 0.6126126126126126,
+      "false_defer": 0.21839080459770116,
+      "defer_on_fail": 0.31746031746031744,
+      "median_handoff_frac": 0.5277777777777778,
+      "mean_replans_saved_per_deferred_fail": 17.6
+    },
+    "signal_a0.3": {
+      "coverage": 0.6333333333333333,
+      "retained_sr": 0.6526315789473685,
+      "false_defer": 0.28735632183908044,
+      "defer_on_fail": 0.47619047619047616,
+      "median_handoff_frac": 0.4722222222222222,
+      "mean_replans_saved_per_deferred_fail": 19.3
+    },
+    "signal_a0.4": {
+      "coverage": 0.5333333333333333,
+      "retained_sr": 0.7,
+      "false_defer": 0.3563218390804598,
+      "defer_on_fail": 0.6190476190476191,
+      "median_handoff_frac": 0.4444444444444444,
+      "mean_replans_saved_per_deferred_fail": 19.487179487179485
+    },
+    "signal_a0.5": {
+      "coverage": 0.4066666666666667,
+      "retained_sr": 0.7213114754098361,
+      "false_defer": 0.4942528735632184,
+      "defer_on_fail": 0.7301587301587301,
+      "median_handoff_frac": 0.3333333333333333,
+      "mean_replans_saved_per_deferred_fail": 22.52173913043478
+    },
+    "timeout_cov0.83": {
+      "coverage": 1.0,
+      "retained_sr": 0.58,
+      "false_defer": 0.0,
+      "defer_on_fail": 0.0,
+      "median_handoff_frac": null,
+      "mean_replans_saved_per_deferred_fail": null,
+      "T0_replans": 37
+    },
+    "timeout_cov0.74": {
+      "coverage": 1.0,
+      "retained_sr": 0.58,
+      "false_defer": 0.0,
+      "defer_on_fail": 0.0,
+      "median_handoff_frac": null,
+      "mean_replans_saved_per_deferred_fail": null,
+      "T0_replans": 37
+    },
+    "timeout_cov0.63": {
+      "coverage": 1.0,
+      "retained_sr": 0.58,
+      "false_defer": 0.0,
+      "defer_on_fail": 0.0,
+      "median_handoff_frac": null,
+      "mean_replans_saved_per_deferred_fail": null,
+      "T0_replans": 37
+    },
+    "timeout_cov0.53": {
+      "coverage": 0.58,
+      "retained_sr": 1.0,
+      "false_defer": 0.0,
+      "defer_on_fail": 1.0,
+      "median_handoff_frac": 0.9722222222222222,
+      "mean_replans_saved_per_deferred_fail": 1.0,
+      "T0_replans": 35
+    },
+    "timeout_cov0.41": {
+      "coverage": 0.43333333333333335,
+      "retained_sr": 1.0,
+      "false_defer": 0.25287356321839083,
+      "defer_on_fail": 1.0,
+      "median_handoff_frac": 0.6944444444444444,
+      "mean_replans_saved_per_deferred_fail": 11.0,
+      "T0_replans": 25
+    },
+    "random_cov0.63": {
+      "coverage": 0.6333333333333333,
+      "retained_sr": 0.5764210526315788
+    },
+    "prefix8_a0.2": {
+      "coverage": 0.68,
+      "retained_sr": 0.6372549019607843,
+      "false_defer": 0.25287356321839083,
+      "defer_on_fail": 0.4126984126984127,
+      "median_handoff_frac": 0.1111111111111111,
+      "mean_replans_saved_per_deferred_fail": 32.03846153846154
+    },
+    "prefix8_a0.3": {
+      "coverage": 0.5733333333333334,
+      "retained_sr": 0.6395348837209303,
+      "false_defer": 0.367816091954023,
+      "defer_on_fail": 0.5079365079365079,
+      "median_handoff_frac": 0.1111111111111111,
+      "mean_replans_saved_per_deferred_fail": 32.0625
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "pusht-strong:dev|a0.3": {
+    "diff_pp": 8.4,
+    "ci": [
+      3.2,
+      13.9
+    ]
+  },
+  "pusht-strong:dev|a0.4": {
+    "diff_pp": 14.4,
+    "ci": [
+      8.2,
+      21.8
+    ]
+  },
+  "pusht-strong:s1000|a0.3": {
+    "diff_pp": 11.8,
+    "ci": [
+      5.0,
+      18.8
+    ]
+  },
+  "pusht-strong:s1000|a0.4": {
+    "diff_pp": 18.3,
+    "ci": [
+      10.3,
+      26.6
+    ]
+  },
+  "pusht-strong:s2000|a0.3": {
+    "diff_pp": 7.3,
+    "ci": [
+      1.4,
+      13.4
+    ]
+  },
+  "pusht-strong:s2000|a0.4": {
+    "diff_pp": 12.0,
+    "ci": [
+      4.7,
+      19.7
+    ]
+  }
+}

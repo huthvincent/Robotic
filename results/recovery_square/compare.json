@@ -1,0 +1,29 @@
+{
+  "baseline_sr": 0.24666666666666667,
+  "n_episodes": 150,
+  "gate": "bcoh_distmin",
+  "rows": [
+    {
+      "pct": 90.0,
+      "recovery": "committed",
+      "threshold": 0.9578293085098275,
+      "success": 0.25333333333333335,
+      "delta": 0.006666666666666682,
+      "intervention": 0.08775447254780999,
+      "hurt": 6,
+      "helped": 7,
+      "p": 1.0
+    },
+    {
+      "pct": 90.0,
+      "recovery": "consensus",
+      "threshold": 0.9578293085098275,
+      "success": 0.26,
+      "delta": 0.013333333333333336,
+      "intervention": 0.08984615384615384,
+      "hurt": 5,
+      "helped": 7,
+      "p": 0.7744140625
+    }
+  ]
+}
