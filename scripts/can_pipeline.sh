@@ -9,7 +9,7 @@ conda activate robo
 LOG=scratch/can_pipeline.log
 echo "=== can pipeline start $(date) ===" >> $LOG
 
-DS=/home/zhu11/.cache/huggingface/lerobot/ankile/robomimic-ph-can-image
+DS=$HOME/.cache/huggingface/lerobot/ankile/robomimic-ph-can-image
 
 # 1) download (mirror fallback, retries inside)
 if [ ! -f "$DS/meta/info.json" ] && [ ! -f "$DS/meta/info.json" ]; then
