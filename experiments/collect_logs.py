@@ -28,6 +28,13 @@ def main():
     ap.add_argument("--n_envs", type=int, default=25)
     ap.add_argument("--k", type=int, default=16)
     ap.add_argument("--out", type=str, required=True)
+    ap.add_argument(
+        "--seed_offset",
+        type=int,
+        default=0,
+        help="shift env seeds and sampling streams; use to extend an existing "
+        "collection with fresh, non-overlapping episodes",
+    )
     args = ap.parse_args()
     out = Path(args.out)
     out.mkdir(parents=True, exist_ok=True)
@@ -47,10 +54,13 @@ def main():
     nb = (args.n_episodes + args.n_envs - 1) // args.n_envs
 
     t0 = time.time()
+    boff = args.seed_offset // args.n_envs
     succ, records = [], []
     for b in range(nb):
-        seeds = list(range(b * args.n_envs, (b + 1) * args.n_envs))
-        s, recs = collect_batch(h, seeds, k=args.k, base_seed=b + 1)
+        seeds = list(
+            range(args.seed_offset + b * args.n_envs, args.seed_offset + (b + 1) * args.n_envs)
+        )
+        s, recs = collect_batch(h, seeds, k=args.k, base_seed=boff + b + 1)
         succ.extend(s.tolist())
         records.extend(recs)
         print(

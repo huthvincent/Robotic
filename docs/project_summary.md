@@ -311,3 +311,23 @@ guard-testtime-recovery/
 **建议 3：更好隔离 regime-dependent monitorability 的因果** — 收窄措辞 + 用 within-run taxonomy 支撑。审稿人正确指出跨 regime 比较同时改变多个因素（去 crop 同时改成功率/表示/视觉偏移敏感度；Square 改任务+能力；Can 单 seed）。已把 §5.3 结论从"tracks failure type"收窄为"**associated with** observed failure composition in the tested settings"，明确列出所有混淆，并指出 **within-run taxonomy 是唯一固定其他因素的比较**（同一 run 内不同失败类型可监测性不同）作为因果的干净证据。摘要/findings 的"tracks...rather than policy quality"软化为"depends on failure regime, not competence alone"（Can vs 强 Push-T 直接支撑此点）。
 
 **产物**：正文经大量压缩仍**恰好 7 页**（图宽降到 0.82/0.82/0.83 + 多处行文精简）；supplement 15 页；ZIP 重打包含 time_aware.json；全表无截断验证。三条建议全部诚实落实，没有一条需要新采集。
+
+## 16. 第 10 轮审稿（7 条 major + writing 清单）核心全部落实（2026-07-17）
+
+这轮审稿抓到了一个真正的内部矛盾，并促成了两个新实验和一个新分析框架。
+
+**#1 EU 模型自相矛盾（最重要）**：审稿人用我们自己的公式算出 timeout 严格支配我们主推的 alarm（0.856 vs 0.687）——因为 EU 里没有时间项，而全文对 alarm 的辩护恰恰是"它触发得早"。修复：新脚本 `utility_time.py` 给 EU 加执行成本项 −c_t·E[执行 replans]/R_ref。**诚实的结果**：c_t=0 时 timeout 处处占优（承认审稿人完全正确）；单独 alarm 只在信号真实处（Square c_t≈0.11–0.24、Can 高 p_fb）反超；combined(OR) 规则按构造永不劣于 timeout，其增益恰好出现在 alarm 有真实信号的制度（弱制度 +0.03–0.15），在强 Push-T 退化为纯 timeout——**检测结论在效用语言下的重述**。主文 utility 表重写 + 新段落 + supplement 新表。
+
+**#4 60k 欠训练实验**：SR 24.0%，完整复现弱制度签名（MMD +0.21 p=0.002、dispersion −0.17、OOD +0.14 p=0.002），失败构成与 crop-weak 几乎一致——弱制度模式源于"弱"本身而非增强特有敏感性。审稿人要的解耦拿到了。
+
+**#6 OOD-gated Square repair**：controller 实现在线 OOD gate（与离线检测器同 split 同 embedding），结果依然 null（+0.0pp committed；+4.0pp consensus p=0.18）——"用对信号也救不了 naive repair"，负结果更硬。
+
+**#5 组合重加权**：利用 AUROC=Σw_t·AUROC_t 精确分解做反事实混合交换——构成解释相干族差距的 109%、MMD 的 41%、OOD 的 19%（强制度 76% near-miss vs 退化制度 26%）。taxonomy 从"描述性"升级为"定量分解"。另加结构性盲点段（near-miss 分数在成功分布内 + success-quantile 阈值 → 召回差是近定义性的）。
+
+**#3 事实修正**：删掉被自己表格打脸的 "OOD uniquely carries early signal"（MMD 在 Square B prefix=0.843），并正面呈现审稿人发现的**反转异常**（Square 上 prefix>max，如相干 B 0.65 vs 0.40——失败策略卡在错误 mode 里反而更自洽），顺带确立"信号方向 dev seed 预定、永不按 run 翻转"的部署规则。
+
+**#2 统计推断**：置换 p 值（500 shuffles，add-one）进 supplement 全表；Table 1 加 excess 括号列；Setup 声明多重性策略（只认族内跨 seed 复现的超额：MMD 4/4 退化 run p≤0.01，OOD 2/2 Square p≤0.002）；prefix 全表加 bootstrap CI；MDE 精确二项 CI 验证（[−2.5,+3.0] 与正态近似一致）；3×扩容采集（强 seeds 各 600 集）在跑，完成后以"仅 supplement 鲁棒性注"形式给更紧的 excess CI（正文数字不动）。
+
+**#7 + writing**：early time-series classification 引用（Xing 2012）；"prefix 协议下 0.5 重新成为正确基线"+"长度匹配不可行"说明；审计清单 box（协议可采纳化）；摘要瘦身到 3 个数字 0 破折号；retained success 定义；69–77% deferral 可行性注；"Six weak runs 列了 5 个"的陈年笔误修正；Römer 在 PDF 渲染正常（审稿人的抽取工具 artifact，不改）。
+
+**页数之战**：本轮净增内容 ~1 页,通过 fig_extras 整图下沉 supplement（其全部内容已有三张 supp 表覆盖）、scope 表移 supplement、图宽 0.72、约 20 处行文精简、`\enlargethispage` 微调，正文收回**恰好 7 页**。主文 8 页 / supplement 18 页 16 表，零错误零未定义引用。

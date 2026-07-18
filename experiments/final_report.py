@@ -191,7 +191,7 @@ def analyze_run(run):
                 np.array([max(derived[e][s][:w]) for e in test_ok if len(derived[e][s]) >= w]),
                 np.array([fail[e] for e in test_ok if len(derived[e][s]) >= w], bool),
             )
-            for w in (6, 8)
+            for w in (4, 6, 8, 10, 12)
         }
     # K-ablation with CI (dev-seed only meaningful; compute where dist arrays present)
     kabl = {}

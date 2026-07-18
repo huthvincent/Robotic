@@ -155,6 +155,21 @@ def main():
             g_sr = float(g_succ.mean())
             interv = float(np.mean([r["intervened"] for r in g_logs]))
             b, c, p = mcnemar(base_succ, g_succ)
+            # re-fire statistics: does the gate fire again after an intervention?
+            fires = {}
+            for r in g_logs:
+                if r["intervened"]:
+                    fires[r["episode"]] = fires.get(r["episode"], 0) + 1
+            n_fired = len(fires)
+            n_refired = sum(1 for v in fires.values() if v >= 2)
+            refire = dict(
+                episodes_fired=n_fired,
+                episodes_refired=n_refired,
+                refire_rate=round(n_refired / n_fired, 3) if n_fired else None,
+                mean_fires_per_fired_episode=round(float(np.mean(list(fires.values()))), 2)
+                if n_fired
+                else None,
+            )
             rows.append(
                 dict(
                     pct=pct,
@@ -166,6 +181,7 @@ def main():
                     hurt=b,
                     helped=c,
                     p=p,
+                    refire=refire,
                 )
             )
             print(

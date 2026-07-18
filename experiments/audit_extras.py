@@ -53,6 +53,7 @@ RUNS = [
     ("pusht-weak:s4000", "results/logs_pusht_weak_s4000"),
     # can-strong appended last (same RNG-preservation rule)
     ("can-strong:s1000", "results/logs_can_s1000"),
+    ("pusht-mid:60k", "results/logs_pusht_mid60k"),
 ]
 out = {
     "fiper_style": {},
@@ -220,7 +221,7 @@ for name, path in RUNS:
         )
 
     # ---------- 4-6) frontier / utility / calibration robustness (strong runs + weak ood) ----------
-    sig = "ood_knn" if name.startswith(("pusht-weak", "square")) else "bcoh_distmin"
+    sig = "ood_knn" if name.startswith(("pusht-weak", "pusht-mid", "square")) else "bcoh_distmin"
     ser = {e: np.asarray(derived[e][sig], float) for e in test_ok}
     n_rep = {e: len(ser[e]) for e in test_ok}
     # timeout frontier

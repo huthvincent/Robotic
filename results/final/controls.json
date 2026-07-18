@@ -6,35 +6,40 @@
         "null_mean": 0.652,
         "null_lo": 0.563,
         "null_hi": 0.736,
-        "excess": 0.016
+        "excess": 0.016,
+        "p_perm": 0.3613
       },
       "stac_mmd": {
         "raw": 0.692,
         "null_mean": 0.648,
         "null_lo": 0.561,
         "null_hi": 0.736,
-        "excess": 0.045
+        "excess": 0.045,
+        "p_perm": 0.1577
       },
       "stac_energy": {
         "raw": 0.689,
         "null_mean": 0.647,
         "null_lo": 0.562,
         "null_hi": 0.734,
-        "excess": 0.042
+        "excess": 0.042,
+        "p_perm": 0.1437
       },
       "disp_all": {
         "raw": 0.599,
         "null_mean": 0.647,
         "null_lo": 0.558,
         "null_hi": 0.733,
-        "excess": -0.047
+        "excess": -0.047,
+        "p_perm": 0.8483
       },
       "ood_knn": {
         "raw": 0.486,
         "null_mean": 0.646,
         "null_lo": 0.564,
         "null_hi": 0.726,
-        "excess": -0.16
+        "excess": -0.16,
+        "p_perm": 1.0
       }
     },
     "pusht-strong:s1000": {
@@ -43,35 +48,40 @@
         "null_mean": 0.636,
         "null_lo": 0.542,
         "null_hi": 0.719,
-        "excess": 0.095
+        "excess": 0.095,
+        "p_perm": 0.016
       },
       "stac_mmd": {
         "raw": 0.747,
         "null_mean": 0.635,
         "null_lo": 0.556,
         "null_hi": 0.722,
-        "excess": 0.112
+        "excess": 0.112,
+        "p_perm": 0.004
       },
       "stac_energy": {
         "raw": 0.72,
         "null_mean": 0.64,
         "null_lo": 0.554,
         "null_hi": 0.722,
-        "excess": 0.08
+        "excess": 0.08,
+        "p_perm": 0.0319
       },
       "disp_all": {
         "raw": 0.575,
         "null_mean": 0.639,
         "null_lo": 0.555,
         "null_hi": 0.711,
-        "excess": -0.064
+        "excess": -0.064,
+        "p_perm": 0.9261
       },
       "ood_knn": {
         "raw": 0.625,
         "null_mean": 0.635,
         "null_lo": 0.548,
         "null_hi": 0.731,
-        "excess": -0.011
+        "excess": -0.011,
+        "p_perm": 0.5868
       }
     },
     "pusht-strong:s2000": {
@@ -80,35 +90,40 @@
         "null_mean": 0.638,
         "null_lo": 0.549,
         "null_hi": 0.718,
-        "excess": 0.023
+        "excess": 0.023,
+        "p_perm": 0.2934
       },
       "stac_mmd": {
         "raw": 0.638,
         "null_mean": 0.638,
         "null_lo": 0.55,
         "null_hi": 0.726,
-        "excess": 0.001
+        "excess": 0.001,
+        "p_perm": 0.517
       },
       "stac_energy": {
         "raw": 0.624,
         "null_mean": 0.636,
         "null_lo": 0.54,
         "null_hi": 0.72,
-        "excess": -0.013
+        "excess": -0.013,
+        "p_perm": 0.6128
       },
       "disp_all": {
         "raw": 0.582,
         "null_mean": 0.636,
         "null_lo": 0.551,
         "null_hi": 0.73,
-        "excess": -0.054
+        "excess": -0.054,
+        "p_perm": 0.8922
       },
       "ood_knn": {
         "raw": 0.591,
         "null_mean": 0.637,
         "null_lo": 0.545,
         "null_hi": 0.72,
-        "excess": -0.046
+        "excess": -0.046,
+        "p_perm": 0.8363
       }
     },
     "pusht-weak:nocrop": {
@@ -117,35 +132,40 @@
         "null_mean": 0.613,
         "null_lo": 0.503,
         "null_hi": 0.715,
-        "excess": -0.013
+        "excess": -0.013,
+        "p_perm": 0.5828
       },
       "stac_mmd": {
         "raw": 0.851,
         "null_mean": 0.613,
         "null_lo": 0.511,
         "null_hi": 0.723,
-        "excess": 0.238
+        "excess": 0.238,
+        "p_perm": 0.002
       },
       "stac_energy": {
         "raw": 0.612,
         "null_mean": 0.613,
         "null_lo": 0.516,
         "null_hi": 0.717,
-        "excess": -0.001
+        "excess": -0.001,
+        "p_perm": 0.515
       },
       "disp_all": {
         "raw": 0.371,
         "null_mean": 0.614,
         "null_lo": 0.518,
         "null_hi": 0.723,
-        "excess": -0.243
+        "excess": -0.243,
+        "p_perm": 1.0
       },
       "ood_knn": {
         "raw": 0.71,
         "null_mean": 0.611,
         "null_lo": 0.508,
         "null_hi": 0.706,
-        "excess": 0.099
+        "excess": 0.099,
+        "p_perm": 0.024
       }
     },
     "pusht-weak:s3000": {
@@ -154,35 +174,40 @@
         "null_mean": 0.624,
         "null_lo": 0.508,
         "null_hi": 0.735,
-        "excess": 0.079
+        "excess": 0.079,
+        "p_perm": 0.0838
       },
       "stac_mmd": {
         "raw": 0.802,
         "null_mean": 0.627,
         "null_lo": 0.521,
         "null_hi": 0.727,
-        "excess": 0.176
+        "excess": 0.176,
+        "p_perm": 0.002
       },
       "stac_energy": {
         "raw": 0.697,
         "null_mean": 0.622,
         "null_lo": 0.52,
         "null_hi": 0.718,
-        "excess": 0.074
+        "excess": 0.074,
+        "p_perm": 0.0858
       },
       "disp_all": {
         "raw": 0.55,
         "null_mean": 0.621,
         "null_lo": 0.52,
         "null_hi": 0.724,
-        "excess": -0.072
+        "excess": -0.072,
+        "p_perm": 0.9122
       },
       "ood_knn": {
         "raw": 0.627,
         "null_mean": 0.62,
         "null_lo": 0.517,
         "null_hi": 0.729,
-        "excess": 0.007
+        "excess": 0.007,
+        "p_perm": 0.4451
       }
     },
     "pusht-weak:s4000": {
@@ -191,35 +216,40 @@
         "null_mean": 0.619,
         "null_lo": 0.524,
         "null_hi": 0.715,
-        "excess": -0.035
+        "excess": -0.035,
+        "p_perm": 0.7385
       },
       "stac_mmd": {
         "raw": 0.751,
         "null_mean": 0.618,
         "null_lo": 0.517,
         "null_hi": 0.712,
-        "excess": 0.133
+        "excess": 0.133,
+        "p_perm": 0.008
       },
       "stac_energy": {
         "raw": 0.584,
         "null_mean": 0.619,
         "null_lo": 0.524,
         "null_hi": 0.72,
-        "excess": -0.035
+        "excess": -0.035,
+        "p_perm": 0.7445
       },
       "disp_all": {
         "raw": 0.456,
         "null_mean": 0.62,
         "null_lo": 0.517,
         "null_hi": 0.723,
-        "excess": -0.164
+        "excess": -0.164,
+        "p_perm": 0.998
       },
       "ood_knn": {
         "raw": 0.665,
         "null_mean": 0.618,
         "null_lo": 0.517,
         "null_hi": 0.723,
-        "excess": 0.047
+        "excess": 0.047,
+        "p_perm": 0.1637
       }
     },
     "square-weak:s1000": {
@@ -228,35 +258,40 @@
         "null_mean": 0.682,
         "null_lo": 0.577,
         "null_hi": 0.786,
-        "excess": -0.148
+        "excess": -0.148,
+        "p_perm": 0.994
       },
       "stac_mmd": {
         "raw": 0.6,
         "null_mean": 0.684,
         "null_lo": 0.574,
         "null_hi": 0.776,
-        "excess": -0.084
+        "excess": -0.084,
+        "p_perm": 0.9381
       },
       "stac_energy": {
         "raw": 0.493,
         "null_mean": 0.681,
         "null_lo": 0.579,
         "null_hi": 0.777,
-        "excess": -0.188
+        "excess": -0.188,
+        "p_perm": 1.0
       },
       "disp_all": {
         "raw": 0.298,
         "null_mean": 0.682,
         "null_lo": 0.59,
         "null_hi": 0.778,
-        "excess": -0.384
+        "excess": -0.384,
+        "p_perm": 1.0
       },
       "ood_knn": {
         "raw": 0.891,
         "null_mean": 0.677,
         "null_lo": 0.572,
         "null_hi": 0.782,
-        "excess": 0.214
+        "excess": 0.214,
+        "p_perm": 0.002
       }
     },
     "square-weak:s2000": {
@@ -265,35 +300,40 @@
         "null_mean": 0.67,
         "null_lo": 0.538,
         "null_hi": 0.804,
-        "excess": -0.27
+        "excess": -0.27,
+        "p_perm": 1.0
       },
       "stac_mmd": {
         "raw": 0.666,
         "null_mean": 0.663,
         "null_lo": 0.533,
         "null_hi": 0.783,
-        "excess": 0.002
+        "excess": 0.002,
+        "p_perm": 0.491
       },
       "stac_energy": {
         "raw": 0.316,
         "null_mean": 0.668,
         "null_lo": 0.54,
         "null_hi": 0.792,
-        "excess": -0.352
+        "excess": -0.352,
+        "p_perm": 1.0
       },
       "disp_all": {
         "raw": 0.192,
         "null_mean": 0.668,
         "null_lo": 0.543,
         "null_hi": 0.793,
-        "excess": -0.475
+        "excess": -0.475,
+        "p_perm": 1.0
       },
       "ood_knn": {
         "raw": 0.929,
         "null_mean": 0.67,
         "null_lo": 0.542,
         "null_hi": 0.785,
-        "excess": 0.259
+        "excess": 0.259,
+        "p_perm": 0.002
       }
     },
     "can-strong:s1000": {
@@ -302,35 +342,82 @@
         "null_mean": 0.741,
         "null_lo": 0.653,
         "null_hi": 0.83,
-        "excess": 0.124
+        "excess": 0.124,
+        "p_perm": 0.002
       },
       "stac_mmd": {
         "raw": 0.65,
         "null_mean": 0.742,
         "null_lo": 0.656,
         "null_hi": 0.825,
-        "excess": -0.092
+        "excess": -0.092,
+        "p_perm": 0.984
       },
       "stac_energy": {
         "raw": 0.81,
         "null_mean": 0.74,
         "null_lo": 0.646,
         "null_hi": 0.824,
-        "excess": 0.07
+        "excess": 0.07,
+        "p_perm": 0.0579
       },
       "disp_all": {
         "raw": 0.456,
         "null_mean": 0.741,
         "null_lo": 0.653,
         "null_hi": 0.818,
-        "excess": -0.285
+        "excess": -0.285,
+        "p_perm": 1.0
       },
       "ood_knn": {
         "raw": 0.684,
         "null_mean": 0.741,
         "null_lo": 0.658,
         "null_hi": 0.822,
-        "excess": -0.058
+        "excess": -0.058,
+        "p_perm": 0.9142
+      }
+    },
+    "pusht-mid:60k": {
+      "bcoh_distmin": {
+        "raw": 0.706,
+        "null_mean": 0.629,
+        "null_lo": 0.523,
+        "null_hi": 0.722,
+        "excess": 0.078,
+        "p_perm": 0.0659
+      },
+      "stac_mmd": {
+        "raw": 0.842,
+        "null_mean": 0.63,
+        "null_lo": 0.507,
+        "null_hi": 0.738,
+        "excess": 0.212,
+        "p_perm": 0.002
+      },
+      "stac_energy": {
+        "raw": 0.689,
+        "null_mean": 0.625,
+        "null_lo": 0.522,
+        "null_hi": 0.73,
+        "excess": 0.063,
+        "p_perm": 0.1357
+      },
+      "disp_all": {
+        "raw": 0.46,
+        "null_mean": 0.626,
+        "null_lo": 0.52,
+        "null_hi": 0.729,
+        "excess": -0.166,
+        "p_perm": 1.0
+      },
+      "ood_knn": {
+        "raw": 0.768,
+        "null_mean": 0.629,
+        "null_lo": 0.52,
+        "null_hi": 0.738,
+        "excess": 0.139,
+        "p_perm": 0.002
       }
     }
   },
@@ -667,6 +754,43 @@
         "n_surv": 150,
         "n_fail_surv": 32
       }
+    },
+    "pusht-mid:60k": {
+      "bcoh_distmin": {
+        "full_max_all": 0.706,
+        "full_max_on_survivors": 0.707,
+        "prefix_on_survivors": 0.615,
+        "n_surv": 149,
+        "n_fail_surv": 115
+      },
+      "stac_mmd": {
+        "full_max_all": 0.842,
+        "full_max_on_survivors": 0.841,
+        "prefix_on_survivors": 0.647,
+        "n_surv": 149,
+        "n_fail_surv": 115
+      },
+      "stac_energy": {
+        "full_max_all": 0.689,
+        "full_max_on_survivors": 0.689,
+        "prefix_on_survivors": 0.605,
+        "n_surv": 149,
+        "n_fail_surv": 115
+      },
+      "disp_all": {
+        "full_max_all": 0.46,
+        "full_max_on_survivors": 0.446,
+        "prefix_on_survivors": 0.526,
+        "n_surv": 149,
+        "n_fail_surv": 115
+      },
+      "ood_knn": {
+        "full_max_all": 0.768,
+        "full_max_on_survivors": 0.761,
+        "prefix_on_survivors": 0.631,
+        "n_surv": 149,
+        "n_fail_surv": 115
+      }
     }
   },
   "recovery_ci": {
@@ -759,6 +883,24 @@
       "ci_lo_pp": -2.4,
       "ci_hi_pp": 2.9,
       "mde_pp": 2.7
+    },
+    "square_ood_committed_p90": {
+      "n": 150,
+      "helped": 8,
+      "hurt": 8,
+      "delta_pp": 0.0,
+      "ci_lo_pp": -5.2,
+      "ci_hi_pp": 5.2,
+      "mde_pp": 5.2
+    },
+    "square_ood_consensus_p90": {
+      "n": 150,
+      "helped": 10,
+      "hurt": 4,
+      "delta_pp": 4.0,
+      "ci_lo_pp": -0.9,
+      "ci_hi_pp": 8.9,
+      "mde_pp": 4.9
     }
   }
 }

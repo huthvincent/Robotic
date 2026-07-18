@@ -1,0 +1,46 @@
+{
+  "bcoh_distmin": {
+    "strong_actual": 0.689,
+    "weak_actual": 0.63,
+    "strong_detect_weak_mix": 0.625,
+    "weak_detect_strong_mix": 0.673,
+    "gap": -0.059,
+    "composition_share": 1.088
+  },
+  "stac_mmd": {
+    "strong_actual": 0.693,
+    "weak_actual": 0.802,
+    "strong_detect_weak_mix": 0.737,
+    "weak_detect_strong_mix": 0.727,
+    "gap": 0.109,
+    "composition_share": 0.405
+  },
+  "ood_knn": {
+    "strong_actual": 0.572,
+    "weak_actual": 0.668,
+    "strong_detect_weak_mix": 0.591,
+    "weak_detect_strong_mix": 0.614,
+    "gap": 0.095,
+    "composition_share": 0.194
+  },
+  "mix": {
+    "strong": {
+      "near_miss": 0.765,
+      "stalled": 0.06,
+      "oscillating": 0.098,
+      "other": 0.077
+    },
+    "weak": {
+      "near_miss": 0.255,
+      "stalled": 0.228,
+      "oscillating": 0.114,
+      "other": 0.402
+    },
+    "mid60k": {
+      "near_miss": 0.261,
+      "stalled": 0.217,
+      "oscillating": 0.13,
+      "other": 0.391
+    }
+  }
+}

@@ -36,6 +36,7 @@ RUNS = [
     ("square-weak:s2000", "results/logs_square_s2000"),
     # appended after the original eight (per-run RNG -> prior outputs unchanged)
     ("can-strong:s1000", "results/logs_can_s1000"),
+    ("pusht-mid:60k", "results/logs_pusht_mid60k"),
 ]
 SIGNALS = ["bcoh_distmin", "stac_mmd", "stac_energy", "disp_all", "ood_knn"]
 N_PERM = 500
@@ -73,12 +74,15 @@ for name, path in RUNS:
         y_s = y[surv]
         full_on_surv = auroc(raw_max[surv], y_s)
         pref_on_surv = auroc(np.array([series[i][:W].max() for i in surv]), y_s)
+        # one-sided permutation p-value (add-one correction): P(null >= observed)
+        p_perm = float((1 + int((nulls >= raw_auroc).sum())) / (1 + len(nulls)))
         out["perm_null"][name][s] = dict(
             raw=round(raw_auroc, 3),
             null_mean=round(float(nulls.mean()), 3),
             null_lo=round(float(np.percentile(nulls, 2.5)), 3),
             null_hi=round(float(np.percentile(nulls, 97.5)), 3),
             excess=round(raw_auroc - float(nulls.mean()), 3),
+            p_perm=round(p_perm, 4),
         )
         out["survivor_decomp"][name][s] = dict(
             full_max_all=round(raw_auroc, 3),
@@ -147,6 +151,15 @@ try:
     )
 except Exception as e:
     out["recovery_ci"]["strong2000_committed_p90_pooled"] = f"skip: {e}"
+# OOD-gated square repair (gate = the informative signal on Square)
+try:
+    d = json.loads((ROOT / "results/recovery_square_ood/compare.json").read_text())
+    for r in d["rows"]:
+        out["recovery_ci"][f"square_ood_{r['recovery']}_p{int(r['pct'])}"] = rec_ci(
+            d["n_episodes"], r["helped"], r["hurt"]
+        )
+except Exception:
+    pass
 # square spot check if done
 try:
     d = json.loads((ROOT / "results/recovery_square/sweep.json").read_text())

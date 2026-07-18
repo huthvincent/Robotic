@@ -39,6 +39,7 @@ RUNS = [
     ("pusht-weak:nocrop", "results/logs_pusht_weak_nocrop"),
     ("square-weak:s1000", "results/logs_square_s1000"),
     ("square-weak:s2000", "results/logs_square_s2000"),
+    ("pusht-mid:60k", "results/logs_pusht_mid60k"),
 ]
 ANCHORS = (0.6, 0.7, 0.8)
 
@@ -99,7 +100,7 @@ for name, path in RUNS:
         continue
     run = load_run(path)
     fail, derived = run["fail"], run["derived"]
-    sig = "ood_knn" if name.startswith(("pusht-weak", "square")) else "bcoh_distmin"
+    sig = "ood_knn" if name.startswith(("pusht-weak", "pusht-mid", "square")) else "bcoh_distmin"
     cal_pool = run["quant_eps"] if sig == "ood_knn" else run["cal_eps"]
     test_ok = [e for e in run["test_eps"] if len(derived[e][sig])]
     series = {e: np.asarray(derived[e][sig], float) for e in test_ok}

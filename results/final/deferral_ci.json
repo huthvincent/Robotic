@@ -943,5 +943,110 @@
         ]
       }
     }
+  },
+  "pusht-mid:60k": {
+    "signal": "ood_knn",
+    "alphas": {
+      "0.1": {
+        "tau": 0.958899199962616,
+        "n_test": 150,
+        "n_kept": 128,
+        "coverage": 0.853,
+        "coverage_ci": [
+          0.793,
+          0.907
+        ],
+        "retained": 0.266,
+        "retained_ci": [
+          0.19,
+          0.341
+        ],
+        "false_defer": 0.029,
+        "false_defer_ci": [
+          0.0,
+          0.094
+        ]
+      },
+      "0.2": {
+        "tau": 0.895749655034807,
+        "n_test": 150,
+        "n_kept": 120,
+        "coverage": 0.8,
+        "coverage_ci": [
+          0.733,
+          0.867
+        ],
+        "retained": 0.283,
+        "retained_ci": [
+          0.202,
+          0.363
+        ],
+        "false_defer": 0.029,
+        "false_defer_ci": [
+          0.0,
+          0.097
+        ]
+      },
+      "0.3": {
+        "tau": 0.8492643303341336,
+        "n_test": 150,
+        "n_kept": 109,
+        "coverage": 0.727,
+        "coverage_ci": [
+          0.66,
+          0.8
+        ],
+        "retained": 0.312,
+        "retained_ci": [
+          0.224,
+          0.4
+        ],
+        "false_defer": 0.029,
+        "false_defer_ci": [
+          0.0,
+          0.094
+        ]
+      },
+      "0.4": {
+        "tau": 0.8101278146107991,
+        "n_test": 150,
+        "n_kept": 101,
+        "coverage": 0.673,
+        "coverage_ci": [
+          0.593,
+          0.747
+        ],
+        "retained": 0.327,
+        "retained_ci": [
+          0.238,
+          0.417
+        ],
+        "false_defer": 0.057,
+        "false_defer_ci": [
+          0.0,
+          0.143
+        ]
+      },
+      "0.5": {
+        "tau": 0.7343916098276774,
+        "n_test": 150,
+        "n_kept": 74,
+        "coverage": 0.493,
+        "coverage_ci": [
+          0.413,
+          0.573
+        ],
+        "retained": 0.392,
+        "retained_ci": [
+          0.282,
+          0.506
+        ],
+        "false_defer": 0.171,
+        "false_defer_ci": [
+          0.056,
+          0.308
+        ]
+      }
+    }
   }
 }

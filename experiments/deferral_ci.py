@@ -31,6 +31,7 @@ RUNS = [
     ("square-weak:s1000", "results/logs_square_s1000"),
     ("square-weak:s2000", "results/logs_square_s2000"),
     ("can-strong:s1000", "results/logs_can_s1000"),
+    ("pusht-mid:60k", "results/logs_pusht_mid60k"),
 ]
 ALPHAS = (0.1, 0.2, 0.3, 0.4, 0.5)
 B = 2000
@@ -39,7 +40,7 @@ out = {}
 for name, path in RUNS:
     run = load_run(path)
     derived, fail = run["derived"], run["fail"]
-    sig = "ood_knn" if name.startswith(("pusht-weak", "square")) else "bcoh_distmin"
+    sig = "ood_knn" if name.startswith(("pusht-weak", "pusht-mid", "square")) else "bcoh_distmin"
     cal_pool = run["quant_eps"] if sig == "ood_knn" else run["cal_eps"]
     test_ok = [e for e in run["test_eps"] if len(derived[e][sig])]
     calmax = np.array([max(derived[e][sig]) for e in cal_pool if len(derived[e][sig])])

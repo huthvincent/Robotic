@@ -1,0 +1,6883 @@
+{
+  "pusht-strong:dev": {
+    "signal": "bcoh_distmin",
+    "R_ref": 26.7,
+    "policies": {
+      "autonomy": {
+        "cov": 1.0,
+        "retained": 0.64,
+        "exec": 26.747
+      },
+      "timeout_T7": {
+        "cov": 0.013,
+        "retained": 1.0,
+        "exec": 7.987
+      },
+      "timeout_T9": {
+        "cov": 0.04,
+        "retained": 1.0,
+        "exec": 9.953
+      },
+      "timeout_T10": {
+        "cov": 0.053,
+        "retained": 1.0,
+        "exec": 10.913
+      },
+      "timeout_T11": {
+        "cov": 0.08,
+        "retained": 1.0,
+        "exec": 11.86
+      },
+      "timeout_T12": {
+        "cov": 0.107,
+        "retained": 1.0,
+        "exec": 12.78
+      },
+      "timeout_T13": {
+        "cov": 0.127,
+        "retained": 1.0,
+        "exec": 13.673
+      },
+      "timeout_T14": {
+        "cov": 0.133,
+        "retained": 1.0,
+        "exec": 14.547
+      },
+      "timeout_T15": {
+        "cov": 0.187,
+        "retained": 1.0,
+        "exec": 15.413
+      },
+      "timeout_T16": {
+        "cov": 0.207,
+        "retained": 1.0,
+        "exec": 16.227
+      },
+      "timeout_T17": {
+        "cov": 0.253,
+        "retained": 1.0,
+        "exec": 17.02
+      },
+      "timeout_T18": {
+        "cov": 0.307,
+        "retained": 1.0,
+        "exec": 17.767
+      },
+      "timeout_T19": {
+        "cov": 0.327,
+        "retained": 1.0,
+        "exec": 18.46
+      },
+      "timeout_T20": {
+        "cov": 0.347,
+        "retained": 1.0,
+        "exec": 19.133
+      },
+      "timeout_T21": {
+        "cov": 0.373,
+        "retained": 1.0,
+        "exec": 19.787
+      },
+      "timeout_T22": {
+        "cov": 0.42,
+        "retained": 1.0,
+        "exec": 20.413
+      },
+      "timeout_T23": {
+        "cov": 0.447,
+        "retained": 1.0,
+        "exec": 20.993
+      },
+      "timeout_T24": {
+        "cov": 0.5,
+        "retained": 1.0,
+        "exec": 21.547
+      },
+      "timeout_T25": {
+        "cov": 0.52,
+        "retained": 1.0,
+        "exec": 22.047
+      },
+      "timeout_T26": {
+        "cov": 0.54,
+        "retained": 1.0,
+        "exec": 22.527
+      },
+      "timeout_T27": {
+        "cov": 0.547,
+        "retained": 1.0,
+        "exec": 22.987
+      },
+      "timeout_T30": {
+        "cov": 0.567,
+        "retained": 1.0,
+        "exec": 24.347
+      },
+      "timeout_T32": {
+        "cov": 0.587,
+        "retained": 1.0,
+        "exec": 25.213
+      },
+      "timeout_T33": {
+        "cov": 0.62,
+        "retained": 1.0,
+        "exec": 25.627
+      },
+      "timeout_T35": {
+        "cov": 0.64,
+        "retained": 1.0,
+        "exec": 26.387
+      },
+      "alarm_a0.1": {
+        "cov": 0.893,
+        "retained": 0.664,
+        "exec": 25.367
+      },
+      "alarm_a0.2": {
+        "cov": 0.833,
+        "retained": 0.672,
+        "exec": 24.3
+      },
+      "alarm_a0.3": {
+        "cov": 0.7,
+        "retained": 0.724,
+        "exec": 22.133
+      },
+      "alarm_a0.4": {
+        "cov": 0.587,
+        "retained": 0.784,
+        "exec": 20.28
+      },
+      "alarm_a0.5": {
+        "cov": 0.507,
+        "retained": 0.763,
+        "exec": 18.413
+      },
+      "comb_a0.1_T7": {
+        "cov": 0.013,
+        "retained": 1.0,
+        "exec": 7.933
+      },
+      "comb_a0.1_T9": {
+        "cov": 0.04,
+        "retained": 1.0,
+        "exec": 9.873
+      },
+      "comb_a0.1_T10": {
+        "cov": 0.053,
+        "retained": 1.0,
+        "exec": 10.813
+      },
+      "comb_a0.1_T11": {
+        "cov": 0.08,
+        "retained": 1.0,
+        "exec": 11.733
+      },
+      "comb_a0.1_T12": {
+        "cov": 0.107,
+        "retained": 1.0,
+        "exec": 12.627
+      },
+      "comb_a0.1_T13": {
+        "cov": 0.127,
+        "retained": 1.0,
+        "exec": 13.493
+      },
+      "comb_a0.1_T14": {
+        "cov": 0.127,
+        "retained": 1.0,
+        "exec": 14.327
+      },
+      "comb_a0.1_T15": {
+        "cov": 0.18,
+        "retained": 1.0,
+        "exec": 15.153
+      },
+      "comb_a0.1_T16": {
+        "cov": 0.2,
+        "retained": 1.0,
+        "exec": 15.92
+      },
+      "comb_a0.1_T17": {
+        "cov": 0.247,
+        "retained": 1.0,
+        "exec": 16.66
+      },
+      "comb_a0.1_T18": {
+        "cov": 0.293,
+        "retained": 1.0,
+        "exec": 17.353
+      },
+      "comb_a0.1_T19": {
+        "cov": 0.313,
+        "retained": 1.0,
+        "exec": 18.0
+      },
+      "comb_a0.1_T20": {
+        "cov": 0.327,
+        "retained": 1.0,
+        "exec": 18.627
+      },
+      "comb_a0.1_T21": {
+        "cov": 0.347,
+        "retained": 1.0,
+        "exec": 19.233
+      },
+      "comb_a0.1_T22": {
+        "cov": 0.393,
+        "retained": 1.0,
+        "exec": 19.82
+      },
+      "comb_a0.1_T23": {
+        "cov": 0.42,
+        "retained": 1.0,
+        "exec": 20.36
+      },
+      "comb_a0.1_T24": {
+        "cov": 0.473,
+        "retained": 1.0,
+        "exec": 20.873
+      },
+      "comb_a0.1_T25": {
+        "cov": 0.493,
+        "retained": 1.0,
+        "exec": 21.333
+      },
+      "comb_a0.1_T26": {
+        "cov": 0.513,
+        "retained": 1.0,
+        "exec": 21.767
+      },
+      "comb_a0.1_T27": {
+        "cov": 0.52,
+        "retained": 1.0,
+        "exec": 22.18
+      },
+      "comb_a0.1_T30": {
+        "cov": 0.54,
+        "retained": 1.0,
+        "exec": 23.367
+      },
+      "comb_a0.1_T32": {
+        "cov": 0.553,
+        "retained": 1.0,
+        "exec": 24.093
+      },
+      "comb_a0.1_T33": {
+        "cov": 0.58,
+        "retained": 1.0,
+        "exec": 24.44
+      },
+      "comb_a0.1_T35": {
+        "cov": 0.593,
+        "retained": 1.0,
+        "exec": 25.067
+      },
+      "comb_a0.2_T7": {
+        "cov": 0.013,
+        "retained": 1.0,
+        "exec": 7.887
+      },
+      "comb_a0.2_T9": {
+        "cov": 0.04,
+        "retained": 1.0,
+        "exec": 9.787
+      },
+      "comb_a0.2_T10": {
+        "cov": 0.053,
+        "retained": 1.0,
+        "exec": 10.707
+      },
+      "comb_a0.2_T11": {
+        "cov": 0.08,
+        "retained": 1.0,
+        "exec": 11.593
+      },
+      "comb_a0.2_T12": {
+        "cov": 0.107,
+        "retained": 1.0,
+        "exec": 12.447
+      },
+      "comb_a0.2_T13": {
+        "cov": 0.12,
+        "retained": 1.0,
+        "exec": 13.253
+      },
+      "comb_a0.2_T14": {
+        "cov": 0.12,
+        "retained": 1.0,
+        "exec": 14.04
+      },
+      "comb_a0.2_T15": {
+        "cov": 0.167,
+        "retained": 1.0,
+        "exec": 14.82
+      },
+      "comb_a0.2_T16": {
+        "cov": 0.187,
+        "retained": 1.0,
+        "exec": 15.547
+      },
+      "comb_a0.2_T17": {
+        "cov": 0.233,
+        "retained": 1.0,
+        "exec": 16.247
+      },
+      "comb_a0.2_T18": {
+        "cov": 0.28,
+        "retained": 1.0,
+        "exec": 16.9
+      },
+      "comb_a0.2_T19": {
+        "cov": 0.3,
+        "retained": 1.0,
+        "exec": 17.507
+      },
+      "comb_a0.2_T20": {
+        "cov": 0.313,
+        "retained": 1.0,
+        "exec": 18.087
+      },
+      "comb_a0.2_T21": {
+        "cov": 0.333,
+        "retained": 1.0,
+        "exec": 18.647
+      },
+      "comb_a0.2_T22": {
+        "cov": 0.373,
+        "retained": 1.0,
+        "exec": 19.187
+      },
+      "comb_a0.2_T23": {
+        "cov": 0.393,
+        "retained": 1.0,
+        "exec": 19.687
+      },
+      "comb_a0.2_T24": {
+        "cov": 0.447,
+        "retained": 1.0,
+        "exec": 20.167
+      },
+      "comb_a0.2_T25": {
+        "cov": 0.467,
+        "retained": 1.0,
+        "exec": 20.593
+      },
+      "comb_a0.2_T26": {
+        "cov": 0.487,
+        "retained": 1.0,
+        "exec": 20.993
+      },
+      "comb_a0.2_T27": {
+        "cov": 0.493,
+        "retained": 1.0,
+        "exec": 21.373
+      },
+      "comb_a0.2_T30": {
+        "cov": 0.507,
+        "retained": 1.0,
+        "exec": 22.46
+      },
+      "comb_a0.2_T32": {
+        "cov": 0.52,
+        "retained": 1.0,
+        "exec": 23.133
+      },
+      "comb_a0.2_T33": {
+        "cov": 0.547,
+        "retained": 1.0,
+        "exec": 23.453
+      },
+      "comb_a0.2_T35": {
+        "cov": 0.56,
+        "retained": 1.0,
+        "exec": 24.027
+      },
+      "comb_a0.3_T7": {
+        "cov": 0.007,
+        "retained": 1.0,
+        "exec": 7.747
+      },
+      "comb_a0.3_T9": {
+        "cov": 0.033,
+        "retained": 1.0,
+        "exec": 9.553
+      },
+      "comb_a0.3_T10": {
+        "cov": 0.047,
+        "retained": 1.0,
+        "exec": 10.427
+      },
+      "comb_a0.3_T11": {
+        "cov": 0.073,
+        "retained": 1.0,
+        "exec": 11.267
+      },
+      "comb_a0.3_T12": {
+        "cov": 0.1,
+        "retained": 1.0,
+        "exec": 12.073
+      },
+      "comb_a0.3_T13": {
+        "cov": 0.113,
+        "retained": 1.0,
+        "exec": 12.833
+      },
+      "comb_a0.3_T14": {
+        "cov": 0.113,
+        "retained": 1.0,
+        "exec": 13.573
+      },
+      "comb_a0.3_T15": {
+        "cov": 0.16,
+        "retained": 1.0,
+        "exec": 14.3
+      },
+      "comb_a0.3_T16": {
+        "cov": 0.18,
+        "retained": 1.0,
+        "exec": 14.96
+      },
+      "comb_a0.3_T17": {
+        "cov": 0.22,
+        "retained": 1.0,
+        "exec": 15.587
+      },
+      "comb_a0.3_T18": {
+        "cov": 0.267,
+        "retained": 1.0,
+        "exec": 16.173
+      },
+      "comb_a0.3_T19": {
+        "cov": 0.287,
+        "retained": 1.0,
+        "exec": 16.713
+      },
+      "comb_a0.3_T20": {
+        "cov": 0.293,
+        "retained": 1.0,
+        "exec": 17.227
+      },
+      "comb_a0.3_T21": {
+        "cov": 0.313,
+        "retained": 1.0,
+        "exec": 17.72
+      },
+      "comb_a0.3_T22": {
+        "cov": 0.353,
+        "retained": 1.0,
+        "exec": 18.193
+      },
+      "comb_a0.3_T23": {
+        "cov": 0.373,
+        "retained": 1.0,
+        "exec": 18.613
+      },
+      "comb_a0.3_T24": {
+        "cov": 0.42,
+        "retained": 1.0,
+        "exec": 19.013
+      },
+      "comb_a0.3_T25": {
+        "cov": 0.44,
+        "retained": 1.0,
+        "exec": 19.367
+      },
+      "comb_a0.3_T26": {
+        "cov": 0.453,
+        "retained": 1.0,
+        "exec": 19.687
+      },
+      "comb_a0.3_T27": {
+        "cov": 0.46,
+        "retained": 1.0,
+        "exec": 19.987
+      },
+      "comb_a0.3_T30": {
+        "cov": 0.473,
+        "retained": 1.0,
+        "exec": 20.82
+      },
+      "comb_a0.3_T32": {
+        "cov": 0.48,
+        "retained": 1.0,
+        "exec": 21.313
+      },
+      "comb_a0.3_T33": {
+        "cov": 0.5,
+        "retained": 1.0,
+        "exec": 21.54
+      },
+      "comb_a0.3_T35": {
+        "cov": 0.507,
+        "retained": 1.0,
+        "exec": 21.94
+      },
+      "comb_a0.4_T7": {
+        "cov": 0.007,
+        "retained": 1.0,
+        "exec": 7.587
+      },
+      "comb_a0.4_T9": {
+        "cov": 0.033,
+        "retained": 1.0,
+        "exec": 9.313
+      },
+      "comb_a0.4_T10": {
+        "cov": 0.047,
+        "retained": 1.0,
+        "exec": 10.14
+      },
+      "comb_a0.4_T11": {
+        "cov": 0.073,
+        "retained": 1.0,
+        "exec": 10.94
+      },
+      "comb_a0.4_T12": {
+        "cov": 0.1,
+        "retained": 1.0,
+        "exec": 11.7
+      },
+      "comb_a0.4_T13": {
+        "cov": 0.113,
+        "retained": 1.0,
+        "exec": 12.413
+      },
+      "comb_a0.4_T14": {
+        "cov": 0.113,
+        "retained": 1.0,
+        "exec": 13.107
+      },
+      "comb_a0.4_T15": {
+        "cov": 0.16,
+        "retained": 1.0,
+        "exec": 13.787
+      },
+      "comb_a0.4_T16": {
+        "cov": 0.18,
+        "retained": 1.0,
+        "exec": 14.4
+      },
+      "comb_a0.4_T17": {
+        "cov": 0.213,
+        "retained": 1.0,
+        "exec": 14.98
+      },
+      "comb_a0.4_T18": {
+        "cov": 0.247,
+        "retained": 1.0,
+        "exec": 15.52
+      },
+      "comb_a0.4_T19": {
+        "cov": 0.267,
+        "retained": 1.0,
+        "exec": 16.027
+      },
+      "comb_a0.4_T20": {
+        "cov": 0.267,
+        "retained": 1.0,
+        "exec": 16.493
+      },
+      "comb_a0.4_T21": {
+        "cov": 0.287,
+        "retained": 1.0,
+        "exec": 16.933
+      },
+      "comb_a0.4_T22": {
+        "cov": 0.327,
+        "retained": 1.0,
+        "exec": 17.347
+      },
+      "comb_a0.4_T23": {
+        "cov": 0.347,
+        "retained": 1.0,
+        "exec": 17.707
+      },
+      "comb_a0.4_T24": {
+        "cov": 0.387,
+        "retained": 1.0,
+        "exec": 18.033
+      },
+      "comb_a0.4_T25": {
+        "cov": 0.407,
+        "retained": 1.0,
+        "exec": 18.32
+      },
+      "comb_a0.4_T26": {
+        "cov": 0.42,
+        "retained": 1.0,
+        "exec": 18.567
+      },
+      "comb_a0.4_T27": {
+        "cov": 0.42,
+        "retained": 1.0,
+        "exec": 18.787
+      },
+      "comb_a0.4_T30": {
+        "cov": 0.433,
+        "retained": 1.0,
+        "exec": 19.387
+      },
+      "comb_a0.4_T32": {
+        "cov": 0.433,
+        "retained": 1.0,
+        "exec": 19.727
+      },
+      "comb_a0.4_T33": {
+        "cov": 0.453,
+        "retained": 1.0,
+        "exec": 19.887
+      },
+      "comb_a0.4_T35": {
+        "cov": 0.46,
+        "retained": 1.0,
+        "exec": 20.153
+      },
+      "comb_a0.5_T7": {
+        "cov": 0.007,
+        "retained": 1.0,
+        "exec": 7.387
+      },
+      "comb_a0.5_T9": {
+        "cov": 0.033,
+        "retained": 1.0,
+        "exec": 9.013
+      },
+      "comb_a0.5_T10": {
+        "cov": 0.047,
+        "retained": 1.0,
+        "exec": 9.78
+      },
+      "comb_a0.5_T11": {
+        "cov": 0.073,
+        "retained": 1.0,
+        "exec": 10.52
+      },
+      "comb_a0.5_T12": {
+        "cov": 0.1,
+        "retained": 1.0,
+        "exec": 11.213
+      },
+      "comb_a0.5_T13": {
+        "cov": 0.113,
+        "retained": 1.0,
+        "exec": 11.853
+      },
+      "comb_a0.5_T14": {
+        "cov": 0.113,
+        "retained": 1.0,
+        "exec": 12.473
+      },
+      "comb_a0.5_T15": {
+        "cov": 0.153,
+        "retained": 1.0,
+        "exec": 13.08
+      },
+      "comb_a0.5_T16": {
+        "cov": 0.173,
+        "retained": 1.0,
+        "exec": 13.627
+      },
+      "comb_a0.5_T17": {
+        "cov": 0.207,
+        "retained": 1.0,
+        "exec": 14.127
+      },
+      "comb_a0.5_T18": {
+        "cov": 0.24,
+        "retained": 1.0,
+        "exec": 14.587
+      },
+      "comb_a0.5_T19": {
+        "cov": 0.253,
+        "retained": 1.0,
+        "exec": 15.013
+      },
+      "comb_a0.5_T20": {
+        "cov": 0.253,
+        "retained": 1.0,
+        "exec": 15.407
+      },
+      "comb_a0.5_T21": {
+        "cov": 0.267,
+        "retained": 1.0,
+        "exec": 15.773
+      },
+      "comb_a0.5_T22": {
+        "cov": 0.3,
+        "retained": 1.0,
+        "exec": 16.113
+      },
+      "comb_a0.5_T23": {
+        "cov": 0.32,
+        "retained": 1.0,
+        "exec": 16.407
+      },
+      "comb_a0.5_T24": {
+        "cov": 0.353,
+        "retained": 1.0,
+        "exec": 16.667
+      },
+      "comb_a0.5_T25": {
+        "cov": 0.367,
+        "retained": 1.0,
+        "exec": 16.887
+      },
+      "comb_a0.5_T26": {
+        "cov": 0.38,
+        "retained": 1.0,
+        "exec": 17.073
+      },
+      "comb_a0.5_T27": {
+        "cov": 0.38,
+        "retained": 1.0,
+        "exec": 17.227
+      },
+      "comb_a0.5_T30": {
+        "cov": 0.38,
+        "retained": 1.0,
+        "exec": 17.647
+      },
+      "comb_a0.5_T32": {
+        "cov": 0.38,
+        "retained": 1.0,
+        "exec": 17.92
+      },
+      "comb_a0.5_T33": {
+        "cov": 0.387,
+        "retained": 1.0,
+        "exec": 18.053
+      },
+      "comb_a0.5_T35": {
+        "cov": 0.387,
+        "retained": 1.0,
+        "exec": 18.293
+      },
+      "comb_a0.0_T7": {
+        "cov": 0.013,
+        "retained": 1.0,
+        "exec": 7.987
+      },
+      "comb_a0.0_T9": {
+        "cov": 0.04,
+        "retained": 1.0,
+        "exec": 9.953
+      },
+      "comb_a0.0_T10": {
+        "cov": 0.053,
+        "retained": 1.0,
+        "exec": 10.913
+      },
+      "comb_a0.0_T11": {
+        "cov": 0.08,
+        "retained": 1.0,
+        "exec": 11.86
+      },
+      "comb_a0.0_T12": {
+        "cov": 0.107,
+        "retained": 1.0,
+        "exec": 12.78
+      },
+      "comb_a0.0_T13": {
+        "cov": 0.127,
+        "retained": 1.0,
+        "exec": 13.673
+      },
+      "comb_a0.0_T14": {
+        "cov": 0.133,
+        "retained": 1.0,
+        "exec": 14.547
+      },
+      "comb_a0.0_T15": {
+        "cov": 0.187,
+        "retained": 1.0,
+        "exec": 15.413
+      },
+      "comb_a0.0_T16": {
+        "cov": 0.207,
+        "retained": 1.0,
+        "exec": 16.227
+      },
+      "comb_a0.0_T17": {
+        "cov": 0.253,
+        "retained": 1.0,
+        "exec": 17.02
+      },
+      "comb_a0.0_T18": {
+        "cov": 0.307,
+        "retained": 1.0,
+        "exec": 17.767
+      },
+      "comb_a0.0_T19": {
+        "cov": 0.327,
+        "retained": 1.0,
+        "exec": 18.46
+      },
+      "comb_a0.0_T20": {
+        "cov": 0.347,
+        "retained": 1.0,
+        "exec": 19.133
+      },
+      "comb_a0.0_T21": {
+        "cov": 0.373,
+        "retained": 1.0,
+        "exec": 19.787
+      },
+      "comb_a0.0_T22": {
+        "cov": 0.42,
+        "retained": 1.0,
+        "exec": 20.413
+      },
+      "comb_a0.0_T23": {
+        "cov": 0.447,
+        "retained": 1.0,
+        "exec": 20.993
+      },
+      "comb_a0.0_T24": {
+        "cov": 0.5,
+        "retained": 1.0,
+        "exec": 21.547
+      },
+      "comb_a0.0_T25": {
+        "cov": 0.52,
+        "retained": 1.0,
+        "exec": 22.047
+      },
+      "comb_a0.0_T26": {
+        "cov": 0.54,
+        "retained": 1.0,
+        "exec": 22.527
+      },
+      "comb_a0.0_T27": {
+        "cov": 0.547,
+        "retained": 1.0,
+        "exec": 22.987
+      },
+      "comb_a0.0_T30": {
+        "cov": 0.567,
+        "retained": 1.0,
+        "exec": 24.347
+      },
+      "comb_a0.0_T32": {
+        "cov": 0.587,
+        "retained": 1.0,
+        "exec": 25.213
+      },
+      "comb_a0.0_T33": {
+        "cov": 0.62,
+        "retained": 1.0,
+        "exec": 25.627
+      },
+      "comb_a0.0_T35": {
+        "cov": 0.64,
+        "retained": 1.0,
+        "exec": 26.387
+      }
+    },
+    "grid": {
+      "pfb0.3_ct0.0": {
+        "autonomy": 0.64,
+        "best_timeout": 0.748,
+        "best_timeout_at": "timeout_T35",
+        "best_alarm": 0.625,
+        "best_alarm_at": "alarm_a0.1",
+        "best_combined": 0.748,
+        "best_combined_at": "comb_a0.0_T35",
+        "alarm_minus_timeout": -0.123,
+        "combined_minus_timeout": 0.0
+      },
+      "pfb0.3_ct0.05": {
+        "autonomy": 0.59,
+        "best_timeout": 0.699,
+        "best_timeout_at": "timeout_T35",
+        "best_alarm": 0.578,
+        "best_alarm_at": "alarm_a0.1",
+        "best_combined": 0.699,
+        "best_combined_at": "comb_a0.0_T35",
+        "alarm_minus_timeout": -0.121,
+        "combined_minus_timeout": 0.0
+      },
+      "pfb0.3_ct0.1": {
+        "autonomy": 0.54,
+        "best_timeout": 0.649,
+        "best_timeout_at": "timeout_T35",
+        "best_alarm": 0.53,
+        "best_alarm_at": "alarm_a0.1",
+        "best_combined": 0.649,
+        "best_combined_at": "comb_a0.0_T35",
+        "alarm_minus_timeout": -0.119,
+        "combined_minus_timeout": 0.0
+      },
+      "pfb0.3_ct0.2": {
+        "autonomy": 0.44,
+        "best_timeout": 0.551,
+        "best_timeout_at": "timeout_T35",
+        "best_alarm": 0.436,
+        "best_alarm_at": "alarm_a0.1",
+        "best_combined": 0.551,
+        "best_combined_at": "comb_a0.0_T35",
+        "alarm_minus_timeout": -0.115,
+        "combined_minus_timeout": 0.0
+      },
+      "pfb0.3_ct0.5": {
+        "autonomy": 0.14,
+        "best_timeout": 0.257,
+        "best_timeout_at": "timeout_T26",
+        "best_alarm": 0.205,
+        "best_alarm_at": "alarm_a0.4",
+        "best_combined": 0.257,
+        "best_combined_at": "comb_a0.0_T26",
+        "alarm_minus_timeout": -0.052,
+        "combined_minus_timeout": 0.0
+      },
+      "pfb0.6_ct0.0": {
+        "autonomy": 0.64,
+        "best_timeout": 0.856,
+        "best_timeout_at": "timeout_T35",
+        "best_alarm": 0.708,
+        "best_alarm_at": "alarm_a0.4",
+        "best_combined": 0.856,
+        "best_combined_at": "comb_a0.0_T35",
+        "alarm_minus_timeout": -0.148,
+        "combined_minus_timeout": 0.0
+      },
+      "pfb0.6_ct0.05": {
+        "autonomy": 0.59,
+        "best_timeout": 0.807,
+        "best_timeout_at": "timeout_T35",
+        "best_alarm": 0.67,
+        "best_alarm_at": "alarm_a0.4",
+        "best_combined": 0.807,
+        "best_combined_at": "comb_a0.0_T35",
+        "alarm_minus_timeout": -0.137,
+        "combined_minus_timeout": 0.0
+      },
+      "pfb0.6_ct0.1": {
+        "autonomy": 0.54,
+        "best_timeout": 0.757,
+        "best_timeout_at": "timeout_T35",
+        "best_alarm": 0.632,
+        "best_alarm_at": "alarm_a0.4",
+        "best_combined": 0.757,
+        "best_combined_at": "comb_a0.0_T35",
+        "alarm_minus_timeout": -0.125,
+        "combined_minus_timeout": 0.0
+      },
+      "pfb0.6_ct0.2": {
+        "autonomy": 0.44,
+        "best_timeout": 0.659,
+        "best_timeout_at": "timeout_T35",
+        "best_alarm": 0.556,
+        "best_alarm_at": "alarm_a0.4",
+        "best_combined": 0.659,
+        "best_combined_at": "comb_a0.0_T35",
+        "alarm_minus_timeout": -0.102,
+        "combined_minus_timeout": 0.0
+      },
+      "pfb0.6_ct0.5": {
+        "autonomy": 0.14,
+        "best_timeout": 0.456,
+        "best_timeout_at": "timeout_T7",
+        "best_alarm": 0.338,
+        "best_alarm_at": "alarm_a0.5",
+        "best_combined": 0.465,
+        "best_combined_at": "comb_a0.5_T7",
+        "alarm_minus_timeout": -0.118,
+        "combined_minus_timeout": 0.009
+      },
+      "pfb0.9_ct0.0": {
+        "autonomy": 0.64,
+        "best_timeout": 0.964,
+        "best_timeout_at": "timeout_T35",
+        "best_alarm": 0.832,
+        "best_alarm_at": "alarm_a0.4",
+        "best_combined": 0.964,
+        "best_combined_at": "comb_a0.0_T35",
+        "alarm_minus_timeout": -0.132,
+        "combined_minus_timeout": 0.0
+      },
+      "pfb0.9_ct0.05": {
+        "autonomy": 0.59,
+        "best_timeout": 0.915,
+        "best_timeout_at": "timeout_T35",
+        "best_alarm": 0.796,
+        "best_alarm_at": "alarm_a0.5",
+        "best_combined": 0.915,
+        "best_combined_at": "comb_a0.0_T35",
+        "alarm_minus_timeout": -0.118,
+        "combined_minus_timeout": 0.0
+      },
+      "pfb0.9_ct0.1": {
+        "autonomy": 0.54,
+        "best_timeout": 0.871,
+        "best_timeout_at": "timeout_T7",
+        "best_alarm": 0.762,
+        "best_alarm_at": "alarm_a0.5",
+        "best_combined": 0.874,
+        "best_combined_at": "comb_a0.5_T26",
+        "alarm_minus_timeout": -0.11,
+        "combined_minus_timeout": 0.003
+      },
+      "pfb0.9_ct0.2": {
+        "autonomy": 0.44,
+        "best_timeout": 0.842,
+        "best_timeout_at": "timeout_T7",
+        "best_alarm": 0.693,
+        "best_alarm_at": "alarm_a0.5",
+        "best_combined": 0.845,
+        "best_combined_at": "comb_a0.5_T7",
+        "alarm_minus_timeout": -0.149,
+        "combined_minus_timeout": 0.004
+      },
+      "pfb0.9_ct0.5": {
+        "autonomy": 0.14,
+        "best_timeout": 0.752,
+        "best_timeout_at": "timeout_T7",
+        "best_alarm": 0.486,
+        "best_alarm_at": "alarm_a0.5",
+        "best_combined": 0.763,
+        "best_combined_at": "comb_a0.5_T7",
+        "alarm_minus_timeout": -0.266,
+        "combined_minus_timeout": 0.011
+      }
+    },
+    "breakeven_ct": {
+      "0.3": null,
+      "0.6": null,
+      "0.9": null
+    }
+  },
+  "pusht-strong:s1000": {
+    "signal": "bcoh_distmin",
+    "R_ref": 28.7,
+    "policies": {
+      "autonomy": {
+        "cov": 1.0,
+        "retained": 0.56,
+        "exec": 28.667
+      },
+      "timeout_T7": {
+        "cov": 0.02,
+        "retained": 1.0,
+        "exec": 7.987
+      },
+      "timeout_T8": {
+        "cov": 0.033,
+        "retained": 1.0,
+        "exec": 8.967
+      },
+      "timeout_T9": {
+        "cov": 0.04,
+        "retained": 1.0,
+        "exec": 9.933
+      },
+      "timeout_T11": {
+        "cov": 0.047,
+        "retained": 1.0,
+        "exec": 11.853
+      },
+      "timeout_T12": {
+        "cov": 0.087,
+        "retained": 1.0,
+        "exec": 12.807
+      },
+      "timeout_T14": {
+        "cov": 0.127,
+        "retained": 1.0,
+        "exec": 14.62
+      },
+      "timeout_T15": {
+        "cov": 0.14,
+        "retained": 1.0,
+        "exec": 15.493
+      },
+      "timeout_T16": {
+        "cov": 0.167,
+        "retained": 1.0,
+        "exec": 16.353
+      },
+      "timeout_T17": {
+        "cov": 0.18,
+        "retained": 1.0,
+        "exec": 17.187
+      },
+      "timeout_T18": {
+        "cov": 0.213,
+        "retained": 1.0,
+        "exec": 18.007
+      },
+      "timeout_T20": {
+        "cov": 0.247,
+        "retained": 1.0,
+        "exec": 19.567
+      },
+      "timeout_T21": {
+        "cov": 0.28,
+        "retained": 1.0,
+        "exec": 20.32
+      },
+      "timeout_T22": {
+        "cov": 0.333,
+        "retained": 1.0,
+        "exec": 21.04
+      },
+      "timeout_T23": {
+        "cov": 0.347,
+        "retained": 1.0,
+        "exec": 21.707
+      },
+      "timeout_T24": {
+        "cov": 0.353,
+        "retained": 1.0,
+        "exec": 22.36
+      },
+      "timeout_T26": {
+        "cov": 0.407,
+        "retained": 1.0,
+        "exec": 23.613
+      },
+      "timeout_T27": {
+        "cov": 0.44,
+        "retained": 1.0,
+        "exec": 24.207
+      },
+      "timeout_T28": {
+        "cov": 0.453,
+        "retained": 1.0,
+        "exec": 24.767
+      },
+      "timeout_T29": {
+        "cov": 0.467,
+        "retained": 1.0,
+        "exec": 25.313
+      },
+      "timeout_T30": {
+        "cov": 0.507,
+        "retained": 1.0,
+        "exec": 25.847
+      },
+      "timeout_T32": {
+        "cov": 0.527,
+        "retained": 1.0,
+        "exec": 26.827
+      },
+      "timeout_T33": {
+        "cov": 0.533,
+        "retained": 1.0,
+        "exec": 27.3
+      },
+      "timeout_T34": {
+        "cov": 0.54,
+        "retained": 1.0,
+        "exec": 27.767
+      },
+      "timeout_T35": {
+        "cov": 0.56,
+        "retained": 1.0,
+        "exec": 28.227
+      },
+      "alarm_a0.1": {
+        "cov": 0.953,
+        "retained": 0.566,
+        "exec": 28.167
+      },
+      "alarm_a0.2": {
+        "cov": 0.667,
+        "retained": 0.69,
+        "exec": 23.693
+      },
+      "alarm_a0.3": {
+        "cov": 0.58,
+        "retained": 0.678,
+        "exec": 21.953
+      },
+      "alarm_a0.4": {
+        "cov": 0.493,
+        "retained": 0.743,
+        "exec": 20.12
+      },
+      "alarm_a0.5": {
+        "cov": 0.373,
+        "retained": 0.75,
+        "exec": 17.307
+      },
+      "comb_a0.1_T7": {
+        "cov": 0.02,
+        "retained": 1.0,
+        "exec": 7.987
+      },
+      "comb_a0.1_T8": {
+        "cov": 0.033,
+        "retained": 1.0,
+        "exec": 8.967
+      },
+      "comb_a0.1_T9": {
+        "cov": 0.04,
+        "retained": 1.0,
+        "exec": 9.933
+      },
+      "comb_a0.1_T11": {
+        "cov": 0.047,
+        "retained": 1.0,
+        "exec": 11.853
+      },
+      "comb_a0.1_T12": {
+        "cov": 0.087,
+        "retained": 1.0,
+        "exec": 12.807
+      },
+      "comb_a0.1_T14": {
+        "cov": 0.127,
+        "retained": 1.0,
+        "exec": 14.613
+      },
+      "comb_a0.1_T15": {
+        "cov": 0.14,
+        "retained": 1.0,
+        "exec": 15.48
+      },
+      "comb_a0.1_T16": {
+        "cov": 0.167,
+        "retained": 1.0,
+        "exec": 16.327
+      },
+      "comb_a0.1_T17": {
+        "cov": 0.18,
+        "retained": 1.0,
+        "exec": 17.147
+      },
+      "comb_a0.1_T18": {
+        "cov": 0.213,
+        "retained": 1.0,
+        "exec": 17.953
+      },
+      "comb_a0.1_T20": {
+        "cov": 0.247,
+        "retained": 1.0,
+        "exec": 19.473
+      },
+      "comb_a0.1_T21": {
+        "cov": 0.28,
+        "retained": 1.0,
+        "exec": 20.207
+      },
+      "comb_a0.1_T22": {
+        "cov": 0.333,
+        "retained": 1.0,
+        "exec": 20.9
+      },
+      "comb_a0.1_T23": {
+        "cov": 0.347,
+        "retained": 1.0,
+        "exec": 21.54
+      },
+      "comb_a0.1_T24": {
+        "cov": 0.353,
+        "retained": 1.0,
+        "exec": 22.167
+      },
+      "comb_a0.1_T26": {
+        "cov": 0.4,
+        "retained": 1.0,
+        "exec": 23.367
+      },
+      "comb_a0.1_T27": {
+        "cov": 0.427,
+        "retained": 1.0,
+        "exec": 23.933
+      },
+      "comb_a0.1_T28": {
+        "cov": 0.44,
+        "retained": 1.0,
+        "exec": 24.473
+      },
+      "comb_a0.1_T29": {
+        "cov": 0.453,
+        "retained": 1.0,
+        "exec": 25.0
+      },
+      "comb_a0.1_T30": {
+        "cov": 0.493,
+        "retained": 1.0,
+        "exec": 25.513
+      },
+      "comb_a0.1_T32": {
+        "cov": 0.513,
+        "retained": 1.0,
+        "exec": 26.447
+      },
+      "comb_a0.1_T33": {
+        "cov": 0.52,
+        "retained": 1.0,
+        "exec": 26.893
+      },
+      "comb_a0.1_T34": {
+        "cov": 0.527,
+        "retained": 1.0,
+        "exec": 27.327
+      },
+      "comb_a0.1_T35": {
+        "cov": 0.54,
+        "retained": 1.0,
+        "exec": 27.753
+      },
+      "comb_a0.2_T7": {
+        "cov": 0.02,
+        "retained": 1.0,
+        "exec": 7.92
+      },
+      "comb_a0.2_T8": {
+        "cov": 0.033,
+        "retained": 1.0,
+        "exec": 8.86
+      },
+      "comb_a0.2_T9": {
+        "cov": 0.04,
+        "retained": 1.0,
+        "exec": 9.78
+      },
+      "comb_a0.2_T11": {
+        "cov": 0.047,
+        "retained": 1.0,
+        "exec": 11.587
+      },
+      "comb_a0.2_T12": {
+        "cov": 0.087,
+        "retained": 1.0,
+        "exec": 12.467
+      },
+      "comb_a0.2_T14": {
+        "cov": 0.127,
+        "retained": 1.0,
+        "exec": 14.073
+      },
+      "comb_a0.2_T15": {
+        "cov": 0.133,
+        "retained": 1.0,
+        "exec": 14.827
+      },
+      "comb_a0.2_T16": {
+        "cov": 0.16,
+        "retained": 1.0,
+        "exec": 15.553
+      },
+      "comb_a0.2_T17": {
+        "cov": 0.173,
+        "retained": 1.0,
+        "exec": 16.24
+      },
+      "comb_a0.2_T18": {
+        "cov": 0.207,
+        "retained": 1.0,
+        "exec": 16.907
+      },
+      "comb_a0.2_T20": {
+        "cov": 0.24,
+        "retained": 1.0,
+        "exec": 18.1
+      },
+      "comb_a0.2_T21": {
+        "cov": 0.267,
+        "retained": 1.0,
+        "exec": 18.66
+      },
+      "comb_a0.2_T22": {
+        "cov": 0.32,
+        "retained": 1.0,
+        "exec": 19.173
+      },
+      "comb_a0.2_T23": {
+        "cov": 0.333,
+        "retained": 1.0,
+        "exec": 19.627
+      },
+      "comb_a0.2_T24": {
+        "cov": 0.333,
+        "retained": 1.0,
+        "exec": 20.06
+      },
+      "comb_a0.2_T26": {
+        "cov": 0.367,
+        "retained": 1.0,
+        "exec": 20.867
+      },
+      "comb_a0.2_T27": {
+        "cov": 0.38,
+        "retained": 1.0,
+        "exec": 21.24
+      },
+      "comb_a0.2_T28": {
+        "cov": 0.393,
+        "retained": 1.0,
+        "exec": 21.593
+      },
+      "comb_a0.2_T29": {
+        "cov": 0.4,
+        "retained": 1.0,
+        "exec": 21.92
+      },
+      "comb_a0.2_T30": {
+        "cov": 0.427,
+        "retained": 1.0,
+        "exec": 22.233
+      },
+      "comb_a0.2_T32": {
+        "cov": 0.447,
+        "retained": 1.0,
+        "exec": 22.773
+      },
+      "comb_a0.2_T33": {
+        "cov": 0.447,
+        "retained": 1.0,
+        "exec": 23.02
+      },
+      "comb_a0.2_T34": {
+        "cov": 0.453,
+        "retained": 1.0,
+        "exec": 23.26
+      },
+      "comb_a0.2_T35": {
+        "cov": 0.46,
+        "retained": 1.0,
+        "exec": 23.48
+      },
+      "comb_a0.3_T7": {
+        "cov": 0.02,
+        "retained": 1.0,
+        "exec": 7.84
+      },
+      "comb_a0.3_T8": {
+        "cov": 0.033,
+        "retained": 1.0,
+        "exec": 8.74
+      },
+      "comb_a0.3_T9": {
+        "cov": 0.04,
+        "retained": 1.0,
+        "exec": 9.62
+      },
+      "comb_a0.3_T11": {
+        "cov": 0.047,
+        "retained": 1.0,
+        "exec": 11.333
+      },
+      "comb_a0.3_T12": {
+        "cov": 0.087,
+        "retained": 1.0,
+        "exec": 12.167
+      },
+      "comb_a0.3_T14": {
+        "cov": 0.12,
+        "retained": 1.0,
+        "exec": 13.66
+      },
+      "comb_a0.3_T15": {
+        "cov": 0.127,
+        "retained": 1.0,
+        "exec": 14.34
+      },
+      "comb_a0.3_T16": {
+        "cov": 0.147,
+        "retained": 1.0,
+        "exec": 14.98
+      },
+      "comb_a0.3_T17": {
+        "cov": 0.153,
+        "retained": 1.0,
+        "exec": 15.58
+      },
+      "comb_a0.3_T18": {
+        "cov": 0.187,
+        "retained": 1.0,
+        "exec": 16.16
+      },
+      "comb_a0.3_T20": {
+        "cov": 0.213,
+        "retained": 1.0,
+        "exec": 17.193
+      },
+      "comb_a0.3_T21": {
+        "cov": 0.24,
+        "retained": 1.0,
+        "exec": 17.68
+      },
+      "comb_a0.3_T22": {
+        "cov": 0.287,
+        "retained": 1.0,
+        "exec": 18.12
+      },
+      "comb_a0.3_T23": {
+        "cov": 0.3,
+        "retained": 1.0,
+        "exec": 18.513
+      },
+      "comb_a0.3_T24": {
+        "cov": 0.3,
+        "retained": 1.0,
+        "exec": 18.88
+      },
+      "comb_a0.3_T26": {
+        "cov": 0.327,
+        "retained": 1.0,
+        "exec": 19.553
+      },
+      "comb_a0.3_T27": {
+        "cov": 0.34,
+        "retained": 1.0,
+        "exec": 19.867
+      },
+      "comb_a0.3_T28": {
+        "cov": 0.353,
+        "retained": 1.0,
+        "exec": 20.16
+      },
+      "comb_a0.3_T29": {
+        "cov": 0.36,
+        "retained": 1.0,
+        "exec": 20.433
+      },
+      "comb_a0.3_T30": {
+        "cov": 0.38,
+        "retained": 1.0,
+        "exec": 20.693
+      },
+      "comb_a0.3_T32": {
+        "cov": 0.387,
+        "retained": 1.0,
+        "exec": 21.147
+      },
+      "comb_a0.3_T33": {
+        "cov": 0.387,
+        "retained": 1.0,
+        "exec": 21.353
+      },
+      "comb_a0.3_T34": {
+        "cov": 0.387,
+        "retained": 1.0,
+        "exec": 21.56
+      },
+      "comb_a0.3_T35": {
+        "cov": 0.393,
+        "retained": 1.0,
+        "exec": 21.76
+      },
+      "comb_a0.4_T7": {
+        "cov": 0.02,
+        "retained": 1.0,
+        "exec": 7.74
+      },
+      "comb_a0.4_T8": {
+        "cov": 0.033,
+        "retained": 1.0,
+        "exec": 8.593
+      },
+      "comb_a0.4_T9": {
+        "cov": 0.04,
+        "retained": 1.0,
+        "exec": 9.427
+      },
+      "comb_a0.4_T11": {
+        "cov": 0.04,
+        "retained": 1.0,
+        "exec": 11.027
+      },
+      "comb_a0.4_T12": {
+        "cov": 0.08,
+        "retained": 1.0,
+        "exec": 11.807
+      },
+      "comb_a0.4_T14": {
+        "cov": 0.113,
+        "retained": 1.0,
+        "exec": 13.193
+      },
+      "comb_a0.4_T15": {
+        "cov": 0.12,
+        "retained": 1.0,
+        "exec": 13.82
+      },
+      "comb_a0.4_T16": {
+        "cov": 0.14,
+        "retained": 1.0,
+        "exec": 14.407
+      },
+      "comb_a0.4_T17": {
+        "cov": 0.147,
+        "retained": 1.0,
+        "exec": 14.933
+      },
+      "comb_a0.4_T18": {
+        "cov": 0.18,
+        "retained": 1.0,
+        "exec": 15.447
+      },
+      "comb_a0.4_T20": {
+        "cov": 0.207,
+        "retained": 1.0,
+        "exec": 16.347
+      },
+      "comb_a0.4_T21": {
+        "cov": 0.227,
+        "retained": 1.0,
+        "exec": 16.76
+      },
+      "comb_a0.4_T22": {
+        "cov": 0.267,
+        "retained": 1.0,
+        "exec": 17.127
+      },
+      "comb_a0.4_T23": {
+        "cov": 0.28,
+        "retained": 1.0,
+        "exec": 17.453
+      },
+      "comb_a0.4_T24": {
+        "cov": 0.28,
+        "retained": 1.0,
+        "exec": 17.76
+      },
+      "comb_a0.4_T26": {
+        "cov": 0.307,
+        "retained": 1.0,
+        "exec": 18.313
+      },
+      "comb_a0.4_T27": {
+        "cov": 0.32,
+        "retained": 1.0,
+        "exec": 18.567
+      },
+      "comb_a0.4_T28": {
+        "cov": 0.333,
+        "retained": 1.0,
+        "exec": 18.807
+      },
+      "comb_a0.4_T29": {
+        "cov": 0.34,
+        "retained": 1.0,
+        "exec": 19.02
+      },
+      "comb_a0.4_T30": {
+        "cov": 0.36,
+        "retained": 1.0,
+        "exec": 19.22
+      },
+      "comb_a0.4_T32": {
+        "cov": 0.367,
+        "retained": 1.0,
+        "exec": 19.553
+      },
+      "comb_a0.4_T33": {
+        "cov": 0.367,
+        "retained": 1.0,
+        "exec": 19.7
+      },
+      "comb_a0.4_T34": {
+        "cov": 0.367,
+        "retained": 1.0,
+        "exec": 19.847
+      },
+      "comb_a0.4_T35": {
+        "cov": 0.367,
+        "retained": 1.0,
+        "exec": 19.987
+      },
+      "comb_a0.5_T7": {
+        "cov": 0.02,
+        "retained": 1.0,
+        "exec": 7.633
+      },
+      "comb_a0.5_T8": {
+        "cov": 0.033,
+        "retained": 1.0,
+        "exec": 8.433
+      },
+      "comb_a0.5_T9": {
+        "cov": 0.04,
+        "retained": 1.0,
+        "exec": 9.207
+      },
+      "comb_a0.5_T11": {
+        "cov": 0.04,
+        "retained": 1.0,
+        "exec": 10.667
+      },
+      "comb_a0.5_T12": {
+        "cov": 0.08,
+        "retained": 1.0,
+        "exec": 11.353
+      },
+      "comb_a0.5_T14": {
+        "cov": 0.1,
+        "retained": 1.0,
+        "exec": 12.527
+      },
+      "comb_a0.5_T15": {
+        "cov": 0.107,
+        "retained": 1.0,
+        "exec": 13.047
+      },
+      "comb_a0.5_T16": {
+        "cov": 0.127,
+        "retained": 1.0,
+        "exec": 13.52
+      },
+      "comb_a0.5_T17": {
+        "cov": 0.133,
+        "retained": 1.0,
+        "exec": 13.913
+      },
+      "comb_a0.5_T18": {
+        "cov": 0.16,
+        "retained": 1.0,
+        "exec": 14.287
+      },
+      "comb_a0.5_T20": {
+        "cov": 0.187,
+        "retained": 1.0,
+        "exec": 14.9
+      },
+      "comb_a0.5_T21": {
+        "cov": 0.2,
+        "retained": 1.0,
+        "exec": 15.167
+      },
+      "comb_a0.5_T22": {
+        "cov": 0.227,
+        "retained": 1.0,
+        "exec": 15.393
+      },
+      "comb_a0.5_T23": {
+        "cov": 0.227,
+        "retained": 1.0,
+        "exec": 15.587
+      },
+      "comb_a0.5_T24": {
+        "cov": 0.227,
+        "retained": 1.0,
+        "exec": 15.773
+      },
+      "comb_a0.5_T26": {
+        "cov": 0.233,
+        "retained": 1.0,
+        "exec": 16.127
+      },
+      "comb_a0.5_T27": {
+        "cov": 0.247,
+        "retained": 1.0,
+        "exec": 16.293
+      },
+      "comb_a0.5_T28": {
+        "cov": 0.26,
+        "retained": 1.0,
+        "exec": 16.447
+      },
+      "comb_a0.5_T29": {
+        "cov": 0.267,
+        "retained": 1.0,
+        "exec": 16.58
+      },
+      "comb_a0.5_T30": {
+        "cov": 0.28,
+        "retained": 1.0,
+        "exec": 16.7
+      },
+      "comb_a0.5_T32": {
+        "cov": 0.28,
+        "retained": 1.0,
+        "exec": 16.907
+      },
+      "comb_a0.5_T33": {
+        "cov": 0.28,
+        "retained": 1.0,
+        "exec": 17.007
+      },
+      "comb_a0.5_T34": {
+        "cov": 0.28,
+        "retained": 1.0,
+        "exec": 17.107
+      },
+      "comb_a0.5_T35": {
+        "cov": 0.28,
+        "retained": 1.0,
+        "exec": 17.207
+      },
+      "comb_a0.0_T7": {
+        "cov": 0.02,
+        "retained": 1.0,
+        "exec": 7.987
+      },
+      "comb_a0.0_T8": {
+        "cov": 0.033,
+        "retained": 1.0,
+        "exec": 8.967
+      },
+      "comb_a0.0_T9": {
+        "cov": 0.04,
+        "retained": 1.0,
+        "exec": 9.933
+      },
+      "comb_a0.0_T11": {
+        "cov": 0.047,
+        "retained": 1.0,
+        "exec": 11.853
+      },
+      "comb_a0.0_T12": {
+        "cov": 0.087,
+        "retained": 1.0,
+        "exec": 12.807
+      },
+      "comb_a0.0_T14": {
+        "cov": 0.127,
+        "retained": 1.0,
+        "exec": 14.62
+      },
+      "comb_a0.0_T15": {
+        "cov": 0.14,
+        "retained": 1.0,
+        "exec": 15.493
+      },
+      "comb_a0.0_T16": {
+        "cov": 0.167,
+        "retained": 1.0,
+        "exec": 16.353
+      },
+      "comb_a0.0_T17": {
+        "cov": 0.18,
+        "retained": 1.0,
+        "exec": 17.187
+      },
+      "comb_a0.0_T18": {
+        "cov": 0.213,
+        "retained": 1.0,
+        "exec": 18.007
+      },
+      "comb_a0.0_T20": {
+        "cov": 0.247,
+        "retained": 1.0,
+        "exec": 19.567
+      },
+      "comb_a0.0_T21": {
+        "cov": 0.28,
+        "retained": 1.0,
+        "exec": 20.32
+      },
+      "comb_a0.0_T22": {
+        "cov": 0.333,
+        "retained": 1.0,
+        "exec": 21.04
+      },
+      "comb_a0.0_T23": {
+        "cov": 0.347,
+        "retained": 1.0,
+        "exec": 21.707
+      },
+      "comb_a0.0_T24": {
+        "cov": 0.353,
+        "retained": 1.0,
+        "exec": 22.36
+      },
+      "comb_a0.0_T26": {
+        "cov": 0.407,
+        "retained": 1.0,
+        "exec": 23.613
+      },
+      "comb_a0.0_T27": {
+        "cov": 0.44,
+        "retained": 1.0,
+        "exec": 24.207
+      },
+      "comb_a0.0_T28": {
+        "cov": 0.453,
+        "retained": 1.0,
+        "exec": 24.767
+      },
+      "comb_a0.0_T29": {
+        "cov": 0.467,
+        "retained": 1.0,
+        "exec": 25.313
+      },
+      "comb_a0.0_T30": {
+        "cov": 0.507,
+        "retained": 1.0,
+        "exec": 25.847
+      },
+      "comb_a0.0_T32": {
+        "cov": 0.527,
+        "retained": 1.0,
+        "exec": 26.827
+      },
+      "comb_a0.0_T33": {
+        "cov": 0.533,
+        "retained": 1.0,
+        "exec": 27.3
+      },
+      "comb_a0.0_T34": {
+        "cov": 0.54,
+        "retained": 1.0,
+        "exec": 27.767
+      },
+      "comb_a0.0_T35": {
+        "cov": 0.56,
+        "retained": 1.0,
+        "exec": 28.227
+      }
+    },
+    "grid": {
+      "pfb0.3_ct0.0": {
+        "autonomy": 0.56,
+        "best_timeout": 0.692,
+        "best_timeout_at": "timeout_T35",
+        "best_alarm": 0.56,
+        "best_alarm_at": "alarm_a0.2",
+        "best_combined": 0.692,
+        "best_combined_at": "comb_a0.0_T35",
+        "alarm_minus_timeout": -0.132,
+        "combined_minus_timeout": 0.0
+      },
+      "pfb0.3_ct0.05": {
+        "autonomy": 0.51,
+        "best_timeout": 0.643,
+        "best_timeout_at": "timeout_T35",
+        "best_alarm": 0.519,
+        "best_alarm_at": "alarm_a0.2",
+        "best_combined": 0.643,
+        "best_combined_at": "comb_a0.0_T35",
+        "alarm_minus_timeout": -0.124,
+        "combined_minus_timeout": 0.0
+      },
+      "pfb0.3_ct0.1": {
+        "autonomy": 0.46,
+        "best_timeout": 0.594,
+        "best_timeout_at": "timeout_T35",
+        "best_alarm": 0.477,
+        "best_alarm_at": "alarm_a0.2",
+        "best_combined": 0.594,
+        "best_combined_at": "comb_a0.0_T35",
+        "alarm_minus_timeout": -0.116,
+        "combined_minus_timeout": 0.0
+      },
+      "pfb0.3_ct0.2": {
+        "autonomy": 0.36,
+        "best_timeout": 0.495,
+        "best_timeout_at": "timeout_T35",
+        "best_alarm": 0.395,
+        "best_alarm_at": "alarm_a0.2",
+        "best_combined": 0.495,
+        "best_combined_at": "comb_a0.0_T35",
+        "alarm_minus_timeout": -0.1,
+        "combined_minus_timeout": 0.0
+      },
+      "pfb0.3_ct0.5": {
+        "autonomy": 0.06,
+        "best_timeout": 0.204,
+        "best_timeout_at": "timeout_T30",
+        "best_alarm": 0.168,
+        "best_alarm_at": "alarm_a0.4",
+        "best_combined": 0.217,
+        "best_combined_at": "comb_a0.4_T30",
+        "alarm_minus_timeout": -0.036,
+        "combined_minus_timeout": 0.013
+      },
+      "pfb0.6_ct0.0": {
+        "autonomy": 0.56,
+        "best_timeout": 0.824,
+        "best_timeout_at": "timeout_T35",
+        "best_alarm": 0.671,
+        "best_alarm_at": "alarm_a0.4",
+        "best_combined": 0.824,
+        "best_combined_at": "comb_a0.0_T35",
+        "alarm_minus_timeout": -0.153,
+        "combined_minus_timeout": 0.0
+      },
+      "pfb0.6_ct0.05": {
+        "autonomy": 0.51,
+        "best_timeout": 0.775,
+        "best_timeout_at": "timeout_T35",
+        "best_alarm": 0.636,
+        "best_alarm_at": "alarm_a0.4",
+        "best_combined": 0.775,
+        "best_combined_at": "comb_a0.0_T35",
+        "alarm_minus_timeout": -0.139,
+        "combined_minus_timeout": 0.0
+      },
+      "pfb0.6_ct0.1": {
+        "autonomy": 0.46,
+        "best_timeout": 0.726,
+        "best_timeout_at": "timeout_T35",
+        "best_alarm": 0.6,
+        "best_alarm_at": "alarm_a0.4",
+        "best_combined": 0.726,
+        "best_combined_at": "comb_a0.0_T35",
+        "alarm_minus_timeout": -0.125,
+        "combined_minus_timeout": 0.0
+      },
+      "pfb0.6_ct0.2": {
+        "autonomy": 0.36,
+        "best_timeout": 0.627,
+        "best_timeout_at": "timeout_T35",
+        "best_alarm": 0.535,
+        "best_alarm_at": "alarm_a0.5",
+        "best_combined": 0.627,
+        "best_combined_at": "comb_a0.0_T35",
+        "alarm_minus_timeout": -0.092,
+        "combined_minus_timeout": 0.0
+      },
+      "pfb0.6_ct0.5": {
+        "autonomy": 0.06,
+        "best_timeout": 0.469,
+        "best_timeout_at": "timeout_T7",
+        "best_alarm": 0.354,
+        "best_alarm_at": "alarm_a0.5",
+        "best_combined": 0.475,
+        "best_combined_at": "comb_a0.5_T7",
+        "alarm_minus_timeout": -0.115,
+        "combined_minus_timeout": 0.006
+      },
+      "pfb0.9_ct0.0": {
+        "autonomy": 0.56,
+        "best_timeout": 0.956,
+        "best_timeout_at": "timeout_T35",
+        "best_alarm": 0.844,
+        "best_alarm_at": "alarm_a0.5",
+        "best_combined": 0.956,
+        "best_combined_at": "comb_a0.0_T35",
+        "alarm_minus_timeout": -0.112,
+        "combined_minus_timeout": 0.0
+      },
+      "pfb0.9_ct0.05": {
+        "autonomy": 0.51,
+        "best_timeout": 0.907,
+        "best_timeout_at": "timeout_T35",
+        "best_alarm": 0.814,
+        "best_alarm_at": "alarm_a0.5",
+        "best_combined": 0.907,
+        "best_combined_at": "comb_a0.0_T35",
+        "alarm_minus_timeout": -0.093,
+        "combined_minus_timeout": 0.0
+      },
+      "pfb0.9_ct0.1": {
+        "autonomy": 0.46,
+        "best_timeout": 0.874,
+        "best_timeout_at": "timeout_T7",
+        "best_alarm": 0.784,
+        "best_alarm_at": "alarm_a0.5",
+        "best_combined": 0.875,
+        "best_combined_at": "comb_a0.5_T7",
+        "alarm_minus_timeout": -0.091,
+        "combined_minus_timeout": 0.001
+      },
+      "pfb0.9_ct0.2": {
+        "autonomy": 0.36,
+        "best_timeout": 0.846,
+        "best_timeout_at": "timeout_T7",
+        "best_alarm": 0.723,
+        "best_alarm_at": "alarm_a0.5",
+        "best_combined": 0.849,
+        "best_combined_at": "comb_a0.5_T7",
+        "alarm_minus_timeout": -0.123,
+        "combined_minus_timeout": 0.002
+      },
+      "pfb0.9_ct0.5": {
+        "autonomy": 0.06,
+        "best_timeout": 0.763,
+        "best_timeout_at": "timeout_T7",
+        "best_alarm": 0.542,
+        "best_alarm_at": "alarm_a0.5",
+        "best_combined": 0.769,
+        "best_combined_at": "comb_a0.5_T7",
+        "alarm_minus_timeout": -0.221,
+        "combined_minus_timeout": 0.006
+      }
+    },
+    "breakeven_ct": {
+      "0.3": null,
+      "0.6": null,
+      "0.9": null
+    }
+  },
+  "pusht-strong:s2000": {
+    "signal": "bcoh_distmin",
+    "R_ref": 28.3,
+    "policies": {
+      "autonomy": {
+        "cov": 1.0,
+        "retained": 0.58,
+        "exec": 28.267
+      },
+      "timeout_T6": {
+        "cov": 0.007,
+        "retained": 1.0,
+        "exec": 6.993
+      },
+      "timeout_T8": {
+        "cov": 0.013,
+        "retained": 1.0,
+        "exec": 8.973
+      },
+      "timeout_T10": {
+        "cov": 0.027,
+        "retained": 1.0,
+        "exec": 10.94
+      },
+      "timeout_T11": {
+        "cov": 0.053,
+        "retained": 1.0,
+        "exec": 11.913
+      },
+      "timeout_T12": {
+        "cov": 0.073,
+        "retained": 1.0,
+        "exec": 12.86
+      },
+      "timeout_T13": {
+        "cov": 0.113,
+        "retained": 1.0,
+        "exec": 13.787
+      },
+      "timeout_T15": {
+        "cov": 0.167,
+        "retained": 1.0,
+        "exec": 15.527
+      },
+      "timeout_T16": {
+        "cov": 0.2,
+        "retained": 1.0,
+        "exec": 16.36
+      },
+      "timeout_T17": {
+        "cov": 0.207,
+        "retained": 1.0,
+        "exec": 17.16
+      },
+      "timeout_T18": {
+        "cov": 0.233,
+        "retained": 1.0,
+        "exec": 17.953
+      },
+      "timeout_T19": {
+        "cov": 0.253,
+        "retained": 1.0,
+        "exec": 18.72
+      },
+      "timeout_T20": {
+        "cov": 0.273,
+        "retained": 1.0,
+        "exec": 19.467
+      },
+      "timeout_T22": {
+        "cov": 0.34,
+        "retained": 1.0,
+        "exec": 20.88
+      },
+      "timeout_T23": {
+        "cov": 0.36,
+        "retained": 1.0,
+        "exec": 21.54
+      },
+      "timeout_T24": {
+        "cov": 0.413,
+        "retained": 1.0,
+        "exec": 22.18
+      },
+      "timeout_T25": {
+        "cov": 0.433,
+        "retained": 1.0,
+        "exec": 22.767
+      },
+      "timeout_T26": {
+        "cov": 0.447,
+        "retained": 1.0,
+        "exec": 23.333
+      },
+      "timeout_T27": {
+        "cov": 0.467,
+        "retained": 1.0,
+        "exec": 23.887
+      },
+      "timeout_T29": {
+        "cov": 0.5,
+        "retained": 1.0,
+        "exec": 24.94
+      },
+      "timeout_T30": {
+        "cov": 0.5,
+        "retained": 1.0,
+        "exec": 25.44
+      },
+      "timeout_T32": {
+        "cov": 0.513,
+        "retained": 1.0,
+        "exec": 26.433
+      },
+      "timeout_T33": {
+        "cov": 0.527,
+        "retained": 1.0,
+        "exec": 26.92
+      },
+      "timeout_T34": {
+        "cov": 0.547,
+        "retained": 1.0,
+        "exec": 27.393
+      },
+      "timeout_T35": {
+        "cov": 0.58,
+        "retained": 1.0,
+        "exec": 27.847
+      },
+      "alarm_a0.1": {
+        "cov": 0.833,
+        "retained": 0.624,
+        "exec": 26.053
+      },
+      "alarm_a0.2": {
+        "cov": 0.74,
+        "retained": 0.613,
+        "exec": 24.713
+      },
+      "alarm_a0.3": {
+        "cov": 0.633,
+        "retained": 0.653,
+        "exec": 22.747
+      },
+      "alarm_a0.4": {
+        "cov": 0.533,
+        "retained": 0.7,
+        "exec": 21.1
+      },
+      "alarm_a0.5": {
+        "cov": 0.407,
+        "retained": 0.721,
+        "exec": 17.733
+      },
+      "comb_a0.1_T6": {
+        "cov": 0.007,
+        "retained": 1.0,
+        "exec": 6.973
+      },
+      "comb_a0.1_T8": {
+        "cov": 0.013,
+        "retained": 1.0,
+        "exec": 8.933
+      },
+      "comb_a0.1_T10": {
+        "cov": 0.027,
+        "retained": 1.0,
+        "exec": 10.873
+      },
+      "comb_a0.1_T11": {
+        "cov": 0.053,
+        "retained": 1.0,
+        "exec": 11.827
+      },
+      "comb_a0.1_T12": {
+        "cov": 0.073,
+        "retained": 1.0,
+        "exec": 12.753
+      },
+      "comb_a0.1_T13": {
+        "cov": 0.113,
+        "retained": 1.0,
+        "exec": 13.653
+      },
+      "comb_a0.1_T15": {
+        "cov": 0.167,
+        "retained": 1.0,
+        "exec": 15.313
+      },
+      "comb_a0.1_T16": {
+        "cov": 0.2,
+        "retained": 1.0,
+        "exec": 16.087
+      },
+      "comb_a0.1_T17": {
+        "cov": 0.207,
+        "retained": 1.0,
+        "exec": 16.827
+      },
+      "comb_a0.1_T18": {
+        "cov": 0.227,
+        "retained": 1.0,
+        "exec": 17.553
+      },
+      "comb_a0.1_T19": {
+        "cov": 0.247,
+        "retained": 1.0,
+        "exec": 18.247
+      },
+      "comb_a0.1_T20": {
+        "cov": 0.267,
+        "retained": 1.0,
+        "exec": 18.9
+      },
+      "comb_a0.1_T22": {
+        "cov": 0.327,
+        "retained": 1.0,
+        "exec": 20.113
+      },
+      "comb_a0.1_T23": {
+        "cov": 0.34,
+        "retained": 1.0,
+        "exec": 20.667
+      },
+      "comb_a0.1_T24": {
+        "cov": 0.387,
+        "retained": 1.0,
+        "exec": 21.2
+      },
+      "comb_a0.1_T25": {
+        "cov": 0.4,
+        "retained": 1.0,
+        "exec": 21.68
+      },
+      "comb_a0.1_T26": {
+        "cov": 0.413,
+        "retained": 1.0,
+        "exec": 22.147
+      },
+      "comb_a0.1_T27": {
+        "cov": 0.433,
+        "retained": 1.0,
+        "exec": 22.593
+      },
+      "comb_a0.1_T29": {
+        "cov": 0.46,
+        "retained": 1.0,
+        "exec": 23.433
+      },
+      "comb_a0.1_T30": {
+        "cov": 0.46,
+        "retained": 1.0,
+        "exec": 23.833
+      },
+      "comb_a0.1_T32": {
+        "cov": 0.467,
+        "retained": 1.0,
+        "exec": 24.633
+      },
+      "comb_a0.1_T33": {
+        "cov": 0.48,
+        "retained": 1.0,
+        "exec": 25.02
+      },
+      "comb_a0.1_T34": {
+        "cov": 0.5,
+        "retained": 1.0,
+        "exec": 25.393
+      },
+      "comb_a0.1_T35": {
+        "cov": 0.52,
+        "retained": 1.0,
+        "exec": 25.74
+      },
+      "comb_a0.2_T6": {
+        "cov": 0.007,
+        "retained": 1.0,
+        "exec": 6.94
+      },
+      "comb_a0.2_T8": {
+        "cov": 0.013,
+        "retained": 1.0,
+        "exec": 8.86
+      },
+      "comb_a0.2_T10": {
+        "cov": 0.027,
+        "retained": 1.0,
+        "exec": 10.74
+      },
+      "comb_a0.2_T11": {
+        "cov": 0.053,
+        "retained": 1.0,
+        "exec": 11.653
+      },
+      "comb_a0.2_T12": {
+        "cov": 0.073,
+        "retained": 1.0,
+        "exec": 12.533
+      },
+      "comb_a0.2_T13": {
+        "cov": 0.113,
+        "retained": 1.0,
+        "exec": 13.387
+      },
+      "comb_a0.2_T15": {
+        "cov": 0.153,
+        "retained": 1.0,
+        "exec": 14.96
+      },
+      "comb_a0.2_T16": {
+        "cov": 0.187,
+        "retained": 1.0,
+        "exec": 15.687
+      },
+      "comb_a0.2_T17": {
+        "cov": 0.193,
+        "retained": 1.0,
+        "exec": 16.38
+      },
+      "comb_a0.2_T18": {
+        "cov": 0.213,
+        "retained": 1.0,
+        "exec": 17.06
+      },
+      "comb_a0.2_T19": {
+        "cov": 0.233,
+        "retained": 1.0,
+        "exec": 17.707
+      },
+      "comb_a0.2_T20": {
+        "cov": 0.247,
+        "retained": 1.0,
+        "exec": 18.313
+      },
+      "comb_a0.2_T22": {
+        "cov": 0.307,
+        "retained": 1.0,
+        "exec": 19.44
+      },
+      "comb_a0.2_T23": {
+        "cov": 0.313,
+        "retained": 1.0,
+        "exec": 19.947
+      },
+      "comb_a0.2_T24": {
+        "cov": 0.353,
+        "retained": 1.0,
+        "exec": 20.427
+      },
+      "comb_a0.2_T25": {
+        "cov": 0.367,
+        "retained": 1.0,
+        "exec": 20.86
+      },
+      "comb_a0.2_T26": {
+        "cov": 0.373,
+        "retained": 1.0,
+        "exec": 21.273
+      },
+      "comb_a0.2_T27": {
+        "cov": 0.387,
+        "retained": 1.0,
+        "exec": 21.667
+      },
+      "comb_a0.2_T29": {
+        "cov": 0.413,
+        "retained": 1.0,
+        "exec": 22.413
+      },
+      "comb_a0.2_T30": {
+        "cov": 0.413,
+        "retained": 1.0,
+        "exec": 22.76
+      },
+      "comb_a0.2_T32": {
+        "cov": 0.413,
+        "retained": 1.0,
+        "exec": 23.453
+      },
+      "comb_a0.2_T33": {
+        "cov": 0.427,
+        "retained": 1.0,
+        "exec": 23.793
+      },
+      "comb_a0.2_T34": {
+        "cov": 0.44,
+        "retained": 1.0,
+        "exec": 24.12
+      },
+      "comb_a0.2_T35": {
+        "cov": 0.453,
+        "retained": 1.0,
+        "exec": 24.427
+      },
+      "comb_a0.3_T6": {
+        "cov": 0.007,
+        "retained": 1.0,
+        "exec": 6.927
+      },
+      "comb_a0.3_T8": {
+        "cov": 0.013,
+        "retained": 1.0,
+        "exec": 8.827
+      },
+      "comb_a0.3_T10": {
+        "cov": 0.027,
+        "retained": 1.0,
+        "exec": 10.653
+      },
+      "comb_a0.3_T11": {
+        "cov": 0.053,
+        "retained": 1.0,
+        "exec": 11.527
+      },
+      "comb_a0.3_T12": {
+        "cov": 0.073,
+        "retained": 1.0,
+        "exec": 12.36
+      },
+      "comb_a0.3_T13": {
+        "cov": 0.1,
+        "retained": 1.0,
+        "exec": 13.16
+      },
+      "comb_a0.3_T15": {
+        "cov": 0.14,
+        "retained": 1.0,
+        "exec": 14.64
+      },
+      "comb_a0.3_T16": {
+        "cov": 0.173,
+        "retained": 1.0,
+        "exec": 15.307
+      },
+      "comb_a0.3_T17": {
+        "cov": 0.18,
+        "retained": 1.0,
+        "exec": 15.933
+      },
+      "comb_a0.3_T18": {
+        "cov": 0.2,
+        "retained": 1.0,
+        "exec": 16.547
+      },
+      "comb_a0.3_T19": {
+        "cov": 0.213,
+        "retained": 1.0,
+        "exec": 17.127
+      },
+      "comb_a0.3_T20": {
+        "cov": 0.227,
+        "retained": 1.0,
+        "exec": 17.673
+      },
+      "comb_a0.3_T22": {
+        "cov": 0.287,
+        "retained": 1.0,
+        "exec": 18.66
+      },
+      "comb_a0.3_T23": {
+        "cov": 0.293,
+        "retained": 1.0,
+        "exec": 19.087
+      },
+      "comb_a0.3_T24": {
+        "cov": 0.333,
+        "retained": 1.0,
+        "exec": 19.493
+      },
+      "comb_a0.3_T25": {
+        "cov": 0.347,
+        "retained": 1.0,
+        "exec": 19.853
+      },
+      "comb_a0.3_T26": {
+        "cov": 0.353,
+        "retained": 1.0,
+        "exec": 20.187
+      },
+      "comb_a0.3_T27": {
+        "cov": 0.367,
+        "retained": 1.0,
+        "exec": 20.5
+      },
+      "comb_a0.3_T29": {
+        "cov": 0.393,
+        "retained": 1.0,
+        "exec": 21.073
+      },
+      "comb_a0.3_T30": {
+        "cov": 0.393,
+        "retained": 1.0,
+        "exec": 21.327
+      },
+      "comb_a0.3_T32": {
+        "cov": 0.393,
+        "retained": 1.0,
+        "exec": 21.82
+      },
+      "comb_a0.3_T33": {
+        "cov": 0.4,
+        "retained": 1.0,
+        "exec": 22.067
+      },
+      "comb_a0.3_T34": {
+        "cov": 0.413,
+        "retained": 1.0,
+        "exec": 22.307
+      },
+      "comb_a0.3_T35": {
+        "cov": 0.413,
+        "retained": 1.0,
+        "exec": 22.527
+      },
+      "comb_a0.4_T6": {
+        "cov": 0.007,
+        "retained": 1.0,
+        "exec": 6.873
+      },
+      "comb_a0.4_T8": {
+        "cov": 0.013,
+        "retained": 1.0,
+        "exec": 8.72
+      },
+      "comb_a0.4_T10": {
+        "cov": 0.027,
+        "retained": 1.0,
+        "exec": 10.467
+      },
+      "comb_a0.4_T11": {
+        "cov": 0.053,
+        "retained": 1.0,
+        "exec": 11.3
+      },
+      "comb_a0.4_T12": {
+        "cov": 0.073,
+        "retained": 1.0,
+        "exec": 12.093
+      },
+      "comb_a0.4_T13": {
+        "cov": 0.1,
+        "retained": 1.0,
+        "exec": 12.853
+      },
+      "comb_a0.4_T15": {
+        "cov": 0.14,
+        "retained": 1.0,
+        "exec": 14.253
+      },
+      "comb_a0.4_T16": {
+        "cov": 0.173,
+        "retained": 1.0,
+        "exec": 14.867
+      },
+      "comb_a0.4_T17": {
+        "cov": 0.18,
+        "retained": 1.0,
+        "exec": 15.427
+      },
+      "comb_a0.4_T18": {
+        "cov": 0.193,
+        "retained": 1.0,
+        "exec": 15.967
+      },
+      "comb_a0.4_T19": {
+        "cov": 0.207,
+        "retained": 1.0,
+        "exec": 16.48
+      },
+      "comb_a0.4_T20": {
+        "cov": 0.22,
+        "retained": 1.0,
+        "exec": 16.96
+      },
+      "comb_a0.4_T22": {
+        "cov": 0.267,
+        "retained": 1.0,
+        "exec": 17.807
+      },
+      "comb_a0.4_T23": {
+        "cov": 0.273,
+        "retained": 1.0,
+        "exec": 18.173
+      },
+      "comb_a0.4_T24": {
+        "cov": 0.307,
+        "retained": 1.0,
+        "exec": 18.52
+      },
+      "comb_a0.4_T25": {
+        "cov": 0.32,
+        "retained": 1.0,
+        "exec": 18.82
+      },
+      "comb_a0.4_T26": {
+        "cov": 0.327,
+        "retained": 1.0,
+        "exec": 19.093
+      },
+      "comb_a0.4_T27": {
+        "cov": 0.34,
+        "retained": 1.0,
+        "exec": 19.347
+      },
+      "comb_a0.4_T29": {
+        "cov": 0.36,
+        "retained": 1.0,
+        "exec": 19.807
+      },
+      "comb_a0.4_T30": {
+        "cov": 0.36,
+        "retained": 1.0,
+        "exec": 20.007
+      },
+      "comb_a0.4_T32": {
+        "cov": 0.36,
+        "retained": 1.0,
+        "exec": 20.393
+      },
+      "comb_a0.4_T33": {
+        "cov": 0.367,
+        "retained": 1.0,
+        "exec": 20.587
+      },
+      "comb_a0.4_T34": {
+        "cov": 0.373,
+        "retained": 1.0,
+        "exec": 20.773
+      },
+      "comb_a0.4_T35": {
+        "cov": 0.373,
+        "retained": 1.0,
+        "exec": 20.94
+      },
+      "comb_a0.5_T6": {
+        "cov": 0.007,
+        "retained": 1.0,
+        "exec": 6.613
+      },
+      "comb_a0.5_T8": {
+        "cov": 0.013,
+        "retained": 1.0,
+        "exec": 8.26
+      },
+      "comb_a0.5_T10": {
+        "cov": 0.027,
+        "retained": 1.0,
+        "exec": 9.773
+      },
+      "comb_a0.5_T11": {
+        "cov": 0.047,
+        "retained": 1.0,
+        "exec": 10.48
+      },
+      "comb_a0.5_T12": {
+        "cov": 0.067,
+        "retained": 1.0,
+        "exec": 11.133
+      },
+      "comb_a0.5_T13": {
+        "cov": 0.087,
+        "retained": 1.0,
+        "exec": 11.733
+      },
+      "comb_a0.5_T15": {
+        "cov": 0.127,
+        "retained": 1.0,
+        "exec": 12.8
+      },
+      "comb_a0.5_T16": {
+        "cov": 0.14,
+        "retained": 1.0,
+        "exec": 13.247
+      },
+      "comb_a0.5_T17": {
+        "cov": 0.147,
+        "retained": 1.0,
+        "exec": 13.667
+      },
+      "comb_a0.5_T18": {
+        "cov": 0.16,
+        "retained": 1.0,
+        "exec": 14.073
+      },
+      "comb_a0.5_T19": {
+        "cov": 0.173,
+        "retained": 1.0,
+        "exec": 14.447
+      },
+      "comb_a0.5_T20": {
+        "cov": 0.18,
+        "retained": 1.0,
+        "exec": 14.793
+      },
+      "comb_a0.5_T22": {
+        "cov": 0.22,
+        "retained": 1.0,
+        "exec": 15.407
+      },
+      "comb_a0.5_T23": {
+        "cov": 0.22,
+        "retained": 1.0,
+        "exec": 15.673
+      },
+      "comb_a0.5_T24": {
+        "cov": 0.247,
+        "retained": 1.0,
+        "exec": 15.933
+      },
+      "comb_a0.5_T25": {
+        "cov": 0.26,
+        "retained": 1.0,
+        "exec": 16.153
+      },
+      "comb_a0.5_T26": {
+        "cov": 0.267,
+        "retained": 1.0,
+        "exec": 16.347
+      },
+      "comb_a0.5_T27": {
+        "cov": 0.28,
+        "retained": 1.0,
+        "exec": 16.52
+      },
+      "comb_a0.5_T29": {
+        "cov": 0.293,
+        "retained": 1.0,
+        "exec": 16.833
+      },
+      "comb_a0.5_T30": {
+        "cov": 0.293,
+        "retained": 1.0,
+        "exec": 16.967
+      },
+      "comb_a0.5_T32": {
+        "cov": 0.293,
+        "retained": 1.0,
+        "exec": 17.233
+      },
+      "comb_a0.5_T33": {
+        "cov": 0.293,
+        "retained": 1.0,
+        "exec": 17.367
+      },
+      "comb_a0.5_T34": {
+        "cov": 0.293,
+        "retained": 1.0,
+        "exec": 17.5
+      },
+      "comb_a0.5_T35": {
+        "cov": 0.293,
+        "retained": 1.0,
+        "exec": 17.62
+      },
+      "comb_a0.0_T6": {
+        "cov": 0.007,
+        "retained": 1.0,
+        "exec": 6.993
+      },
+      "comb_a0.0_T8": {
+        "cov": 0.013,
+        "retained": 1.0,
+        "exec": 8.973
+      },
+      "comb_a0.0_T10": {
+        "cov": 0.027,
+        "retained": 1.0,
+        "exec": 10.94
+      },
+      "comb_a0.0_T11": {
+        "cov": 0.053,
+        "retained": 1.0,
+        "exec": 11.913
+      },
+      "comb_a0.0_T12": {
+        "cov": 0.073,
+        "retained": 1.0,
+        "exec": 12.86
+      },
+      "comb_a0.0_T13": {
+        "cov": 0.113,
+        "retained": 1.0,
+        "exec": 13.787
+      },
+      "comb_a0.0_T15": {
+        "cov": 0.167,
+        "retained": 1.0,
+        "exec": 15.527
+      },
+      "comb_a0.0_T16": {
+        "cov": 0.2,
+        "retained": 1.0,
+        "exec": 16.36
+      },
+      "comb_a0.0_T17": {
+        "cov": 0.207,
+        "retained": 1.0,
+        "exec": 17.16
+      },
+      "comb_a0.0_T18": {
+        "cov": 0.233,
+        "retained": 1.0,
+        "exec": 17.953
+      },
+      "comb_a0.0_T19": {
+        "cov": 0.253,
+        "retained": 1.0,
+        "exec": 18.72
+      },
+      "comb_a0.0_T20": {
+        "cov": 0.273,
+        "retained": 1.0,
+        "exec": 19.467
+      },
+      "comb_a0.0_T22": {
+        "cov": 0.34,
+        "retained": 1.0,
+        "exec": 20.88
+      },
+      "comb_a0.0_T23": {
+        "cov": 0.36,
+        "retained": 1.0,
+        "exec": 21.54
+      },
+      "comb_a0.0_T24": {
+        "cov": 0.413,
+        "retained": 1.0,
+        "exec": 22.18
+      },
+      "comb_a0.0_T25": {
+        "cov": 0.433,
+        "retained": 1.0,
+        "exec": 22.767
+      },
+      "comb_a0.0_T26": {
+        "cov": 0.447,
+        "retained": 1.0,
+        "exec": 23.333
+      },
+      "comb_a0.0_T27": {
+        "cov": 0.467,
+        "retained": 1.0,
+        "exec": 23.887
+      },
+      "comb_a0.0_T29": {
+        "cov": 0.5,
+        "retained": 1.0,
+        "exec": 24.94
+      },
+      "comb_a0.0_T30": {
+        "cov": 0.5,
+        "retained": 1.0,
+        "exec": 25.44
+      },
+      "comb_a0.0_T32": {
+        "cov": 0.513,
+        "retained": 1.0,
+        "exec": 26.433
+      },
+      "comb_a0.0_T33": {
+        "cov": 0.527,
+        "retained": 1.0,
+        "exec": 26.92
+      },
+      "comb_a0.0_T34": {
+        "cov": 0.547,
+        "retained": 1.0,
+        "exec": 27.393
+      },
+      "comb_a0.0_T35": {
+        "cov": 0.58,
+        "retained": 1.0,
+        "exec": 27.847
+      }
+    },
+    "grid": {
+      "pfb0.3_ct0.0": {
+        "autonomy": 0.58,
+        "best_timeout": 0.706,
+        "best_timeout_at": "timeout_T35",
+        "best_alarm": 0.57,
+        "best_alarm_at": "alarm_a0.1",
+        "best_combined": 0.706,
+        "best_combined_at": "comb_a0.0_T35",
+        "alarm_minus_timeout": -0.136,
+        "combined_minus_timeout": 0.0
+      },
+      "pfb0.3_ct0.05": {
+        "autonomy": 0.53,
+        "best_timeout": 0.657,
+        "best_timeout_at": "timeout_T35",
+        "best_alarm": 0.524,
+        "best_alarm_at": "alarm_a0.1",
+        "best_combined": 0.657,
+        "best_combined_at": "comb_a0.0_T35",
+        "alarm_minus_timeout": -0.133,
+        "combined_minus_timeout": 0.0
+      },
+      "pfb0.3_ct0.1": {
+        "autonomy": 0.48,
+        "best_timeout": 0.607,
+        "best_timeout_at": "timeout_T35",
+        "best_alarm": 0.478,
+        "best_alarm_at": "alarm_a0.1",
+        "best_combined": 0.607,
+        "best_combined_at": "comb_a0.0_T35",
+        "alarm_minus_timeout": -0.13,
+        "combined_minus_timeout": 0.0
+      },
+      "pfb0.3_ct0.2": {
+        "autonomy": 0.38,
+        "best_timeout": 0.509,
+        "best_timeout_at": "timeout_T35",
+        "best_alarm": 0.386,
+        "best_alarm_at": "alarm_a0.1",
+        "best_combined": 0.509,
+        "best_combined_at": "comb_a0.0_T35",
+        "alarm_minus_timeout": -0.123,
+        "combined_minus_timeout": 0.0
+      },
+      "pfb0.3_ct0.5": {
+        "autonomy": 0.08,
+        "best_timeout": 0.213,
+        "best_timeout_at": "timeout_T35",
+        "best_alarm": 0.158,
+        "best_alarm_at": "alarm_a0.5",
+        "best_combined": 0.213,
+        "best_combined_at": "comb_a0.0_T35",
+        "alarm_minus_timeout": -0.056,
+        "combined_minus_timeout": 0.0
+      },
+      "pfb0.6_ct0.0": {
+        "autonomy": 0.58,
+        "best_timeout": 0.832,
+        "best_timeout_at": "timeout_T35",
+        "best_alarm": 0.653,
+        "best_alarm_at": "alarm_a0.4",
+        "best_combined": 0.832,
+        "best_combined_at": "comb_a0.0_T35",
+        "alarm_minus_timeout": -0.179,
+        "combined_minus_timeout": 0.0
+      },
+      "pfb0.6_ct0.05": {
+        "autonomy": 0.53,
+        "best_timeout": 0.783,
+        "best_timeout_at": "timeout_T35",
+        "best_alarm": 0.618,
+        "best_alarm_at": "alarm_a0.5",
+        "best_combined": 0.783,
+        "best_combined_at": "comb_a0.0_T35",
+        "alarm_minus_timeout": -0.165,
+        "combined_minus_timeout": 0.0
+      },
+      "pfb0.6_ct0.1": {
+        "autonomy": 0.48,
+        "best_timeout": 0.733,
+        "best_timeout_at": "timeout_T35",
+        "best_alarm": 0.587,
+        "best_alarm_at": "alarm_a0.5",
+        "best_combined": 0.733,
+        "best_combined_at": "comb_a0.0_T35",
+        "alarm_minus_timeout": -0.147,
+        "combined_minus_timeout": 0.0
+      },
+      "pfb0.6_ct0.2": {
+        "autonomy": 0.38,
+        "best_timeout": 0.635,
+        "best_timeout_at": "timeout_T35",
+        "best_alarm": 0.524,
+        "best_alarm_at": "alarm_a0.5",
+        "best_combined": 0.635,
+        "best_combined_at": "comb_a0.0_T35",
+        "alarm_minus_timeout": -0.111,
+        "combined_minus_timeout": 0.0
+      },
+      "pfb0.6_ct0.5": {
+        "autonomy": 0.08,
+        "best_timeout": 0.479,
+        "best_timeout_at": "timeout_T6",
+        "best_alarm": 0.336,
+        "best_alarm_at": "alarm_a0.5",
+        "best_combined": 0.486,
+        "best_combined_at": "comb_a0.5_T6",
+        "alarm_minus_timeout": -0.143,
+        "combined_minus_timeout": 0.007
+      },
+      "pfb0.9_ct0.0": {
+        "autonomy": 0.58,
+        "best_timeout": 0.958,
+        "best_timeout_at": "timeout_T35",
+        "best_alarm": 0.827,
+        "best_alarm_at": "alarm_a0.5",
+        "best_combined": 0.958,
+        "best_combined_at": "comb_a0.0_T35",
+        "alarm_minus_timeout": -0.131,
+        "combined_minus_timeout": 0.0
+      },
+      "pfb0.9_ct0.05": {
+        "autonomy": 0.53,
+        "best_timeout": 0.909,
+        "best_timeout_at": "timeout_T35",
+        "best_alarm": 0.796,
+        "best_alarm_at": "alarm_a0.5",
+        "best_combined": 0.909,
+        "best_combined_at": "comb_a0.0_T35",
+        "alarm_minus_timeout": -0.113,
+        "combined_minus_timeout": 0.0
+      },
+      "pfb0.9_ct0.1": {
+        "autonomy": 0.48,
+        "best_timeout": 0.876,
+        "best_timeout_at": "timeout_T6",
+        "best_alarm": 0.765,
+        "best_alarm_at": "alarm_a0.5",
+        "best_combined": 0.877,
+        "best_combined_at": "comb_a0.5_T6",
+        "alarm_minus_timeout": -0.111,
+        "combined_minus_timeout": 0.001
+      },
+      "pfb0.9_ct0.2": {
+        "autonomy": 0.38,
+        "best_timeout": 0.851,
+        "best_timeout_at": "timeout_T6",
+        "best_alarm": 0.702,
+        "best_alarm_at": "alarm_a0.5",
+        "best_combined": 0.854,
+        "best_combined_at": "comb_a0.5_T6",
+        "alarm_minus_timeout": -0.149,
+        "combined_minus_timeout": 0.003
+      },
+      "pfb0.9_ct0.5": {
+        "autonomy": 0.08,
+        "best_timeout": 0.777,
+        "best_timeout_at": "timeout_T6",
+        "best_alarm": 0.514,
+        "best_alarm_at": "alarm_a0.5",
+        "best_combined": 0.784,
+        "best_combined_at": "comb_a0.5_T6",
+        "alarm_minus_timeout": -0.263,
+        "combined_minus_timeout": 0.007
+      }
+    },
+    "breakeven_ct": {
+      "0.3": null,
+      "0.6": null,
+      "0.9": null
+    }
+  },
+  "can-strong:s1000": {
+    "signal": "bcoh_distmin",
+    "R_ref": 24.3,
+    "policies": {
+      "autonomy": {
+        "cov": 1.0,
+        "retained": 0.787,
+        "exec": 24.307
+      },
+      "timeout_T11": {
+        "cov": 0.033,
+        "retained": 1.0,
+        "exec": 11.993
+      },
+      "timeout_T12": {
+        "cov": 0.113,
+        "retained": 1.0,
+        "exec": 12.96
+      },
+      "timeout_T13": {
+        "cov": 0.28,
+        "retained": 1.0,
+        "exec": 13.847
+      },
+      "timeout_T14": {
+        "cov": 0.413,
+        "retained": 1.0,
+        "exec": 14.567
+      },
+      "timeout_T15": {
+        "cov": 0.5,
+        "retained": 1.0,
+        "exec": 15.153
+      },
+      "timeout_T16": {
+        "cov": 0.573,
+        "retained": 1.0,
+        "exec": 15.653
+      },
+      "timeout_T17": {
+        "cov": 0.64,
+        "retained": 1.0,
+        "exec": 16.08
+      },
+      "timeout_T18": {
+        "cov": 0.64,
+        "retained": 1.0,
+        "exec": 16.44
+      },
+      "timeout_T19": {
+        "cov": 0.653,
+        "retained": 1.0,
+        "exec": 16.8
+      },
+      "timeout_T20": {
+        "cov": 0.68,
+        "retained": 1.0,
+        "exec": 17.147
+      },
+      "timeout_T21": {
+        "cov": 0.693,
+        "retained": 1.0,
+        "exec": 17.467
+      },
+      "timeout_T22": {
+        "cov": 0.7,
+        "retained": 1.0,
+        "exec": 17.773
+      },
+      "timeout_T23": {
+        "cov": 0.713,
+        "retained": 1.0,
+        "exec": 18.073
+      },
+      "timeout_T24": {
+        "cov": 0.713,
+        "retained": 1.0,
+        "exec": 18.36
+      },
+      "timeout_T27": {
+        "cov": 0.727,
+        "retained": 1.0,
+        "exec": 19.207
+      },
+      "timeout_T30": {
+        "cov": 0.74,
+        "retained": 1.0,
+        "exec": 20.013
+      },
+      "timeout_T31": {
+        "cov": 0.747,
+        "retained": 1.0,
+        "exec": 20.273
+      },
+      "timeout_T34": {
+        "cov": 0.753,
+        "retained": 1.0,
+        "exec": 21.033
+      },
+      "timeout_T36": {
+        "cov": 0.76,
+        "retained": 1.0,
+        "exec": 21.527
+      },
+      "timeout_T39": {
+        "cov": 0.76,
+        "retained": 1.0,
+        "exec": 22.247
+      },
+      "timeout_T42": {
+        "cov": 0.767,
+        "retained": 1.0,
+        "exec": 22.953
+      },
+      "timeout_T45": {
+        "cov": 0.78,
+        "retained": 1.0,
+        "exec": 23.647
+      },
+      "timeout_T46": {
+        "cov": 0.78,
+        "retained": 1.0,
+        "exec": 23.867
+      },
+      "alarm_a0.1": {
+        "cov": 0.853,
+        "retained": 0.844,
+        "exec": 20.233
+      },
+      "alarm_a0.2": {
+        "cov": 0.727,
+        "retained": 0.927,
+        "exec": 17.173
+      },
+      "alarm_a0.3": {
+        "cov": 0.647,
+        "retained": 0.928,
+        "exec": 15.28
+      },
+      "alarm_a0.4": {
+        "cov": 0.487,
+        "retained": 0.973,
+        "exec": 12.46
+      },
+      "alarm_a0.5": {
+        "cov": 0.447,
+        "retained": 0.97,
+        "exec": 12.073
+      },
+      "comb_a0.1_T11": {
+        "cov": 0.033,
+        "retained": 1.0,
+        "exec": 11.687
+      },
+      "comb_a0.1_T12": {
+        "cov": 0.113,
+        "retained": 1.0,
+        "exec": 12.553
+      },
+      "comb_a0.1_T13": {
+        "cov": 0.273,
+        "retained": 1.0,
+        "exec": 13.34
+      },
+      "comb_a0.1_T14": {
+        "cov": 0.407,
+        "retained": 1.0,
+        "exec": 13.953
+      },
+      "comb_a0.1_T15": {
+        "cov": 0.493,
+        "retained": 1.0,
+        "exec": 14.427
+      },
+      "comb_a0.1_T16": {
+        "cov": 0.56,
+        "retained": 1.0,
+        "exec": 14.813
+      },
+      "comb_a0.1_T17": {
+        "cov": 0.627,
+        "retained": 1.0,
+        "exec": 15.133
+      },
+      "comb_a0.1_T18": {
+        "cov": 0.627,
+        "retained": 1.0,
+        "exec": 15.387
+      },
+      "comb_a0.1_T19": {
+        "cov": 0.64,
+        "retained": 1.0,
+        "exec": 15.633
+      },
+      "comb_a0.1_T20": {
+        "cov": 0.66,
+        "retained": 1.0,
+        "exec": 15.867
+      },
+      "comb_a0.1_T21": {
+        "cov": 0.673,
+        "retained": 1.0,
+        "exec": 16.073
+      },
+      "comb_a0.1_T22": {
+        "cov": 0.68,
+        "retained": 1.0,
+        "exec": 16.267
+      },
+      "comb_a0.1_T23": {
+        "cov": 0.693,
+        "retained": 1.0,
+        "exec": 16.453
+      },
+      "comb_a0.1_T24": {
+        "cov": 0.693,
+        "retained": 1.0,
+        "exec": 16.627
+      },
+      "comb_a0.1_T27": {
+        "cov": 0.707,
+        "retained": 1.0,
+        "exec": 17.127
+      },
+      "comb_a0.1_T30": {
+        "cov": 0.707,
+        "retained": 1.0,
+        "exec": 17.587
+      },
+      "comb_a0.1_T31": {
+        "cov": 0.713,
+        "retained": 1.0,
+        "exec": 17.74
+      },
+      "comb_a0.1_T34": {
+        "cov": 0.713,
+        "retained": 1.0,
+        "exec": 18.18
+      },
+      "comb_a0.1_T36": {
+        "cov": 0.713,
+        "retained": 1.0,
+        "exec": 18.473
+      },
+      "comb_a0.1_T39": {
+        "cov": 0.713,
+        "retained": 1.0,
+        "exec": 18.913
+      },
+      "comb_a0.1_T42": {
+        "cov": 0.713,
+        "retained": 1.0,
+        "exec": 19.353
+      },
+      "comb_a0.1_T45": {
+        "cov": 0.713,
+        "retained": 1.0,
+        "exec": 19.793
+      },
+      "comb_a0.1_T46": {
+        "cov": 0.713,
+        "retained": 1.0,
+        "exec": 19.94
+      },
+      "comb_a0.2_T11": {
+        "cov": 0.033,
+        "retained": 1.0,
+        "exec": 11.42
+      },
+      "comb_a0.2_T12": {
+        "cov": 0.113,
+        "retained": 1.0,
+        "exec": 12.213
+      },
+      "comb_a0.2_T13": {
+        "cov": 0.273,
+        "retained": 1.0,
+        "exec": 12.92
+      },
+      "comb_a0.2_T14": {
+        "cov": 0.407,
+        "retained": 1.0,
+        "exec": 13.453
+      },
+      "comb_a0.2_T15": {
+        "cov": 0.493,
+        "retained": 1.0,
+        "exec": 13.847
+      },
+      "comb_a0.2_T16": {
+        "cov": 0.553,
+        "retained": 1.0,
+        "exec": 14.153
+      },
+      "comb_a0.2_T17": {
+        "cov": 0.613,
+        "retained": 1.0,
+        "exec": 14.4
+      },
+      "comb_a0.2_T18": {
+        "cov": 0.613,
+        "retained": 1.0,
+        "exec": 14.587
+      },
+      "comb_a0.2_T19": {
+        "cov": 0.627,
+        "retained": 1.0,
+        "exec": 14.767
+      },
+      "comb_a0.2_T20": {
+        "cov": 0.64,
+        "retained": 1.0,
+        "exec": 14.933
+      },
+      "comb_a0.2_T21": {
+        "cov": 0.653,
+        "retained": 1.0,
+        "exec": 15.073
+      },
+      "comb_a0.2_T22": {
+        "cov": 0.66,
+        "retained": 1.0,
+        "exec": 15.2
+      },
+      "comb_a0.2_T23": {
+        "cov": 0.673,
+        "retained": 1.0,
+        "exec": 15.313
+      },
+      "comb_a0.2_T24": {
+        "cov": 0.673,
+        "retained": 1.0,
+        "exec": 15.413
+      },
+      "comb_a0.2_T27": {
+        "cov": 0.673,
+        "retained": 1.0,
+        "exec": 15.693
+      },
+      "comb_a0.2_T30": {
+        "cov": 0.673,
+        "retained": 1.0,
+        "exec": 15.967
+      },
+      "comb_a0.2_T31": {
+        "cov": 0.673,
+        "retained": 1.0,
+        "exec": 16.053
+      },
+      "comb_a0.2_T34": {
+        "cov": 0.673,
+        "retained": 1.0,
+        "exec": 16.293
+      },
+      "comb_a0.2_T36": {
+        "cov": 0.673,
+        "retained": 1.0,
+        "exec": 16.427
+      },
+      "comb_a0.2_T39": {
+        "cov": 0.673,
+        "retained": 1.0,
+        "exec": 16.627
+      },
+      "comb_a0.2_T42": {
+        "cov": 0.673,
+        "retained": 1.0,
+        "exec": 16.82
+      },
+      "comb_a0.2_T45": {
+        "cov": 0.673,
+        "retained": 1.0,
+        "exec": 17.0
+      },
+      "comb_a0.2_T46": {
+        "cov": 0.673,
+        "retained": 1.0,
+        "exec": 17.06
+      },
+      "comb_a0.3_T11": {
+        "cov": 0.033,
+        "retained": 1.0,
+        "exec": 11.087
+      },
+      "comb_a0.3_T12": {
+        "cov": 0.113,
+        "retained": 1.0,
+        "exec": 11.78
+      },
+      "comb_a0.3_T13": {
+        "cov": 0.273,
+        "retained": 1.0,
+        "exec": 12.373
+      },
+      "comb_a0.3_T14": {
+        "cov": 0.393,
+        "retained": 1.0,
+        "exec": 12.787
+      },
+      "comb_a0.3_T15": {
+        "cov": 0.473,
+        "retained": 1.0,
+        "exec": 13.073
+      },
+      "comb_a0.3_T16": {
+        "cov": 0.52,
+        "retained": 1.0,
+        "exec": 13.28
+      },
+      "comb_a0.3_T17": {
+        "cov": 0.567,
+        "retained": 1.0,
+        "exec": 13.44
+      },
+      "comb_a0.3_T18": {
+        "cov": 0.567,
+        "retained": 1.0,
+        "exec": 13.553
+      },
+      "comb_a0.3_T19": {
+        "cov": 0.567,
+        "retained": 1.0,
+        "exec": 13.66
+      },
+      "comb_a0.3_T20": {
+        "cov": 0.58,
+        "retained": 1.0,
+        "exec": 13.767
+      },
+      "comb_a0.3_T21": {
+        "cov": 0.587,
+        "retained": 1.0,
+        "exec": 13.853
+      },
+      "comb_a0.3_T22": {
+        "cov": 0.593,
+        "retained": 1.0,
+        "exec": 13.933
+      },
+      "comb_a0.3_T23": {
+        "cov": 0.6,
+        "retained": 1.0,
+        "exec": 14.0
+      },
+      "comb_a0.3_T24": {
+        "cov": 0.6,
+        "retained": 1.0,
+        "exec": 14.06
+      },
+      "comb_a0.3_T27": {
+        "cov": 0.6,
+        "retained": 1.0,
+        "exec": 14.24
+      },
+      "comb_a0.3_T30": {
+        "cov": 0.6,
+        "retained": 1.0,
+        "exec": 14.42
+      },
+      "comb_a0.3_T31": {
+        "cov": 0.6,
+        "retained": 1.0,
+        "exec": 14.473
+      },
+      "comb_a0.3_T34": {
+        "cov": 0.6,
+        "retained": 1.0,
+        "exec": 14.627
+      },
+      "comb_a0.3_T36": {
+        "cov": 0.6,
+        "retained": 1.0,
+        "exec": 14.72
+      },
+      "comb_a0.3_T39": {
+        "cov": 0.6,
+        "retained": 1.0,
+        "exec": 14.86
+      },
+      "comb_a0.3_T42": {
+        "cov": 0.6,
+        "retained": 1.0,
+        "exec": 15.0
+      },
+      "comb_a0.3_T45": {
+        "cov": 0.6,
+        "retained": 1.0,
+        "exec": 15.14
+      },
+      "comb_a0.3_T46": {
+        "cov": 0.6,
+        "retained": 1.0,
+        "exec": 15.187
+      },
+      "comb_a0.4_T11": {
+        "cov": 0.027,
+        "retained": 1.0,
+        "exec": 10.273
+      },
+      "comb_a0.4_T12": {
+        "cov": 0.1,
+        "retained": 1.0,
+        "exec": 10.78
+      },
+      "comb_a0.4_T13": {
+        "cov": 0.253,
+        "retained": 1.0,
+        "exec": 11.2
+      },
+      "comb_a0.4_T14": {
+        "cov": 0.34,
+        "retained": 1.0,
+        "exec": 11.467
+      },
+      "comb_a0.4_T15": {
+        "cov": 0.407,
+        "retained": 1.0,
+        "exec": 11.633
+      },
+      "comb_a0.4_T16": {
+        "cov": 0.433,
+        "retained": 1.0,
+        "exec": 11.733
+      },
+      "comb_a0.4_T17": {
+        "cov": 0.467,
+        "retained": 1.0,
+        "exec": 11.807
+      },
+      "comb_a0.4_T18": {
+        "cov": 0.467,
+        "retained": 1.0,
+        "exec": 11.847
+      },
+      "comb_a0.4_T19": {
+        "cov": 0.467,
+        "retained": 1.0,
+        "exec": 11.88
+      },
+      "comb_a0.4_T20": {
+        "cov": 0.467,
+        "retained": 1.0,
+        "exec": 11.913
+      },
+      "comb_a0.4_T21": {
+        "cov": 0.467,
+        "retained": 1.0,
+        "exec": 11.947
+      },
+      "comb_a0.4_T22": {
+        "cov": 0.473,
+        "retained": 1.0,
+        "exec": 11.98
+      },
+      "comb_a0.4_T23": {
+        "cov": 0.473,
+        "retained": 1.0,
+        "exec": 12.0
+      },
+      "comb_a0.4_T24": {
+        "cov": 0.473,
+        "retained": 1.0,
+        "exec": 12.02
+      },
+      "comb_a0.4_T27": {
+        "cov": 0.473,
+        "retained": 1.0,
+        "exec": 12.08
+      },
+      "comb_a0.4_T30": {
+        "cov": 0.473,
+        "retained": 1.0,
+        "exec": 12.14
+      },
+      "comb_a0.4_T31": {
+        "cov": 0.473,
+        "retained": 1.0,
+        "exec": 12.16
+      },
+      "comb_a0.4_T34": {
+        "cov": 0.473,
+        "retained": 1.0,
+        "exec": 12.22
+      },
+      "comb_a0.4_T36": {
+        "cov": 0.473,
+        "retained": 1.0,
+        "exec": 12.26
+      },
+      "comb_a0.4_T39": {
+        "cov": 0.473,
+        "retained": 1.0,
+        "exec": 12.32
+      },
+      "comb_a0.4_T42": {
+        "cov": 0.473,
+        "retained": 1.0,
+        "exec": 12.38
+      },
+      "comb_a0.4_T45": {
+        "cov": 0.473,
+        "retained": 1.0,
+        "exec": 12.42
+      },
+      "comb_a0.4_T46": {
+        "cov": 0.473,
+        "retained": 1.0,
+        "exec": 12.433
+      },
+      "comb_a0.5_T11": {
+        "cov": 0.027,
+        "retained": 1.0,
+        "exec": 10.133
+      },
+      "comb_a0.5_T12": {
+        "cov": 0.1,
+        "retained": 1.0,
+        "exec": 10.6
+      },
+      "comb_a0.5_T13": {
+        "cov": 0.253,
+        "retained": 1.0,
+        "exec": 10.973
+      },
+      "comb_a0.5_T14": {
+        "cov": 0.333,
+        "retained": 1.0,
+        "exec": 11.187
+      },
+      "comb_a0.5_T15": {
+        "cov": 0.393,
+        "retained": 1.0,
+        "exec": 11.313
+      },
+      "comb_a0.5_T16": {
+        "cov": 0.413,
+        "retained": 1.0,
+        "exec": 11.38
+      },
+      "comb_a0.5_T17": {
+        "cov": 0.427,
+        "retained": 1.0,
+        "exec": 11.427
+      },
+      "comb_a0.5_T18": {
+        "cov": 0.427,
+        "retained": 1.0,
+        "exec": 11.46
+      },
+      "comb_a0.5_T19": {
+        "cov": 0.427,
+        "retained": 1.0,
+        "exec": 11.493
+      },
+      "comb_a0.5_T20": {
+        "cov": 0.427,
+        "retained": 1.0,
+        "exec": 11.527
+      },
+      "comb_a0.5_T21": {
+        "cov": 0.427,
+        "retained": 1.0,
+        "exec": 11.56
+      },
+      "comb_a0.5_T22": {
+        "cov": 0.433,
+        "retained": 1.0,
+        "exec": 11.593
+      },
+      "comb_a0.5_T23": {
+        "cov": 0.433,
+        "retained": 1.0,
+        "exec": 11.613
+      },
+      "comb_a0.5_T24": {
+        "cov": 0.433,
+        "retained": 1.0,
+        "exec": 11.633
+      },
+      "comb_a0.5_T27": {
+        "cov": 0.433,
+        "retained": 1.0,
+        "exec": 11.693
+      },
+      "comb_a0.5_T30": {
+        "cov": 0.433,
+        "retained": 1.0,
+        "exec": 11.753
+      },
+      "comb_a0.5_T31": {
+        "cov": 0.433,
+        "retained": 1.0,
+        "exec": 11.773
+      },
+      "comb_a0.5_T34": {
+        "cov": 0.433,
+        "retained": 1.0,
+        "exec": 11.833
+      },
+      "comb_a0.5_T36": {
+        "cov": 0.433,
+        "retained": 1.0,
+        "exec": 11.873
+      },
+      "comb_a0.5_T39": {
+        "cov": 0.433,
+        "retained": 1.0,
+        "exec": 11.933
+      },
+      "comb_a0.5_T42": {
+        "cov": 0.433,
+        "retained": 1.0,
+        "exec": 11.993
+      },
+      "comb_a0.5_T45": {
+        "cov": 0.433,
+        "retained": 1.0,
+        "exec": 12.033
+      },
+      "comb_a0.5_T46": {
+        "cov": 0.433,
+        "retained": 1.0,
+        "exec": 12.047
+      },
+      "comb_a0.0_T11": {
+        "cov": 0.033,
+        "retained": 1.0,
+        "exec": 11.993
+      },
+      "comb_a0.0_T12": {
+        "cov": 0.113,
+        "retained": 1.0,
+        "exec": 12.96
+      },
+      "comb_a0.0_T13": {
+        "cov": 0.28,
+        "retained": 1.0,
+        "exec": 13.847
+      },
+      "comb_a0.0_T14": {
+        "cov": 0.413,
+        "retained": 1.0,
+        "exec": 14.567
+      },
+      "comb_a0.0_T15": {
+        "cov": 0.5,
+        "retained": 1.0,
+        "exec": 15.153
+      },
+      "comb_a0.0_T16": {
+        "cov": 0.573,
+        "retained": 1.0,
+        "exec": 15.653
+      },
+      "comb_a0.0_T17": {
+        "cov": 0.64,
+        "retained": 1.0,
+        "exec": 16.08
+      },
+      "comb_a0.0_T18": {
+        "cov": 0.64,
+        "retained": 1.0,
+        "exec": 16.44
+      },
+      "comb_a0.0_T19": {
+        "cov": 0.653,
+        "retained": 1.0,
+        "exec": 16.8
+      },
+      "comb_a0.0_T20": {
+        "cov": 0.68,
+        "retained": 1.0,
+        "exec": 17.147
+      },
+      "comb_a0.0_T21": {
+        "cov": 0.693,
+        "retained": 1.0,
+        "exec": 17.467
+      },
+      "comb_a0.0_T22": {
+        "cov": 0.7,
+        "retained": 1.0,
+        "exec": 17.773
+      },
+      "comb_a0.0_T23": {
+        "cov": 0.713,
+        "retained": 1.0,
+        "exec": 18.073
+      },
+      "comb_a0.0_T24": {
+        "cov": 0.713,
+        "retained": 1.0,
+        "exec": 18.36
+      },
+      "comb_a0.0_T27": {
+        "cov": 0.727,
+        "retained": 1.0,
+        "exec": 19.207
+      },
+      "comb_a0.0_T30": {
+        "cov": 0.74,
+        "retained": 1.0,
+        "exec": 20.013
+      },
+      "comb_a0.0_T31": {
+        "cov": 0.747,
+        "retained": 1.0,
+        "exec": 20.273
+      },
+      "comb_a0.0_T34": {
+        "cov": 0.753,
+        "retained": 1.0,
+        "exec": 21.033
+      },
+      "comb_a0.0_T36": {
+        "cov": 0.76,
+        "retained": 1.0,
+        "exec": 21.527
+      },
+      "comb_a0.0_T39": {
+        "cov": 0.76,
+        "retained": 1.0,
+        "exec": 22.247
+      },
+      "comb_a0.0_T42": {
+        "cov": 0.767,
+        "retained": 1.0,
+        "exec": 22.953
+      },
+      "comb_a0.0_T45": {
+        "cov": 0.78,
+        "retained": 1.0,
+        "exec": 23.647
+      },
+      "comb_a0.0_T46": {
+        "cov": 0.78,
+        "retained": 1.0,
+        "exec": 23.867
+      }
+    },
+    "grid": {
+      "pfb0.3_ct0.0": {
+        "autonomy": 0.787,
+        "best_timeout": 0.846,
+        "best_timeout_at": "timeout_T45",
+        "best_alarm": 0.764,
+        "best_alarm_at": "alarm_a0.1",
+        "best_combined": 0.846,
+        "best_combined_at": "comb_a0.0_T45",
+        "alarm_minus_timeout": -0.082,
+        "combined_minus_timeout": 0.0
+      },
+      "pfb0.3_ct0.05": {
+        "autonomy": 0.737,
+        "best_timeout": 0.797,
+        "best_timeout_at": "timeout_T45",
+        "best_alarm": 0.722,
+        "best_alarm_at": "alarm_a0.1",
+        "best_combined": 0.797,
+        "best_combined_at": "comb_a0.0_T45",
+        "alarm_minus_timeout": -0.075,
+        "combined_minus_timeout": 0.0
+      },
+      "pfb0.3_ct0.1": {
+        "autonomy": 0.687,
+        "best_timeout": 0.749,
+        "best_timeout_at": "timeout_T45",
+        "best_alarm": 0.685,
+        "best_alarm_at": "alarm_a0.2",
+        "best_combined": 0.749,
+        "best_combined_at": "comb_a0.0_T45",
+        "alarm_minus_timeout": -0.064,
+        "combined_minus_timeout": 0.0
+      },
+      "pfb0.3_ct0.2": {
+        "autonomy": 0.587,
+        "best_timeout": 0.656,
+        "best_timeout_at": "timeout_T31",
+        "best_alarm": 0.614,
+        "best_alarm_at": "alarm_a0.2",
+        "best_combined": 0.656,
+        "best_combined_at": "comb_a0.0_T31",
+        "alarm_minus_timeout": -0.042,
+        "combined_minus_timeout": 0.0
+      },
+      "pfb0.3_ct0.5": {
+        "autonomy": 0.287,
+        "best_timeout": 0.428,
+        "best_timeout_at": "timeout_T23",
+        "best_alarm": 0.402,
+        "best_alarm_at": "alarm_a0.2",
+        "best_combined": 0.456,
+        "best_combined_at": "comb_a0.2_T23",
+        "alarm_minus_timeout": -0.025,
+        "combined_minus_timeout": 0.029
+      },
+      "pfb0.6_ct0.0": {
+        "autonomy": 0.787,
+        "best_timeout": 0.912,
+        "best_timeout_at": "timeout_T45",
+        "best_alarm": 0.837,
+        "best_alarm_at": "alarm_a0.2",
+        "best_combined": 0.912,
+        "best_combined_at": "comb_a0.0_T45",
+        "alarm_minus_timeout": -0.075,
+        "combined_minus_timeout": 0.0
+      },
+      "pfb0.6_ct0.05": {
+        "autonomy": 0.737,
+        "best_timeout": 0.863,
+        "best_timeout_at": "timeout_T45",
+        "best_alarm": 0.802,
+        "best_alarm_at": "alarm_a0.2",
+        "best_combined": 0.863,
+        "best_combined_at": "comb_a0.0_T45",
+        "alarm_minus_timeout": -0.061,
+        "combined_minus_timeout": 0.0
+      },
+      "pfb0.6_ct0.1": {
+        "autonomy": 0.687,
+        "best_timeout": 0.815,
+        "best_timeout_at": "timeout_T36",
+        "best_alarm": 0.767,
+        "best_alarm_at": "alarm_a0.2",
+        "best_combined": 0.815,
+        "best_combined_at": "comb_a0.0_T36",
+        "alarm_minus_timeout": -0.049,
+        "combined_minus_timeout": 0.0
+      },
+      "pfb0.6_ct0.2": {
+        "autonomy": 0.587,
+        "best_timeout": 0.737,
+        "best_timeout_at": "timeout_T23",
+        "best_alarm": 0.696,
+        "best_alarm_at": "alarm_a0.2",
+        "best_combined": 0.743,
+        "best_combined_at": "comb_a0.2_T23",
+        "alarm_minus_timeout": -0.041,
+        "combined_minus_timeout": 0.007
+      },
+      "pfb0.6_ct0.5": {
+        "autonomy": 0.287,
+        "best_timeout": 0.525,
+        "best_timeout_at": "timeout_T17",
+        "best_alarm": 0.525,
+        "best_alarm_at": "alarm_a0.4",
+        "best_combined": 0.554,
+        "best_combined_at": "comb_a0.2_T23",
+        "alarm_minus_timeout": -0.0,
+        "combined_minus_timeout": 0.029
+      },
+      "pfb0.9_ct0.0": {
+        "autonomy": 0.787,
+        "best_timeout": 0.978,
+        "best_timeout_at": "timeout_T45",
+        "best_alarm": 0.935,
+        "best_alarm_at": "alarm_a0.4",
+        "best_combined": 0.978,
+        "best_combined_at": "comb_a0.0_T45",
+        "alarm_minus_timeout": -0.043,
+        "combined_minus_timeout": 0.0
+      },
+      "pfb0.9_ct0.05": {
+        "autonomy": 0.737,
+        "best_timeout": 0.934,
+        "best_timeout_at": "timeout_T23",
+        "best_alarm": 0.91,
+        "best_alarm_at": "alarm_a0.4",
+        "best_combined": 0.936,
+        "best_combined_at": "comb_a0.2_T23",
+        "alarm_minus_timeout": -0.024,
+        "combined_minus_timeout": 0.002
+      },
+      "pfb0.9_ct0.1": {
+        "autonomy": 0.687,
+        "best_timeout": 0.898,
+        "best_timeout_at": "timeout_T17",
+        "best_alarm": 0.884,
+        "best_alarm_at": "alarm_a0.4",
+        "best_combined": 0.904,
+        "best_combined_at": "comb_a0.2_T23",
+        "alarm_minus_timeout": -0.014,
+        "combined_minus_timeout": 0.006
+      },
+      "pfb0.9_ct0.2": {
+        "autonomy": 0.587,
+        "best_timeout": 0.832,
+        "best_timeout_at": "timeout_T17",
+        "best_alarm": 0.833,
+        "best_alarm_at": "alarm_a0.4",
+        "best_combined": 0.85,
+        "best_combined_at": "comb_a0.4_T17",
+        "alarm_minus_timeout": 0.001,
+        "combined_minus_timeout": 0.018
+      },
+      "pfb0.9_ct0.5": {
+        "autonomy": 0.287,
+        "best_timeout": 0.657,
+        "best_timeout_at": "timeout_T11",
+        "best_alarm": 0.683,
+        "best_alarm_at": "alarm_a0.5",
+        "best_combined": 0.708,
+        "best_combined_at": "comb_a0.5_T17",
+        "alarm_minus_timeout": 0.026,
+        "combined_minus_timeout": 0.051
+      }
+    },
+    "breakeven_ct": {
+      "0.3": 0.815,
+      "0.6": 0.505,
+      "0.9": 0.195
+    }
+  },
+  "pusht-weak:nocrop": {
+    "signal": "ood_knn",
+    "R_ref": 33.8,
+    "policies": {
+      "autonomy": {
+        "cov": 1.0,
+        "retained": 0.253,
+        "exec": 33.82
+      },
+      "timeout_T11": {
+        "cov": 0.013,
+        "retained": 1.0,
+        "exec": 11.993
+      },
+      "timeout_T13": {
+        "cov": 0.027,
+        "retained": 1.0,
+        "exec": 13.967
+      },
+      "timeout_T14": {
+        "cov": 0.04,
+        "retained": 1.0,
+        "exec": 14.94
+      },
+      "timeout_T15": {
+        "cov": 0.047,
+        "retained": 1.0,
+        "exec": 15.9
+      },
+      "timeout_T16": {
+        "cov": 0.047,
+        "retained": 1.0,
+        "exec": 16.853
+      },
+      "timeout_T18": {
+        "cov": 0.087,
+        "retained": 1.0,
+        "exec": 18.74
+      },
+      "timeout_T19": {
+        "cov": 0.093,
+        "retained": 1.0,
+        "exec": 19.653
+      },
+      "timeout_T20": {
+        "cov": 0.107,
+        "retained": 1.0,
+        "exec": 20.56
+      },
+      "timeout_T21": {
+        "cov": 0.113,
+        "retained": 1.0,
+        "exec": 21.453
+      },
+      "timeout_T22": {
+        "cov": 0.12,
+        "retained": 1.0,
+        "exec": 22.34
+      },
+      "timeout_T23": {
+        "cov": 0.12,
+        "retained": 1.0,
+        "exec": 23.22
+      },
+      "timeout_T24": {
+        "cov": 0.14,
+        "retained": 1.0,
+        "exec": 24.1
+      },
+      "timeout_T25": {
+        "cov": 0.147,
+        "retained": 1.0,
+        "exec": 24.96
+      },
+      "timeout_T26": {
+        "cov": 0.153,
+        "retained": 1.0,
+        "exec": 25.813
+      },
+      "timeout_T27": {
+        "cov": 0.18,
+        "retained": 1.0,
+        "exec": 26.66
+      },
+      "timeout_T28": {
+        "cov": 0.18,
+        "retained": 1.0,
+        "exec": 27.48
+      },
+      "timeout_T31": {
+        "cov": 0.187,
+        "retained": 1.0,
+        "exec": 29.933
+      },
+      "timeout_T32": {
+        "cov": 0.207,
+        "retained": 1.0,
+        "exec": 30.747
+      },
+      "timeout_T33": {
+        "cov": 0.227,
+        "retained": 1.0,
+        "exec": 31.54
+      },
+      "timeout_T34": {
+        "cov": 0.24,
+        "retained": 1.0,
+        "exec": 32.313
+      },
+      "timeout_T35": {
+        "cov": 0.253,
+        "retained": 1.0,
+        "exec": 33.073
+      },
+      "alarm_a0.1": {
+        "cov": 0.673,
+        "retained": 0.356,
+        "exec": 25.933
+      },
+      "alarm_a0.2": {
+        "cov": 0.6,
+        "retained": 0.378,
+        "exec": 24.06
+      },
+      "alarm_a0.3": {
+        "cov": 0.487,
+        "retained": 0.397,
+        "exec": 20.587
+      },
+      "alarm_a0.4": {
+        "cov": 0.427,
+        "retained": 0.359,
+        "exec": 18.433
+      },
+      "alarm_a0.5": {
+        "cov": 0.307,
+        "retained": 0.326,
+        "exec": 14.873
+      },
+      "comb_a0.1_T11": {
+        "cov": 0.013,
+        "retained": 1.0,
+        "exec": 10.78
+      },
+      "comb_a0.1_T13": {
+        "cov": 0.027,
+        "retained": 1.0,
+        "exec": 12.4
+      },
+      "comb_a0.1_T14": {
+        "cov": 0.04,
+        "retained": 1.0,
+        "exec": 13.167
+      },
+      "comb_a0.1_T15": {
+        "cov": 0.047,
+        "retained": 1.0,
+        "exec": 13.907
+      },
+      "comb_a0.1_T16": {
+        "cov": 0.047,
+        "retained": 1.0,
+        "exec": 14.633
+      },
+      "comb_a0.1_T18": {
+        "cov": 0.087,
+        "retained": 1.0,
+        "exec": 16.033
+      },
+      "comb_a0.1_T19": {
+        "cov": 0.093,
+        "retained": 1.0,
+        "exec": 16.693
+      },
+      "comb_a0.1_T20": {
+        "cov": 0.107,
+        "retained": 1.0,
+        "exec": 17.34
+      },
+      "comb_a0.1_T21": {
+        "cov": 0.113,
+        "retained": 1.0,
+        "exec": 17.967
+      },
+      "comb_a0.1_T22": {
+        "cov": 0.12,
+        "retained": 1.0,
+        "exec": 18.587
+      },
+      "comb_a0.1_T23": {
+        "cov": 0.12,
+        "retained": 1.0,
+        "exec": 19.2
+      },
+      "comb_a0.1_T24": {
+        "cov": 0.127,
+        "retained": 1.0,
+        "exec": 19.8
+      },
+      "comb_a0.1_T25": {
+        "cov": 0.133,
+        "retained": 1.0,
+        "exec": 20.38
+      },
+      "comb_a0.1_T26": {
+        "cov": 0.14,
+        "retained": 1.0,
+        "exec": 20.953
+      },
+      "comb_a0.1_T27": {
+        "cov": 0.167,
+        "retained": 1.0,
+        "exec": 21.52
+      },
+      "comb_a0.1_T28": {
+        "cov": 0.167,
+        "retained": 1.0,
+        "exec": 22.053
+      },
+      "comb_a0.1_T31": {
+        "cov": 0.173,
+        "retained": 1.0,
+        "exec": 23.6
+      },
+      "comb_a0.1_T32": {
+        "cov": 0.193,
+        "retained": 1.0,
+        "exec": 24.107
+      },
+      "comb_a0.1_T33": {
+        "cov": 0.213,
+        "retained": 1.0,
+        "exec": 24.593
+      },
+      "comb_a0.1_T34": {
+        "cov": 0.227,
+        "retained": 1.0,
+        "exec": 25.053
+      },
+      "comb_a0.1_T35": {
+        "cov": 0.24,
+        "retained": 1.0,
+        "exec": 25.5
+      },
+      "comb_a0.2_T11": {
+        "cov": 0.013,
+        "retained": 1.0,
+        "exec": 10.353
+      },
+      "comb_a0.2_T13": {
+        "cov": 0.027,
+        "retained": 1.0,
+        "exec": 11.847
+      },
+      "comb_a0.2_T14": {
+        "cov": 0.04,
+        "retained": 1.0,
+        "exec": 12.553
+      },
+      "comb_a0.2_T15": {
+        "cov": 0.047,
+        "retained": 1.0,
+        "exec": 13.233
+      },
+      "comb_a0.2_T16": {
+        "cov": 0.047,
+        "retained": 1.0,
+        "exec": 13.9
+      },
+      "comb_a0.2_T18": {
+        "cov": 0.087,
+        "retained": 1.0,
+        "exec": 15.167
+      },
+      "comb_a0.2_T19": {
+        "cov": 0.093,
+        "retained": 1.0,
+        "exec": 15.753
+      },
+      "comb_a0.2_T20": {
+        "cov": 0.107,
+        "retained": 1.0,
+        "exec": 16.327
+      },
+      "comb_a0.2_T21": {
+        "cov": 0.113,
+        "retained": 1.0,
+        "exec": 16.887
+      },
+      "comb_a0.2_T22": {
+        "cov": 0.113,
+        "retained": 1.0,
+        "exec": 17.44
+      },
+      "comb_a0.2_T23": {
+        "cov": 0.113,
+        "retained": 1.0,
+        "exec": 17.993
+      },
+      "comb_a0.2_T24": {
+        "cov": 0.12,
+        "retained": 1.0,
+        "exec": 18.54
+      },
+      "comb_a0.2_T25": {
+        "cov": 0.127,
+        "retained": 1.0,
+        "exec": 19.073
+      },
+      "comb_a0.2_T26": {
+        "cov": 0.133,
+        "retained": 1.0,
+        "exec": 19.6
+      },
+      "comb_a0.2_T27": {
+        "cov": 0.16,
+        "retained": 1.0,
+        "exec": 20.12
+      },
+      "comb_a0.2_T28": {
+        "cov": 0.16,
+        "retained": 1.0,
+        "exec": 20.6
+      },
+      "comb_a0.2_T31": {
+        "cov": 0.167,
+        "retained": 1.0,
+        "exec": 22.0
+      },
+      "comb_a0.2_T32": {
+        "cov": 0.187,
+        "retained": 1.0,
+        "exec": 22.453
+      },
+      "comb_a0.2_T33": {
+        "cov": 0.207,
+        "retained": 1.0,
+        "exec": 22.887
+      },
+      "comb_a0.2_T34": {
+        "cov": 0.213,
+        "retained": 1.0,
+        "exec": 23.287
+      },
+      "comb_a0.2_T35": {
+        "cov": 0.227,
+        "retained": 1.0,
+        "exec": 23.68
+      },
+      "comb_a0.3_T11": {
+        "cov": 0.007,
+        "retained": 1.0,
+        "exec": 9.16
+      },
+      "comb_a0.3_T13": {
+        "cov": 0.02,
+        "retained": 1.0,
+        "exec": 10.413
+      },
+      "comb_a0.3_T14": {
+        "cov": 0.033,
+        "retained": 1.0,
+        "exec": 11.007
+      },
+      "comb_a0.3_T15": {
+        "cov": 0.04,
+        "retained": 1.0,
+        "exec": 11.58
+      },
+      "comb_a0.3_T16": {
+        "cov": 0.04,
+        "retained": 1.0,
+        "exec": 12.14
+      },
+      "comb_a0.3_T18": {
+        "cov": 0.067,
+        "retained": 1.0,
+        "exec": 13.207
+      },
+      "comb_a0.3_T19": {
+        "cov": 0.073,
+        "retained": 1.0,
+        "exec": 13.72
+      },
+      "comb_a0.3_T20": {
+        "cov": 0.087,
+        "retained": 1.0,
+        "exec": 14.213
+      },
+      "comb_a0.3_T21": {
+        "cov": 0.093,
+        "retained": 1.0,
+        "exec": 14.693
+      },
+      "comb_a0.3_T22": {
+        "cov": 0.093,
+        "retained": 1.0,
+        "exec": 15.167
+      },
+      "comb_a0.3_T23": {
+        "cov": 0.093,
+        "retained": 1.0,
+        "exec": 15.64
+      },
+      "comb_a0.3_T24": {
+        "cov": 0.1,
+        "retained": 1.0,
+        "exec": 16.107
+      },
+      "comb_a0.3_T25": {
+        "cov": 0.107,
+        "retained": 1.0,
+        "exec": 16.56
+      },
+      "comb_a0.3_T26": {
+        "cov": 0.113,
+        "retained": 1.0,
+        "exec": 17.0
+      },
+      "comb_a0.3_T27": {
+        "cov": 0.14,
+        "retained": 1.0,
+        "exec": 17.427
+      },
+      "comb_a0.3_T28": {
+        "cov": 0.14,
+        "retained": 1.0,
+        "exec": 17.82
+      },
+      "comb_a0.3_T31": {
+        "cov": 0.147,
+        "retained": 1.0,
+        "exec": 18.953
+      },
+      "comb_a0.3_T32": {
+        "cov": 0.167,
+        "retained": 1.0,
+        "exec": 19.32
+      },
+      "comb_a0.3_T33": {
+        "cov": 0.187,
+        "retained": 1.0,
+        "exec": 19.667
+      },
+      "comb_a0.3_T34": {
+        "cov": 0.187,
+        "retained": 1.0,
+        "exec": 19.98
+      },
+      "comb_a0.3_T35": {
+        "cov": 0.193,
+        "retained": 1.0,
+        "exec": 20.287
+      },
+      "comb_a0.4_T11": {
+        "cov": 0.007,
+        "retained": 1.0,
+        "exec": 8.347
+      },
+      "comb_a0.4_T13": {
+        "cov": 0.013,
+        "retained": 1.0,
+        "exec": 9.447
+      },
+      "comb_a0.4_T14": {
+        "cov": 0.027,
+        "retained": 1.0,
+        "exec": 9.973
+      },
+      "comb_a0.4_T15": {
+        "cov": 0.033,
+        "retained": 1.0,
+        "exec": 10.48
+      },
+      "comb_a0.4_T16": {
+        "cov": 0.033,
+        "retained": 1.0,
+        "exec": 10.973
+      },
+      "comb_a0.4_T18": {
+        "cov": 0.06,
+        "retained": 1.0,
+        "exec": 11.907
+      },
+      "comb_a0.4_T19": {
+        "cov": 0.06,
+        "retained": 1.0,
+        "exec": 12.347
+      },
+      "comb_a0.4_T20": {
+        "cov": 0.067,
+        "retained": 1.0,
+        "exec": 12.773
+      },
+      "comb_a0.4_T21": {
+        "cov": 0.067,
+        "retained": 1.0,
+        "exec": 13.193
+      },
+      "comb_a0.4_T22": {
+        "cov": 0.067,
+        "retained": 1.0,
+        "exec": 13.613
+      },
+      "comb_a0.4_T23": {
+        "cov": 0.067,
+        "retained": 1.0,
+        "exec": 14.033
+      },
+      "comb_a0.4_T24": {
+        "cov": 0.073,
+        "retained": 1.0,
+        "exec": 14.44
+      },
+      "comb_a0.4_T25": {
+        "cov": 0.08,
+        "retained": 1.0,
+        "exec": 14.833
+      },
+      "comb_a0.4_T26": {
+        "cov": 0.087,
+        "retained": 1.0,
+        "exec": 15.213
+      },
+      "comb_a0.4_T27": {
+        "cov": 0.113,
+        "retained": 1.0,
+        "exec": 15.587
+      },
+      "comb_a0.4_T28": {
+        "cov": 0.113,
+        "retained": 1.0,
+        "exec": 15.927
+      },
+      "comb_a0.4_T31": {
+        "cov": 0.12,
+        "retained": 1.0,
+        "exec": 16.94
+      },
+      "comb_a0.4_T32": {
+        "cov": 0.127,
+        "retained": 1.0,
+        "exec": 17.267
+      },
+      "comb_a0.4_T33": {
+        "cov": 0.147,
+        "retained": 1.0,
+        "exec": 17.58
+      },
+      "comb_a0.4_T34": {
+        "cov": 0.147,
+        "retained": 1.0,
+        "exec": 17.867
+      },
+      "comb_a0.4_T35": {
+        "cov": 0.153,
+        "retained": 1.0,
+        "exec": 18.153
+      },
+      "comb_a0.5_T11": {
+        "cov": 0.007,
+        "retained": 1.0,
+        "exec": 6.993
+      },
+      "comb_a0.5_T13": {
+        "cov": 0.007,
+        "retained": 1.0,
+        "exec": 7.82
+      },
+      "comb_a0.5_T14": {
+        "cov": 0.02,
+        "retained": 1.0,
+        "exec": 8.22
+      },
+      "comb_a0.5_T15": {
+        "cov": 0.027,
+        "retained": 1.0,
+        "exec": 8.607
+      },
+      "comb_a0.5_T16": {
+        "cov": 0.027,
+        "retained": 1.0,
+        "exec": 8.987
+      },
+      "comb_a0.5_T18": {
+        "cov": 0.04,
+        "retained": 1.0,
+        "exec": 9.713
+      },
+      "comb_a0.5_T19": {
+        "cov": 0.04,
+        "retained": 1.0,
+        "exec": 10.06
+      },
+      "comb_a0.5_T20": {
+        "cov": 0.04,
+        "retained": 1.0,
+        "exec": 10.393
+      },
+      "comb_a0.5_T21": {
+        "cov": 0.04,
+        "retained": 1.0,
+        "exec": 10.727
+      },
+      "comb_a0.5_T22": {
+        "cov": 0.04,
+        "retained": 1.0,
+        "exec": 11.06
+      },
+      "comb_a0.5_T23": {
+        "cov": 0.04,
+        "retained": 1.0,
+        "exec": 11.393
+      },
+      "comb_a0.5_T24": {
+        "cov": 0.04,
+        "retained": 1.0,
+        "exec": 11.713
+      },
+      "comb_a0.5_T25": {
+        "cov": 0.047,
+        "retained": 1.0,
+        "exec": 12.027
+      },
+      "comb_a0.5_T26": {
+        "cov": 0.053,
+        "retained": 1.0,
+        "exec": 12.327
+      },
+      "comb_a0.5_T27": {
+        "cov": 0.06,
+        "retained": 1.0,
+        "exec": 12.62
+      },
+      "comb_a0.5_T28": {
+        "cov": 0.06,
+        "retained": 1.0,
+        "exec": 12.9
+      },
+      "comb_a0.5_T31": {
+        "cov": 0.067,
+        "retained": 1.0,
+        "exec": 13.713
+      },
+      "comb_a0.5_T32": {
+        "cov": 0.073,
+        "retained": 1.0,
+        "exec": 13.973
+      },
+      "comb_a0.5_T33": {
+        "cov": 0.093,
+        "retained": 1.0,
+        "exec": 14.22
+      },
+      "comb_a0.5_T34": {
+        "cov": 0.093,
+        "retained": 1.0,
+        "exec": 14.44
+      },
+      "comb_a0.5_T35": {
+        "cov": 0.1,
+        "retained": 1.0,
+        "exec": 14.66
+      },
+      "comb_a0.0_T11": {
+        "cov": 0.013,
+        "retained": 1.0,
+        "exec": 11.993
+      },
+      "comb_a0.0_T13": {
+        "cov": 0.027,
+        "retained": 1.0,
+        "exec": 13.967
+      },
+      "comb_a0.0_T14": {
+        "cov": 0.04,
+        "retained": 1.0,
+        "exec": 14.94
+      },
+      "comb_a0.0_T15": {
+        "cov": 0.047,
+        "retained": 1.0,
+        "exec": 15.9
+      },
+      "comb_a0.0_T16": {
+        "cov": 0.047,
+        "retained": 1.0,
+        "exec": 16.853
+      },
+      "comb_a0.0_T18": {
+        "cov": 0.087,
+        "retained": 1.0,
+        "exec": 18.74
+      },
+      "comb_a0.0_T19": {
+        "cov": 0.093,
+        "retained": 1.0,
+        "exec": 19.653
+      },
+      "comb_a0.0_T20": {
+        "cov": 0.107,
+        "retained": 1.0,
+        "exec": 20.56
+      },
+      "comb_a0.0_T21": {
+        "cov": 0.113,
+        "retained": 1.0,
+        "exec": 21.453
+      },
+      "comb_a0.0_T22": {
+        "cov": 0.12,
+        "retained": 1.0,
+        "exec": 22.34
+      },
+      "comb_a0.0_T23": {
+        "cov": 0.12,
+        "retained": 1.0,
+        "exec": 23.22
+      },
+      "comb_a0.0_T24": {
+        "cov": 0.14,
+        "retained": 1.0,
+        "exec": 24.1
+      },
+      "comb_a0.0_T25": {
+        "cov": 0.147,
+        "retained": 1.0,
+        "exec": 24.96
+      },
+      "comb_a0.0_T26": {
+        "cov": 0.153,
+        "retained": 1.0,
+        "exec": 25.813
+      },
+      "comb_a0.0_T27": {
+        "cov": 0.18,
+        "retained": 1.0,
+        "exec": 26.66
+      },
+      "comb_a0.0_T28": {
+        "cov": 0.18,
+        "retained": 1.0,
+        "exec": 27.48
+      },
+      "comb_a0.0_T31": {
+        "cov": 0.187,
+        "retained": 1.0,
+        "exec": 29.933
+      },
+      "comb_a0.0_T32": {
+        "cov": 0.207,
+        "retained": 1.0,
+        "exec": 30.747
+      },
+      "comb_a0.0_T33": {
+        "cov": 0.227,
+        "retained": 1.0,
+        "exec": 31.54
+      },
+      "comb_a0.0_T34": {
+        "cov": 0.24,
+        "retained": 1.0,
+        "exec": 32.313
+      },
+      "comb_a0.0_T35": {
+        "cov": 0.253,
+        "retained": 1.0,
+        "exec": 33.073
+      }
+    },
+    "grid": {
+      "pfb0.3_ct0.0": {
+        "autonomy": 0.253,
+        "best_timeout": 0.477,
+        "best_timeout_at": "timeout_T35",
+        "best_alarm": 0.347,
+        "best_alarm_at": "alarm_a0.3",
+        "best_combined": 0.477,
+        "best_combined_at": "comb_a0.0_T35",
+        "alarm_minus_timeout": -0.13,
+        "combined_minus_timeout": 0.0
+      },
+      "pfb0.3_ct0.05": {
+        "autonomy": 0.203,
+        "best_timeout": 0.428,
+        "best_timeout_at": "timeout_T35",
+        "best_alarm": 0.317,
+        "best_alarm_at": "alarm_a0.3",
+        "best_combined": 0.43,
+        "best_combined_at": "comb_a0.1_T35",
+        "alarm_minus_timeout": -0.112,
+        "combined_minus_timeout": 0.002
+      },
+      "pfb0.3_ct0.1": {
+        "autonomy": 0.153,
+        "best_timeout": 0.38,
+        "best_timeout_at": "timeout_T35",
+        "best_alarm": 0.286,
+        "best_alarm_at": "alarm_a0.3",
+        "best_combined": 0.393,
+        "best_combined_at": "comb_a0.1_T35",
+        "alarm_minus_timeout": -0.093,
+        "combined_minus_timeout": 0.013
+      },
+      "pfb0.3_ct0.2": {
+        "autonomy": 0.053,
+        "best_timeout": 0.282,
+        "best_timeout_at": "timeout_T35",
+        "best_alarm": 0.226,
+        "best_alarm_at": "alarm_a0.3",
+        "best_combined": 0.319,
+        "best_combined_at": "comb_a0.2_T35",
+        "alarm_minus_timeout": -0.056,
+        "combined_minus_timeout": 0.037
+      },
+      "pfb0.3_ct0.5": {
+        "autonomy": -0.247,
+        "best_timeout": 0.132,
+        "best_timeout_at": "timeout_T11",
+        "best_alarm": 0.088,
+        "best_alarm_at": "alarm_a0.5",
+        "best_combined": 0.201,
+        "best_combined_at": "comb_a0.5_T11",
+        "alarm_minus_timeout": -0.044,
+        "combined_minus_timeout": 0.069
+      },
+      "pfb0.6_ct0.0": {
+        "autonomy": 0.253,
+        "best_timeout": 0.701,
+        "best_timeout_at": "timeout_T35",
+        "best_alarm": 0.516,
+        "best_alarm_at": "alarm_a0.5",
+        "best_combined": 0.701,
+        "best_combined_at": "comb_a0.0_T35",
+        "alarm_minus_timeout": -0.185,
+        "combined_minus_timeout": 0.0
+      },
+      "pfb0.6_ct0.05": {
+        "autonomy": 0.203,
+        "best_timeout": 0.652,
+        "best_timeout_at": "timeout_T35",
+        "best_alarm": 0.494,
+        "best_alarm_at": "alarm_a0.5",
+        "best_combined": 0.658,
+        "best_combined_at": "comb_a0.1_T35",
+        "alarm_minus_timeout": -0.158,
+        "combined_minus_timeout": 0.006
+      },
+      "pfb0.6_ct0.1": {
+        "autonomy": 0.153,
+        "best_timeout": 0.604,
+        "best_timeout_at": "timeout_T35",
+        "best_alarm": 0.472,
+        "best_alarm_at": "alarm_a0.5",
+        "best_combined": 0.621,
+        "best_combined_at": "comb_a0.2_T35",
+        "alarm_minus_timeout": -0.132,
+        "combined_minus_timeout": 0.017
+      },
+      "pfb0.6_ct0.2": {
+        "autonomy": 0.053,
+        "best_timeout": 0.534,
+        "best_timeout_at": "timeout_T11",
+        "best_alarm": 0.428,
+        "best_alarm_at": "alarm_a0.5",
+        "best_combined": 0.561,
+        "best_combined_at": "comb_a0.5_T11",
+        "alarm_minus_timeout": -0.106,
+        "combined_minus_timeout": 0.027
+      },
+      "pfb0.6_ct0.5": {
+        "autonomy": -0.247,
+        "best_timeout": 0.428,
+        "best_timeout_at": "timeout_T11",
+        "best_alarm": 0.296,
+        "best_alarm_at": "alarm_a0.5",
+        "best_combined": 0.499,
+        "best_combined_at": "comb_a0.5_T11",
+        "alarm_minus_timeout": -0.132,
+        "combined_minus_timeout": 0.071
+      },
+      "pfb0.9_ct0.0": {
+        "autonomy": 0.253,
+        "best_timeout": 0.925,
+        "best_timeout_at": "timeout_T35",
+        "best_alarm": 0.724,
+        "best_alarm_at": "alarm_a0.5",
+        "best_combined": 0.925,
+        "best_combined_at": "comb_a0.0_T35",
+        "alarm_minus_timeout": -0.201,
+        "combined_minus_timeout": 0.0
+      },
+      "pfb0.9_ct0.05": {
+        "autonomy": 0.203,
+        "best_timeout": 0.884,
+        "best_timeout_at": "timeout_T11",
+        "best_alarm": 0.702,
+        "best_alarm_at": "alarm_a0.5",
+        "best_combined": 0.89,
+        "best_combined_at": "comb_a0.5_T11",
+        "alarm_minus_timeout": -0.182,
+        "combined_minus_timeout": 0.007
+      },
+      "pfb0.9_ct0.1": {
+        "autonomy": 0.153,
+        "best_timeout": 0.866,
+        "best_timeout_at": "timeout_T11",
+        "best_alarm": 0.68,
+        "best_alarm_at": "alarm_a0.5",
+        "best_combined": 0.88,
+        "best_combined_at": "comb_a0.5_T11",
+        "alarm_minus_timeout": -0.186,
+        "combined_minus_timeout": 0.014
+      },
+      "pfb0.9_ct0.2": {
+        "autonomy": 0.053,
+        "best_timeout": 0.83,
+        "best_timeout_at": "timeout_T11",
+        "best_alarm": 0.636,
+        "best_alarm_at": "alarm_a0.5",
+        "best_combined": 0.859,
+        "best_combined_at": "comb_a0.5_T11",
+        "alarm_minus_timeout": -0.194,
+        "combined_minus_timeout": 0.029
+      },
+      "pfb0.9_ct0.5": {
+        "autonomy": -0.247,
+        "best_timeout": 0.724,
+        "best_timeout_at": "timeout_T11",
+        "best_alarm": 0.504,
+        "best_alarm_at": "alarm_a0.5",
+        "best_combined": 0.797,
+        "best_combined_at": "comb_a0.5_T11",
+        "alarm_minus_timeout": -0.22,
+        "combined_minus_timeout": 0.073
+      }
+    },
+    "breakeven_ct": {
+      "0.3": null,
+      "0.6": null,
+      "0.9": null
+    }
+  },
+  "square-weak:s1000": {
+    "signal": "ood_knn",
+    "R_ref": 42.4,
+    "policies": {
+      "autonomy": {
+        "cov": 1.0,
+        "retained": 0.26,
+        "exec": 42.373
+      },
+      "timeout_T15": {
+        "cov": 0.027,
+        "retained": 1.0,
+        "exec": 15.993
+      },
+      "timeout_T16": {
+        "cov": 0.053,
+        "retained": 1.0,
+        "exec": 16.967
+      },
+      "timeout_T17": {
+        "cov": 0.067,
+        "retained": 1.0,
+        "exec": 17.913
+      },
+      "timeout_T18": {
+        "cov": 0.073,
+        "retained": 1.0,
+        "exec": 18.847
+      },
+      "timeout_T19": {
+        "cov": 0.093,
+        "retained": 1.0,
+        "exec": 19.773
+      },
+      "timeout_T20": {
+        "cov": 0.12,
+        "retained": 1.0,
+        "exec": 20.68
+      },
+      "timeout_T21": {
+        "cov": 0.133,
+        "retained": 1.0,
+        "exec": 21.56
+      },
+      "timeout_T22": {
+        "cov": 0.147,
+        "retained": 1.0,
+        "exec": 22.427
+      },
+      "timeout_T23": {
+        "cov": 0.167,
+        "retained": 1.0,
+        "exec": 23.28
+      },
+      "timeout_T24": {
+        "cov": 0.193,
+        "retained": 1.0,
+        "exec": 24.113
+      },
+      "timeout_T25": {
+        "cov": 0.2,
+        "retained": 1.0,
+        "exec": 24.92
+      },
+      "timeout_T26": {
+        "cov": 0.207,
+        "retained": 1.0,
+        "exec": 25.72
+      },
+      "timeout_T28": {
+        "cov": 0.213,
+        "retained": 1.0,
+        "exec": 27.307
+      },
+      "timeout_T29": {
+        "cov": 0.22,
+        "retained": 1.0,
+        "exec": 28.093
+      },
+      "timeout_T30": {
+        "cov": 0.233,
+        "retained": 1.0,
+        "exec": 28.873
+      },
+      "timeout_T31": {
+        "cov": 0.233,
+        "retained": 1.0,
+        "exec": 29.64
+      },
+      "timeout_T33": {
+        "cov": 0.24,
+        "retained": 1.0,
+        "exec": 31.173
+      },
+      "timeout_T34": {
+        "cov": 0.247,
+        "retained": 1.0,
+        "exec": 31.933
+      },
+      "timeout_T37": {
+        "cov": 0.247,
+        "retained": 1.0,
+        "exec": 34.193
+      },
+      "timeout_T40": {
+        "cov": 0.253,
+        "retained": 1.0,
+        "exec": 36.44
+      },
+      "timeout_T43": {
+        "cov": 0.26,
+        "retained": 1.0,
+        "exec": 38.673
+      },
+      "alarm_a0.1": {
+        "cov": 0.527,
+        "retained": 0.456,
+        "exec": 29.367
+      },
+      "alarm_a0.2": {
+        "cov": 0.487,
+        "retained": 0.452,
+        "exec": 28.187
+      },
+      "alarm_a0.3": {
+        "cov": 0.313,
+        "retained": 0.681,
+        "exec": 21.64
+      },
+      "alarm_a0.4": {
+        "cov": 0.267,
+        "retained": 0.725,
+        "exec": 17.733
+      },
+      "alarm_a0.5": {
+        "cov": 0.233,
+        "retained": 0.743,
+        "exec": 16.173
+      },
+      "comb_a0.1_T15": {
+        "cov": 0.027,
+        "retained": 1.0,
+        "exec": 14.0
+      },
+      "comb_a0.1_T16": {
+        "cov": 0.053,
+        "retained": 1.0,
+        "exec": 14.8
+      },
+      "comb_a0.1_T17": {
+        "cov": 0.067,
+        "retained": 1.0,
+        "exec": 15.54
+      },
+      "comb_a0.1_T18": {
+        "cov": 0.073,
+        "retained": 1.0,
+        "exec": 16.253
+      },
+      "comb_a0.1_T19": {
+        "cov": 0.093,
+        "retained": 1.0,
+        "exec": 16.953
+      },
+      "comb_a0.1_T20": {
+        "cov": 0.12,
+        "retained": 1.0,
+        "exec": 17.627
+      },
+      "comb_a0.1_T21": {
+        "cov": 0.133,
+        "retained": 1.0,
+        "exec": 18.267
+      },
+      "comb_a0.1_T22": {
+        "cov": 0.147,
+        "retained": 1.0,
+        "exec": 18.887
+      },
+      "comb_a0.1_T23": {
+        "cov": 0.167,
+        "retained": 1.0,
+        "exec": 19.487
+      },
+      "comb_a0.1_T24": {
+        "cov": 0.193,
+        "retained": 1.0,
+        "exec": 20.053
+      },
+      "comb_a0.1_T25": {
+        "cov": 0.2,
+        "retained": 1.0,
+        "exec": 20.593
+      },
+      "comb_a0.1_T26": {
+        "cov": 0.207,
+        "retained": 1.0,
+        "exec": 21.127
+      },
+      "comb_a0.1_T28": {
+        "cov": 0.213,
+        "retained": 1.0,
+        "exec": 22.107
+      },
+      "comb_a0.1_T29": {
+        "cov": 0.22,
+        "retained": 1.0,
+        "exec": 22.58
+      },
+      "comb_a0.1_T30": {
+        "cov": 0.233,
+        "retained": 1.0,
+        "exec": 23.02
+      },
+      "comb_a0.1_T31": {
+        "cov": 0.233,
+        "retained": 1.0,
+        "exec": 23.447
+      },
+      "comb_a0.1_T33": {
+        "cov": 0.24,
+        "retained": 1.0,
+        "exec": 24.26
+      },
+      "comb_a0.1_T34": {
+        "cov": 0.24,
+        "retained": 1.0,
+        "exec": 24.647
+      },
+      "comb_a0.1_T37": {
+        "cov": 0.24,
+        "retained": 1.0,
+        "exec": 25.753
+      },
+      "comb_a0.1_T40": {
+        "cov": 0.24,
+        "retained": 1.0,
+        "exec": 26.787
+      },
+      "comb_a0.1_T43": {
+        "cov": 0.24,
+        "retained": 1.0,
+        "exec": 27.8
+      },
+      "comb_a0.2_T15": {
+        "cov": 0.027,
+        "retained": 1.0,
+        "exec": 13.927
+      },
+      "comb_a0.2_T16": {
+        "cov": 0.053,
+        "retained": 1.0,
+        "exec": 14.7
+      },
+      "comb_a0.2_T17": {
+        "cov": 0.067,
+        "retained": 1.0,
+        "exec": 15.42
+      },
+      "comb_a0.2_T18": {
+        "cov": 0.073,
+        "retained": 1.0,
+        "exec": 16.113
+      },
+      "comb_a0.2_T19": {
+        "cov": 0.093,
+        "retained": 1.0,
+        "exec": 16.793
+      },
+      "comb_a0.2_T20": {
+        "cov": 0.12,
+        "retained": 1.0,
+        "exec": 17.44
+      },
+      "comb_a0.2_T21": {
+        "cov": 0.133,
+        "retained": 1.0,
+        "exec": 18.04
+      },
+      "comb_a0.2_T22": {
+        "cov": 0.147,
+        "retained": 1.0,
+        "exec": 18.613
+      },
+      "comb_a0.2_T23": {
+        "cov": 0.16,
+        "retained": 1.0,
+        "exec": 19.16
+      },
+      "comb_a0.2_T24": {
+        "cov": 0.187,
+        "retained": 1.0,
+        "exec": 19.68
+      },
+      "comb_a0.2_T25": {
+        "cov": 0.187,
+        "retained": 1.0,
+        "exec": 20.16
+      },
+      "comb_a0.2_T26": {
+        "cov": 0.187,
+        "retained": 1.0,
+        "exec": 20.62
+      },
+      "comb_a0.2_T28": {
+        "cov": 0.193,
+        "retained": 1.0,
+        "exec": 21.513
+      },
+      "comb_a0.2_T29": {
+        "cov": 0.2,
+        "retained": 1.0,
+        "exec": 21.947
+      },
+      "comb_a0.2_T30": {
+        "cov": 0.213,
+        "retained": 1.0,
+        "exec": 22.373
+      },
+      "comb_a0.2_T31": {
+        "cov": 0.213,
+        "retained": 1.0,
+        "exec": 22.773
+      },
+      "comb_a0.2_T33": {
+        "cov": 0.22,
+        "retained": 1.0,
+        "exec": 23.533
+      },
+      "comb_a0.2_T34": {
+        "cov": 0.22,
+        "retained": 1.0,
+        "exec": 23.893
+      },
+      "comb_a0.2_T37": {
+        "cov": 0.22,
+        "retained": 1.0,
+        "exec": 24.933
+      },
+      "comb_a0.2_T40": {
+        "cov": 0.22,
+        "retained": 1.0,
+        "exec": 25.887
+      },
+      "comb_a0.2_T43": {
+        "cov": 0.22,
+        "retained": 1.0,
+        "exec": 26.8
+      },
+      "comb_a0.3_T15": {
+        "cov": 0.027,
+        "retained": 1.0,
+        "exec": 13.12
+      },
+      "comb_a0.3_T16": {
+        "cov": 0.053,
+        "retained": 1.0,
+        "exec": 13.747
+      },
+      "comb_a0.3_T17": {
+        "cov": 0.067,
+        "retained": 1.0,
+        "exec": 14.293
+      },
+      "comb_a0.3_T18": {
+        "cov": 0.073,
+        "retained": 1.0,
+        "exec": 14.82
+      },
+      "comb_a0.3_T19": {
+        "cov": 0.093,
+        "retained": 1.0,
+        "exec": 15.3
+      },
+      "comb_a0.3_T20": {
+        "cov": 0.113,
+        "retained": 1.0,
+        "exec": 15.753
+      },
+      "comb_a0.3_T21": {
+        "cov": 0.127,
+        "retained": 1.0,
+        "exec": 16.16
+      },
+      "comb_a0.3_T22": {
+        "cov": 0.14,
+        "retained": 1.0,
+        "exec": 16.553
+      },
+      "comb_a0.3_T23": {
+        "cov": 0.153,
+        "retained": 1.0,
+        "exec": 16.933
+      },
+      "comb_a0.3_T24": {
+        "cov": 0.18,
+        "retained": 1.0,
+        "exec": 17.287
+      },
+      "comb_a0.3_T25": {
+        "cov": 0.18,
+        "retained": 1.0,
+        "exec": 17.6
+      },
+      "comb_a0.3_T26": {
+        "cov": 0.18,
+        "retained": 1.0,
+        "exec": 17.913
+      },
+      "comb_a0.3_T28": {
+        "cov": 0.187,
+        "retained": 1.0,
+        "exec": 18.487
+      },
+      "comb_a0.3_T29": {
+        "cov": 0.193,
+        "retained": 1.0,
+        "exec": 18.753
+      },
+      "comb_a0.3_T30": {
+        "cov": 0.207,
+        "retained": 1.0,
+        "exec": 18.993
+      },
+      "comb_a0.3_T31": {
+        "cov": 0.207,
+        "retained": 1.0,
+        "exec": 19.22
+      },
+      "comb_a0.3_T33": {
+        "cov": 0.213,
+        "retained": 1.0,
+        "exec": 19.627
+      },
+      "comb_a0.3_T34": {
+        "cov": 0.213,
+        "retained": 1.0,
+        "exec": 19.813
+      },
+      "comb_a0.3_T37": {
+        "cov": 0.213,
+        "retained": 1.0,
+        "exec": 20.3
+      },
+      "comb_a0.3_T40": {
+        "cov": 0.213,
+        "retained": 1.0,
+        "exec": 20.733
+      },
+      "comb_a0.3_T43": {
+        "cov": 0.213,
+        "retained": 1.0,
+        "exec": 21.12
+      },
+      "comb_a0.4_T15": {
+        "cov": 0.027,
+        "retained": 1.0,
+        "exec": 11.76
+      },
+      "comb_a0.4_T16": {
+        "cov": 0.04,
+        "retained": 1.0,
+        "exec": 12.273
+      },
+      "comb_a0.4_T17": {
+        "cov": 0.053,
+        "retained": 1.0,
+        "exec": 12.747
+      },
+      "comb_a0.4_T18": {
+        "cov": 0.06,
+        "retained": 1.0,
+        "exec": 13.193
+      },
+      "comb_a0.4_T19": {
+        "cov": 0.08,
+        "retained": 1.0,
+        "exec": 13.593
+      },
+      "comb_a0.4_T20": {
+        "cov": 0.1,
+        "retained": 1.0,
+        "exec": 13.933
+      },
+      "comb_a0.4_T21": {
+        "cov": 0.113,
+        "retained": 1.0,
+        "exec": 14.247
+      },
+      "comb_a0.4_T22": {
+        "cov": 0.127,
+        "retained": 1.0,
+        "exec": 14.54
+      },
+      "comb_a0.4_T23": {
+        "cov": 0.14,
+        "retained": 1.0,
+        "exec": 14.807
+      },
+      "comb_a0.4_T24": {
+        "cov": 0.167,
+        "retained": 1.0,
+        "exec": 15.047
+      },
+      "comb_a0.4_T25": {
+        "cov": 0.167,
+        "retained": 1.0,
+        "exec": 15.253
+      },
+      "comb_a0.4_T26": {
+        "cov": 0.167,
+        "retained": 1.0,
+        "exec": 15.44
+      },
+      "comb_a0.4_T28": {
+        "cov": 0.173,
+        "retained": 1.0,
+        "exec": 15.8
+      },
+      "comb_a0.4_T29": {
+        "cov": 0.18,
+        "retained": 1.0,
+        "exec": 15.96
+      },
+      "comb_a0.4_T30": {
+        "cov": 0.187,
+        "retained": 1.0,
+        "exec": 16.107
+      },
+      "comb_a0.4_T31": {
+        "cov": 0.187,
+        "retained": 1.0,
+        "exec": 16.24
+      },
+      "comb_a0.4_T33": {
+        "cov": 0.193,
+        "retained": 1.0,
+        "exec": 16.48
+      },
+      "comb_a0.4_T34": {
+        "cov": 0.193,
+        "retained": 1.0,
+        "exec": 16.587
+      },
+      "comb_a0.4_T37": {
+        "cov": 0.193,
+        "retained": 1.0,
+        "exec": 16.88
+      },
+      "comb_a0.4_T40": {
+        "cov": 0.193,
+        "retained": 1.0,
+        "exec": 17.14
+      },
+      "comb_a0.4_T43": {
+        "cov": 0.193,
+        "retained": 1.0,
+        "exec": 17.367
+      },
+      "comb_a0.5_T15": {
+        "cov": 0.027,
+        "retained": 1.0,
+        "exec": 11.24
+      },
+      "comb_a0.5_T16": {
+        "cov": 0.033,
+        "retained": 1.0,
+        "exec": 11.72
+      },
+      "comb_a0.5_T17": {
+        "cov": 0.047,
+        "retained": 1.0,
+        "exec": 12.14
+      },
+      "comb_a0.5_T18": {
+        "cov": 0.053,
+        "retained": 1.0,
+        "exec": 12.52
+      },
+      "comb_a0.5_T19": {
+        "cov": 0.073,
+        "retained": 1.0,
+        "exec": 12.847
+      },
+      "comb_a0.5_T20": {
+        "cov": 0.093,
+        "retained": 1.0,
+        "exec": 13.14
+      },
+      "comb_a0.5_T21": {
+        "cov": 0.1,
+        "retained": 1.0,
+        "exec": 13.413
+      },
+      "comb_a0.5_T22": {
+        "cov": 0.113,
+        "retained": 1.0,
+        "exec": 13.66
+      },
+      "comb_a0.5_T23": {
+        "cov": 0.127,
+        "retained": 1.0,
+        "exec": 13.88
+      },
+      "comb_a0.5_T24": {
+        "cov": 0.147,
+        "retained": 1.0,
+        "exec": 14.08
+      },
+      "comb_a0.5_T25": {
+        "cov": 0.147,
+        "retained": 1.0,
+        "exec": 14.233
+      },
+      "comb_a0.5_T26": {
+        "cov": 0.147,
+        "retained": 1.0,
+        "exec": 14.387
+      },
+      "comb_a0.5_T28": {
+        "cov": 0.153,
+        "retained": 1.0,
+        "exec": 14.673
+      },
+      "comb_a0.5_T29": {
+        "cov": 0.16,
+        "retained": 1.0,
+        "exec": 14.793
+      },
+      "comb_a0.5_T30": {
+        "cov": 0.167,
+        "retained": 1.0,
+        "exec": 14.9
+      },
+      "comb_a0.5_T31": {
+        "cov": 0.167,
+        "retained": 1.0,
+        "exec": 15.0
+      },
+      "comb_a0.5_T33": {
+        "cov": 0.173,
+        "retained": 1.0,
+        "exec": 15.187
+      },
+      "comb_a0.5_T34": {
+        "cov": 0.173,
+        "retained": 1.0,
+        "exec": 15.273
+      },
+      "comb_a0.5_T37": {
+        "cov": 0.173,
+        "retained": 1.0,
+        "exec": 15.493
+      },
+      "comb_a0.5_T40": {
+        "cov": 0.173,
+        "retained": 1.0,
+        "exec": 15.693
+      },
+      "comb_a0.5_T43": {
+        "cov": 0.173,
+        "retained": 1.0,
+        "exec": 15.873
+      },
+      "comb_a0.0_T15": {
+        "cov": 0.027,
+        "retained": 1.0,
+        "exec": 15.993
+      },
+      "comb_a0.0_T16": {
+        "cov": 0.053,
+        "retained": 1.0,
+        "exec": 16.967
+      },
+      "comb_a0.0_T17": {
+        "cov": 0.067,
+        "retained": 1.0,
+        "exec": 17.913
+      },
+      "comb_a0.0_T18": {
+        "cov": 0.073,
+        "retained": 1.0,
+        "exec": 18.847
+      },
+      "comb_a0.0_T19": {
+        "cov": 0.093,
+        "retained": 1.0,
+        "exec": 19.773
+      },
+      "comb_a0.0_T20": {
+        "cov": 0.12,
+        "retained": 1.0,
+        "exec": 20.68
+      },
+      "comb_a0.0_T21": {
+        "cov": 0.133,
+        "retained": 1.0,
+        "exec": 21.56
+      },
+      "comb_a0.0_T22": {
+        "cov": 0.147,
+        "retained": 1.0,
+        "exec": 22.427
+      },
+      "comb_a0.0_T23": {
+        "cov": 0.167,
+        "retained": 1.0,
+        "exec": 23.28
+      },
+      "comb_a0.0_T24": {
+        "cov": 0.193,
+        "retained": 1.0,
+        "exec": 24.113
+      },
+      "comb_a0.0_T25": {
+        "cov": 0.2,
+        "retained": 1.0,
+        "exec": 24.92
+      },
+      "comb_a0.0_T26": {
+        "cov": 0.207,
+        "retained": 1.0,
+        "exec": 25.72
+      },
+      "comb_a0.0_T28": {
+        "cov": 0.213,
+        "retained": 1.0,
+        "exec": 27.307
+      },
+      "comb_a0.0_T29": {
+        "cov": 0.22,
+        "retained": 1.0,
+        "exec": 28.093
+      },
+      "comb_a0.0_T30": {
+        "cov": 0.233,
+        "retained": 1.0,
+        "exec": 28.873
+      },
+      "comb_a0.0_T31": {
+        "cov": 0.233,
+        "retained": 1.0,
+        "exec": 29.64
+      },
+      "comb_a0.0_T33": {
+        "cov": 0.24,
+        "retained": 1.0,
+        "exec": 31.173
+      },
+      "comb_a0.0_T34": {
+        "cov": 0.247,
+        "retained": 1.0,
+        "exec": 31.933
+      },
+      "comb_a0.0_T37": {
+        "cov": 0.247,
+        "retained": 1.0,
+        "exec": 34.193
+      },
+      "comb_a0.0_T40": {
+        "cov": 0.253,
+        "retained": 1.0,
+        "exec": 36.44
+      },
+      "comb_a0.0_T43": {
+        "cov": 0.26,
+        "retained": 1.0,
+        "exec": 38.673
+      }
+    },
+    "grid": {
+      "pfb0.3_ct0.0": {
+        "autonomy": 0.26,
+        "best_timeout": 0.482,
+        "best_timeout_at": "timeout_T43",
+        "best_alarm": 0.419,
+        "best_alarm_at": "alarm_a0.3",
+        "best_combined": 0.482,
+        "best_combined_at": "comb_a0.0_T43",
+        "alarm_minus_timeout": -0.063,
+        "combined_minus_timeout": 0.0
+      },
+      "pfb0.3_ct0.05": {
+        "autonomy": 0.21,
+        "best_timeout": 0.436,
+        "best_timeout_at": "timeout_T43",
+        "best_alarm": 0.394,
+        "best_alarm_at": "alarm_a0.3",
+        "best_combined": 0.439,
+        "best_combined_at": "comb_a0.1_T33",
+        "alarm_minus_timeout": -0.043,
+        "combined_minus_timeout": 0.003
+      },
+      "pfb0.3_ct0.1": {
+        "autonomy": 0.16,
+        "best_timeout": 0.397,
+        "best_timeout_at": "timeout_T34",
+        "best_alarm": 0.371,
+        "best_alarm_at": "alarm_a0.4",
+        "best_combined": 0.411,
+        "best_combined_at": "comb_a0.1_T33",
+        "alarm_minus_timeout": -0.026,
+        "combined_minus_timeout": 0.013
+      },
+      "pfb0.3_ct0.2": {
+        "autonomy": 0.06,
+        "best_timeout": 0.327,
+        "best_timeout_at": "timeout_T30",
+        "best_alarm": 0.33,
+        "best_alarm_at": "alarm_a0.4",
+        "best_combined": 0.358,
+        "best_combined_at": "comb_a0.4_T33",
+        "alarm_minus_timeout": 0.003,
+        "combined_minus_timeout": 0.03
+      },
+      "pfb0.3_ct0.5": {
+        "autonomy": -0.24,
+        "best_timeout": 0.151,
+        "best_timeout_at": "timeout_T24",
+        "best_alarm": 0.212,
+        "best_alarm_at": "alarm_a0.5",
+        "best_combined": 0.242,
+        "best_combined_at": "comb_a0.5_T33",
+        "alarm_minus_timeout": 0.062,
+        "combined_minus_timeout": 0.091
+      },
+      "pfb0.6_ct0.0": {
+        "autonomy": 0.26,
+        "best_timeout": 0.704,
+        "best_timeout_at": "timeout_T43",
+        "best_alarm": 0.633,
+        "best_alarm_at": "alarm_a0.4",
+        "best_combined": 0.704,
+        "best_combined_at": "comb_a0.0_T43",
+        "alarm_minus_timeout": -0.071,
+        "combined_minus_timeout": 0.0
+      },
+      "pfb0.6_ct0.05": {
+        "autonomy": 0.21,
+        "best_timeout": 0.661,
+        "best_timeout_at": "timeout_T34",
+        "best_alarm": 0.614,
+        "best_alarm_at": "alarm_a0.5",
+        "best_combined": 0.667,
+        "best_combined_at": "comb_a0.1_T33",
+        "alarm_minus_timeout": -0.047,
+        "combined_minus_timeout": 0.006
+      },
+      "pfb0.6_ct0.1": {
+        "autonomy": 0.16,
+        "best_timeout": 0.625,
+        "best_timeout_at": "timeout_T30",
+        "best_alarm": 0.595,
+        "best_alarm_at": "alarm_a0.5",
+        "best_combined": 0.639,
+        "best_combined_at": "comb_a0.3_T33",
+        "alarm_minus_timeout": -0.03,
+        "combined_minus_timeout": 0.014
+      },
+      "pfb0.6_ct0.2": {
+        "autonomy": 0.06,
+        "best_timeout": 0.564,
+        "best_timeout_at": "timeout_T24",
+        "best_alarm": 0.557,
+        "best_alarm_at": "alarm_a0.5",
+        "best_combined": 0.6,
+        "best_combined_at": "comb_a0.4_T33",
+        "alarm_minus_timeout": -0.007,
+        "combined_minus_timeout": 0.036
+      },
+      "pfb0.6_ct0.5": {
+        "autonomy": -0.24,
+        "best_timeout": 0.422,
+        "best_timeout_at": "timeout_T15",
+        "best_alarm": 0.442,
+        "best_alarm_at": "alarm_a0.5",
+        "best_combined": 0.493,
+        "best_combined_at": "comb_a0.5_T24",
+        "alarm_minus_timeout": 0.021,
+        "combined_minus_timeout": 0.071
+      },
+      "pfb0.9_ct0.0": {
+        "autonomy": 0.26,
+        "best_timeout": 0.926,
+        "best_timeout_at": "timeout_T43",
+        "best_alarm": 0.863,
+        "best_alarm_at": "alarm_a0.5",
+        "best_combined": 0.926,
+        "best_combined_at": "comb_a0.0_T43",
+        "alarm_minus_timeout": -0.063,
+        "combined_minus_timeout": 0.0
+      },
+      "pfb0.9_ct0.05": {
+        "autonomy": 0.21,
+        "best_timeout": 0.891,
+        "best_timeout_at": "timeout_T24",
+        "best_alarm": 0.844,
+        "best_alarm_at": "alarm_a0.5",
+        "best_combined": 0.9,
+        "best_combined_at": "comb_a0.4_T33",
+        "alarm_minus_timeout": -0.047,
+        "combined_minus_timeout": 0.009
+      },
+      "pfb0.9_ct0.1": {
+        "autonomy": 0.16,
+        "best_timeout": 0.865,
+        "best_timeout_at": "timeout_T16",
+        "best_alarm": 0.825,
+        "best_alarm_at": "alarm_a0.5",
+        "best_combined": 0.882,
+        "best_combined_at": "comb_a0.5_T30",
+        "alarm_minus_timeout": -0.04,
+        "combined_minus_timeout": 0.016
+      },
+      "pfb0.9_ct0.2": {
+        "autonomy": 0.06,
+        "best_timeout": 0.827,
+        "best_timeout_at": "timeout_T15",
+        "best_alarm": 0.787,
+        "best_alarm_at": "alarm_a0.5",
+        "best_combined": 0.85,
+        "best_combined_at": "comb_a0.5_T15",
+        "alarm_minus_timeout": -0.04,
+        "combined_minus_timeout": 0.022
+      },
+      "pfb0.9_ct0.5": {
+        "autonomy": -0.24,
+        "best_timeout": 0.714,
+        "best_timeout_at": "timeout_T15",
+        "best_alarm": 0.672,
+        "best_alarm_at": "alarm_a0.5",
+        "best_combined": 0.77,
+        "best_combined_at": "comb_a0.5_T15",
+        "alarm_minus_timeout": -0.041,
+        "combined_minus_timeout": 0.056
+      }
+    },
+    "breakeven_ct": {
+      "0.3": 0.195,
+      "0.6": 0.235,
+      "0.9": null
+    }
+  },
+  "square-weak:s2000": {
+    "signal": "ood_knn",
+    "R_ref": 45.5,
+    "policies": {
+      "autonomy": {
+        "cov": 1.0,
+        "retained": 0.147,
+        "exec": 45.48
+      },
+      "timeout_T18": {
+        "cov": 0.013,
+        "retained": 1.0,
+        "exec": 18.993
+      },
+      "timeout_T19": {
+        "cov": 0.04,
+        "retained": 1.0,
+        "exec": 19.98
+      },
+      "timeout_T20": {
+        "cov": 0.047,
+        "retained": 1.0,
+        "exec": 20.94
+      },
+      "timeout_T21": {
+        "cov": 0.067,
+        "retained": 1.0,
+        "exec": 21.893
+      },
+      "timeout_T22": {
+        "cov": 0.093,
+        "retained": 1.0,
+        "exec": 22.827
+      },
+      "timeout_T23": {
+        "cov": 0.107,
+        "retained": 1.0,
+        "exec": 23.733
+      },
+      "timeout_T24": {
+        "cov": 0.113,
+        "retained": 1.0,
+        "exec": 24.627
+      },
+      "timeout_T25": {
+        "cov": 0.113,
+        "retained": 1.0,
+        "exec": 25.513
+      },
+      "timeout_T27": {
+        "cov": 0.113,
+        "retained": 1.0,
+        "exec": 27.287
+      },
+      "timeout_T29": {
+        "cov": 0.12,
+        "retained": 1.0,
+        "exec": 29.053
+      },
+      "timeout_T31": {
+        "cov": 0.127,
+        "retained": 1.0,
+        "exec": 30.813
+      },
+      "timeout_T32": {
+        "cov": 0.127,
+        "retained": 1.0,
+        "exec": 31.687
+      },
+      "timeout_T33": {
+        "cov": 0.133,
+        "retained": 1.0,
+        "exec": 32.56
+      },
+      "timeout_T35": {
+        "cov": 0.133,
+        "retained": 1.0,
+        "exec": 34.293
+      },
+      "timeout_T38": {
+        "cov": 0.14,
+        "retained": 1.0,
+        "exec": 36.893
+      },
+      "timeout_T42": {
+        "cov": 0.14,
+        "retained": 1.0,
+        "exec": 40.333
+      },
+      "timeout_T46": {
+        "cov": 0.147,
+        "retained": 1.0,
+        "exec": 43.773
+      },
+      "timeout_T47": {
+        "cov": 0.147,
+        "retained": 1.0,
+        "exec": 44.627
+      },
+      "alarm_a0.1": {
+        "cov": 0.38,
+        "retained": 0.386,
+        "exec": 20.933
+      },
+      "alarm_a0.2": {
+        "cov": 0.32,
+        "retained": 0.438,
+        "exec": 18.947
+      },
+      "alarm_a0.3": {
+        "cov": 0.227,
+        "retained": 0.5,
+        "exec": 13.78
+      },
+      "alarm_a0.4": {
+        "cov": 0.193,
+        "retained": 0.552,
+        "exec": 11.407
+      },
+      "alarm_a0.5": {
+        "cov": 0.147,
+        "retained": 0.591,
+        "exec": 9.48
+      },
+      "comb_a0.1_T18": {
+        "cov": 0.013,
+        "retained": 1.0,
+        "exec": 11.56
+      },
+      "comb_a0.1_T19": {
+        "cov": 0.04,
+        "retained": 1.0,
+        "exec": 12.073
+      },
+      "comb_a0.1_T20": {
+        "cov": 0.047,
+        "retained": 1.0,
+        "exec": 12.547
+      },
+      "comb_a0.1_T21": {
+        "cov": 0.067,
+        "retained": 1.0,
+        "exec": 13.007
+      },
+      "comb_a0.1_T22": {
+        "cov": 0.093,
+        "retained": 1.0,
+        "exec": 13.44
+      },
+      "comb_a0.1_T23": {
+        "cov": 0.107,
+        "retained": 1.0,
+        "exec": 13.84
+      },
+      "comb_a0.1_T24": {
+        "cov": 0.113,
+        "retained": 1.0,
+        "exec": 14.207
+      },
+      "comb_a0.1_T25": {
+        "cov": 0.113,
+        "retained": 1.0,
+        "exec": 14.547
+      },
+      "comb_a0.1_T27": {
+        "cov": 0.113,
+        "retained": 1.0,
+        "exec": 15.207
+      },
+      "comb_a0.1_T29": {
+        "cov": 0.12,
+        "retained": 1.0,
+        "exec": 15.84
+      },
+      "comb_a0.1_T31": {
+        "cov": 0.127,
+        "retained": 1.0,
+        "exec": 16.46
+      },
+      "comb_a0.1_T32": {
+        "cov": 0.127,
+        "retained": 1.0,
+        "exec": 16.76
+      },
+      "comb_a0.1_T33": {
+        "cov": 0.133,
+        "retained": 1.0,
+        "exec": 17.053
+      },
+      "comb_a0.1_T35": {
+        "cov": 0.133,
+        "retained": 1.0,
+        "exec": 17.62
+      },
+      "comb_a0.1_T38": {
+        "cov": 0.14,
+        "retained": 1.0,
+        "exec": 18.44
+      },
+      "comb_a0.1_T42": {
+        "cov": 0.14,
+        "retained": 1.0,
+        "exec": 19.467
+      },
+      "comb_a0.1_T46": {
+        "cov": 0.147,
+        "retained": 1.0,
+        "exec": 20.467
+      },
+      "comb_a0.1_T47": {
+        "cov": 0.147,
+        "retained": 1.0,
+        "exec": 20.7
+      },
+      "comb_a0.2_T18": {
+        "cov": 0.013,
+        "retained": 1.0,
+        "exec": 10.947
+      },
+      "comb_a0.2_T19": {
+        "cov": 0.04,
+        "retained": 1.0,
+        "exec": 11.4
+      },
+      "comb_a0.2_T20": {
+        "cov": 0.047,
+        "retained": 1.0,
+        "exec": 11.82
+      },
+      "comb_a0.2_T21": {
+        "cov": 0.067,
+        "retained": 1.0,
+        "exec": 12.213
+      },
+      "comb_a0.2_T22": {
+        "cov": 0.087,
+        "retained": 1.0,
+        "exec": 12.567
+      },
+      "comb_a0.2_T23": {
+        "cov": 0.1,
+        "retained": 1.0,
+        "exec": 12.893
+      },
+      "comb_a0.2_T24": {
+        "cov": 0.107,
+        "retained": 1.0,
+        "exec": 13.2
+      },
+      "comb_a0.2_T25": {
+        "cov": 0.107,
+        "retained": 1.0,
+        "exec": 13.5
+      },
+      "comb_a0.2_T27": {
+        "cov": 0.107,
+        "retained": 1.0,
+        "exec": 14.093
+      },
+      "comb_a0.2_T29": {
+        "cov": 0.113,
+        "retained": 1.0,
+        "exec": 14.653
+      },
+      "comb_a0.2_T31": {
+        "cov": 0.12,
+        "retained": 1.0,
+        "exec": 15.187
+      },
+      "comb_a0.2_T32": {
+        "cov": 0.12,
+        "retained": 1.0,
+        "exec": 15.447
+      },
+      "comb_a0.2_T33": {
+        "cov": 0.127,
+        "retained": 1.0,
+        "exec": 15.7
+      },
+      "comb_a0.2_T35": {
+        "cov": 0.127,
+        "retained": 1.0,
+        "exec": 16.193
+      },
+      "comb_a0.2_T38": {
+        "cov": 0.133,
+        "retained": 1.0,
+        "exec": 16.9
+      },
+      "comb_a0.2_T42": {
+        "cov": 0.133,
+        "retained": 1.0,
+        "exec": 17.767
+      },
+      "comb_a0.2_T46": {
+        "cov": 0.14,
+        "retained": 1.0,
+        "exec": 18.573
+      },
+      "comb_a0.2_T47": {
+        "cov": 0.14,
+        "retained": 1.0,
+        "exec": 18.76
+      },
+      "comb_a0.3_T18": {
+        "cov": 0.007,
+        "retained": 1.0,
+        "exec": 9.213
+      },
+      "comb_a0.3_T19": {
+        "cov": 0.033,
+        "retained": 1.0,
+        "exec": 9.54
+      },
+      "comb_a0.3_T20": {
+        "cov": 0.04,
+        "retained": 1.0,
+        "exec": 9.827
+      },
+      "comb_a0.3_T21": {
+        "cov": 0.06,
+        "retained": 1.0,
+        "exec": 10.087
+      },
+      "comb_a0.3_T22": {
+        "cov": 0.08,
+        "retained": 1.0,
+        "exec": 10.32
+      },
+      "comb_a0.3_T23": {
+        "cov": 0.093,
+        "retained": 1.0,
+        "exec": 10.52
+      },
+      "comb_a0.3_T24": {
+        "cov": 0.1,
+        "retained": 1.0,
+        "exec": 10.693
+      },
+      "comb_a0.3_T25": {
+        "cov": 0.1,
+        "retained": 1.0,
+        "exec": 10.853
+      },
+      "comb_a0.3_T27": {
+        "cov": 0.1,
+        "retained": 1.0,
+        "exec": 11.16
+      },
+      "comb_a0.3_T29": {
+        "cov": 0.1,
+        "retained": 1.0,
+        "exec": 11.453
+      },
+      "comb_a0.3_T31": {
+        "cov": 0.107,
+        "retained": 1.0,
+        "exec": 11.747
+      },
+      "comb_a0.3_T32": {
+        "cov": 0.107,
+        "retained": 1.0,
+        "exec": 11.88
+      },
+      "comb_a0.3_T33": {
+        "cov": 0.113,
+        "retained": 1.0,
+        "exec": 12.013
+      },
+      "comb_a0.3_T35": {
+        "cov": 0.113,
+        "retained": 1.0,
+        "exec": 12.26
+      },
+      "comb_a0.3_T38": {
+        "cov": 0.113,
+        "retained": 1.0,
+        "exec": 12.62
+      },
+      "comb_a0.3_T42": {
+        "cov": 0.113,
+        "retained": 1.0,
+        "exec": 13.1
+      },
+      "comb_a0.3_T46": {
+        "cov": 0.113,
+        "retained": 1.0,
+        "exec": 13.553
+      },
+      "comb_a0.3_T47": {
+        "cov": 0.113,
+        "retained": 1.0,
+        "exec": 13.667
+      },
+      "comb_a0.4_T18": {
+        "cov": 0.007,
+        "retained": 1.0,
+        "exec": 8.013
+      },
+      "comb_a0.4_T19": {
+        "cov": 0.033,
+        "retained": 1.0,
+        "exec": 8.273
+      },
+      "comb_a0.4_T20": {
+        "cov": 0.04,
+        "retained": 1.0,
+        "exec": 8.493
+      },
+      "comb_a0.4_T21": {
+        "cov": 0.06,
+        "retained": 1.0,
+        "exec": 8.693
+      },
+      "comb_a0.4_T22": {
+        "cov": 0.08,
+        "retained": 1.0,
+        "exec": 8.86
+      },
+      "comb_a0.4_T23": {
+        "cov": 0.093,
+        "retained": 1.0,
+        "exec": 9.007
+      },
+      "comb_a0.4_T24": {
+        "cov": 0.1,
+        "retained": 1.0,
+        "exec": 9.127
+      },
+      "comb_a0.4_T25": {
+        "cov": 0.1,
+        "retained": 1.0,
+        "exec": 9.24
+      },
+      "comb_a0.4_T27": {
+        "cov": 0.1,
+        "retained": 1.0,
+        "exec": 9.453
+      },
+      "comb_a0.4_T29": {
+        "cov": 0.1,
+        "retained": 1.0,
+        "exec": 9.667
+      },
+      "comb_a0.4_T31": {
+        "cov": 0.1,
+        "retained": 1.0,
+        "exec": 9.88
+      },
+      "comb_a0.4_T32": {
+        "cov": 0.1,
+        "retained": 1.0,
+        "exec": 9.98
+      },
+      "comb_a0.4_T33": {
+        "cov": 0.107,
+        "retained": 1.0,
+        "exec": 10.08
+      },
+      "comb_a0.4_T35": {
+        "cov": 0.107,
+        "retained": 1.0,
+        "exec": 10.267
+      },
+      "comb_a0.4_T38": {
+        "cov": 0.107,
+        "retained": 1.0,
+        "exec": 10.54
+      },
+      "comb_a0.4_T42": {
+        "cov": 0.107,
+        "retained": 1.0,
+        "exec": 10.887
+      },
+      "comb_a0.4_T46": {
+        "cov": 0.107,
+        "retained": 1.0,
+        "exec": 11.233
+      },
+      "comb_a0.4_T47": {
+        "cov": 0.107,
+        "retained": 1.0,
+        "exec": 11.32
+      },
+      "comb_a0.5_T18": {
+        "cov": 0.007,
+        "retained": 1.0,
+        "exec": 7.107
+      },
+      "comb_a0.5_T19": {
+        "cov": 0.033,
+        "retained": 1.0,
+        "exec": 7.307
+      },
+      "comb_a0.5_T20": {
+        "cov": 0.04,
+        "retained": 1.0,
+        "exec": 7.467
+      },
+      "comb_a0.5_T21": {
+        "cov": 0.053,
+        "retained": 1.0,
+        "exec": 7.607
+      },
+      "comb_a0.5_T22": {
+        "cov": 0.073,
+        "retained": 1.0,
+        "exec": 7.733
+      },
+      "comb_a0.5_T23": {
+        "cov": 0.08,
+        "retained": 1.0,
+        "exec": 7.84
+      },
+      "comb_a0.5_T24": {
+        "cov": 0.087,
+        "retained": 1.0,
+        "exec": 7.933
+      },
+      "comb_a0.5_T25": {
+        "cov": 0.087,
+        "retained": 1.0,
+        "exec": 8.02
+      },
+      "comb_a0.5_T27": {
+        "cov": 0.087,
+        "retained": 1.0,
+        "exec": 8.18
+      },
+      "comb_a0.5_T29": {
+        "cov": 0.087,
+        "retained": 1.0,
+        "exec": 8.327
+      },
+      "comb_a0.5_T31": {
+        "cov": 0.087,
+        "retained": 1.0,
+        "exec": 8.46
+      },
+      "comb_a0.5_T32": {
+        "cov": 0.087,
+        "retained": 1.0,
+        "exec": 8.52
+      },
+      "comb_a0.5_T33": {
+        "cov": 0.087,
+        "retained": 1.0,
+        "exec": 8.58
+      },
+      "comb_a0.5_T35": {
+        "cov": 0.087,
+        "retained": 1.0,
+        "exec": 8.7
+      },
+      "comb_a0.5_T38": {
+        "cov": 0.087,
+        "retained": 1.0,
+        "exec": 8.88
+      },
+      "comb_a0.5_T42": {
+        "cov": 0.087,
+        "retained": 1.0,
+        "exec": 9.12
+      },
+      "comb_a0.5_T46": {
+        "cov": 0.087,
+        "retained": 1.0,
+        "exec": 9.36
+      },
+      "comb_a0.5_T47": {
+        "cov": 0.087,
+        "retained": 1.0,
+        "exec": 9.42
+      },
+      "comb_a0.0_T18": {
+        "cov": 0.013,
+        "retained": 1.0,
+        "exec": 18.993
+      },
+      "comb_a0.0_T19": {
+        "cov": 0.04,
+        "retained": 1.0,
+        "exec": 19.98
+      },
+      "comb_a0.0_T20": {
+        "cov": 0.047,
+        "retained": 1.0,
+        "exec": 20.94
+      },
+      "comb_a0.0_T21": {
+        "cov": 0.067,
+        "retained": 1.0,
+        "exec": 21.893
+      },
+      "comb_a0.0_T22": {
+        "cov": 0.093,
+        "retained": 1.0,
+        "exec": 22.827
+      },
+      "comb_a0.0_T23": {
+        "cov": 0.107,
+        "retained": 1.0,
+        "exec": 23.733
+      },
+      "comb_a0.0_T24": {
+        "cov": 0.113,
+        "retained": 1.0,
+        "exec": 24.627
+      },
+      "comb_a0.0_T25": {
+        "cov": 0.113,
+        "retained": 1.0,
+        "exec": 25.513
+      },
+      "comb_a0.0_T27": {
+        "cov": 0.113,
+        "retained": 1.0,
+        "exec": 27.287
+      },
+      "comb_a0.0_T29": {
+        "cov": 0.12,
+        "retained": 1.0,
+        "exec": 29.053
+      },
+      "comb_a0.0_T31": {
+        "cov": 0.127,
+        "retained": 1.0,
+        "exec": 30.813
+      },
+      "comb_a0.0_T32": {
+        "cov": 0.127,
+        "retained": 1.0,
+        "exec": 31.687
+      },
+      "comb_a0.0_T33": {
+        "cov": 0.133,
+        "retained": 1.0,
+        "exec": 32.56
+      },
+      "comb_a0.0_T35": {
+        "cov": 0.133,
+        "retained": 1.0,
+        "exec": 34.293
+      },
+      "comb_a0.0_T38": {
+        "cov": 0.14,
+        "retained": 1.0,
+        "exec": 36.893
+      },
+      "comb_a0.0_T42": {
+        "cov": 0.14,
+        "retained": 1.0,
+        "exec": 40.333
+      },
+      "comb_a0.0_T46": {
+        "cov": 0.147,
+        "retained": 1.0,
+        "exec": 43.773
+      },
+      "comb_a0.0_T47": {
+        "cov": 0.147,
+        "retained": 1.0,
+        "exec": 44.627
+      }
+    },
+    "grid": {
+      "pfb0.3_ct0.0": {
+        "autonomy": 0.147,
+        "best_timeout": 0.403,
+        "best_timeout_at": "timeout_T46",
+        "best_alarm": 0.349,
+        "best_alarm_at": "alarm_a0.4",
+        "best_combined": 0.403,
+        "best_combined_at": "comb_a0.1_T46",
+        "alarm_minus_timeout": -0.054,
+        "combined_minus_timeout": 0.0
+      },
+      "pfb0.3_ct0.05": {
+        "autonomy": 0.097,
+        "best_timeout": 0.358,
+        "best_timeout_at": "timeout_T33",
+        "best_alarm": 0.336,
+        "best_alarm_at": "alarm_a0.4",
+        "best_combined": 0.38,
+        "best_combined_at": "comb_a0.1_T46",
+        "alarm_minus_timeout": -0.021,
+        "combined_minus_timeout": 0.023
+      },
+      "pfb0.3_ct0.1": {
+        "autonomy": 0.047,
+        "best_timeout": 0.325,
+        "best_timeout_at": "timeout_T24",
+        "best_alarm": 0.324,
+        "best_alarm_at": "alarm_a0.4",
+        "best_combined": 0.358,
+        "best_combined_at": "comb_a0.1_T46",
+        "alarm_minus_timeout": -0.002,
+        "combined_minus_timeout": 0.032
+      },
+      "pfb0.3_ct0.2": {
+        "autonomy": -0.053,
+        "best_timeout": 0.271,
+        "best_timeout_at": "timeout_T24",
+        "best_alarm": 0.301,
+        "best_alarm_at": "alarm_a0.5",
+        "best_combined": 0.33,
+        "best_combined_at": "comb_a0.4_T33",
+        "alarm_minus_timeout": 0.03,
+        "combined_minus_timeout": 0.059
+      },
+      "pfb0.3_ct0.5": {
+        "autonomy": -0.353,
+        "best_timeout": 0.114,
+        "best_timeout_at": "timeout_T22",
+        "best_alarm": 0.238,
+        "best_alarm_at": "alarm_a0.5",
+        "best_combined": 0.273,
+        "best_combined_at": "comb_a0.5_T24",
+        "alarm_minus_timeout": 0.124,
+        "combined_minus_timeout": 0.159
+      },
+      "pfb0.6_ct0.0": {
+        "autonomy": 0.147,
+        "best_timeout": 0.659,
+        "best_timeout_at": "timeout_T46",
+        "best_alarm": 0.599,
+        "best_alarm_at": "alarm_a0.5",
+        "best_combined": 0.659,
+        "best_combined_at": "comb_a0.1_T46",
+        "alarm_minus_timeout": -0.06,
+        "combined_minus_timeout": 0.0
+      },
+      "pfb0.6_ct0.05": {
+        "autonomy": 0.097,
+        "best_timeout": 0.618,
+        "best_timeout_at": "timeout_T24",
+        "best_alarm": 0.588,
+        "best_alarm_at": "alarm_a0.5",
+        "best_combined": 0.636,
+        "best_combined_at": "comb_a0.1_T46",
+        "alarm_minus_timeout": -0.03,
+        "combined_minus_timeout": 0.018
+      },
+      "pfb0.6_ct0.1": {
+        "autonomy": 0.047,
+        "best_timeout": 0.591,
+        "best_timeout_at": "timeout_T24",
+        "best_alarm": 0.578,
+        "best_alarm_at": "alarm_a0.5",
+        "best_combined": 0.621,
+        "best_combined_at": "comb_a0.4_T33",
+        "alarm_minus_timeout": -0.013,
+        "combined_minus_timeout": 0.029
+      },
+      "pfb0.6_ct0.2": {
+        "autonomy": -0.053,
+        "best_timeout": 0.538,
+        "best_timeout_at": "timeout_T23",
+        "best_alarm": 0.557,
+        "best_alarm_at": "alarm_a0.5",
+        "best_combined": 0.6,
+        "best_combined_at": "comb_a0.4_T24",
+        "alarm_minus_timeout": 0.019,
+        "combined_minus_timeout": 0.062
+      },
+      "pfb0.6_ct0.5": {
+        "autonomy": -0.353,
+        "best_timeout": 0.397,
+        "best_timeout_at": "timeout_T18",
+        "best_alarm": 0.494,
+        "best_alarm_at": "alarm_a0.5",
+        "best_combined": 0.547,
+        "best_combined_at": "comb_a0.5_T24",
+        "alarm_minus_timeout": 0.098,
+        "combined_minus_timeout": 0.151
+      },
+      "pfb0.9_ct0.0": {
+        "autonomy": 0.147,
+        "best_timeout": 0.915,
+        "best_timeout_at": "timeout_T46",
+        "best_alarm": 0.855,
+        "best_alarm_at": "alarm_a0.5",
+        "best_combined": 0.915,
+        "best_combined_at": "comb_a0.1_T46",
+        "alarm_minus_timeout": -0.06,
+        "combined_minus_timeout": 0.0
+      },
+      "pfb0.9_ct0.05": {
+        "autonomy": 0.097,
+        "best_timeout": 0.885,
+        "best_timeout_at": "timeout_T23",
+        "best_alarm": 0.844,
+        "best_alarm_at": "alarm_a0.5",
+        "best_combined": 0.9,
+        "best_combined_at": "comb_a0.4_T24",
+        "alarm_minus_timeout": -0.04,
+        "combined_minus_timeout": 0.015
+      },
+      "pfb0.9_ct0.1": {
+        "autonomy": 0.047,
+        "best_timeout": 0.86,
+        "best_timeout_at": "timeout_T19",
+        "best_alarm": 0.834,
+        "best_alarm_at": "alarm_a0.5",
+        "best_combined": 0.891,
+        "best_combined_at": "comb_a0.5_T24",
+        "alarm_minus_timeout": -0.026,
+        "combined_minus_timeout": 0.031
+      },
+      "pfb0.9_ct0.2": {
+        "autonomy": -0.053,
+        "best_timeout": 0.818,
+        "best_timeout_at": "timeout_T18",
+        "best_alarm": 0.813,
+        "best_alarm_at": "alarm_a0.5",
+        "best_combined": 0.874,
+        "best_combined_at": "comb_a0.5_T24",
+        "alarm_minus_timeout": -0.005,
+        "combined_minus_timeout": 0.056
+      },
+      "pfb0.9_ct0.5": {
+        "autonomy": -0.353,
+        "best_timeout": 0.693,
+        "best_timeout_at": "timeout_T18",
+        "best_alarm": 0.75,
+        "best_alarm_at": "alarm_a0.5",
+        "best_combined": 0.823,
+        "best_combined_at": "comb_a0.5_T19",
+        "alarm_minus_timeout": 0.058,
+        "combined_minus_timeout": 0.13
+      }
+    },
+    "breakeven_ct": {
+      "0.3": 0.11,
+      "0.6": 0.145,
+      "0.9": 0.225
+    }
+  }
+}

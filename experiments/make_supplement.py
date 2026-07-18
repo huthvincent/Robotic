@@ -41,6 +41,7 @@ RUNS_META = [
     ("square-weak:s1000", "results/logs_square_s1000", "Square weak (A)"),
     ("square-weak:s2000", "results/logs_square_s2000", "Square weak (B)"),
     ("can-strong:s1000", "results/logs_can_s1000", "Can strong"),
+    ("pusht-mid:60k", "results/logs_pusht_mid60k", "Push-T mid (60k)"),
 ]
 SIGS = [
     "bcoh_distmin",
@@ -134,8 +135,8 @@ PERSEED_GROUPS = [
     ),
     (
         "supp-perseed-weak",
-        "Push-T weak regime (3 crop-ablated seeds)",
-        ["pusht-weak:nocrop", "pusht-weak:s3000", "pusht-weak:s4000"],
+        "Push-T degraded regime (3 crop-ablated seeds; 1 undertrained 60k checkpoint)",
+        ["pusht-weak:nocrop", "pusht-weak:s3000", "pusht-weak:s4000", "pusht-mid:60k"],
     ),
     (
         "supp-perseed-square",
@@ -153,25 +154,32 @@ for key, gname, members in PERSEED_GROUPS:
         for s in SIGS:
             d = r["signals"][s]
             ci = d["ci"]
-            exc = pn.get(s, {}).get("excess", "---")
+            pns = pn.get(s, {})
+            exc = pns.get("excess", "---")
+            pp = pns.get("p_perm", None)
+            pps = ("$<$.002" if pp <= 0.002 else f"{pp:.2f}") if pp is not None else "---"
             pw8 = r["prefix"].get(f"{s}_W8", None)
             pw8s = f"{pw8:.3f}" if pw8 is not None else "---"
             rows.append(
                 f"{pretty} & {PRETTY[s]} & {d['auroc_max']:.3f} "
                 f"[{ci[0]:.2f},{ci[1]:.2f}] & {d['auroc_cusum']:.3f} & {pw8s} & "
-                f"{exc if isinstance(exc, str) else f'{exc:+.3f}'} \\\\"
+                f"{exc if isinstance(exc, str) else f'{exc:+.3f}'} & {pps} \\\\"
             )
         t = tide[name]
         rows.append(
             f"{pretty} & {PRETTY['tide_like']} & {t['auroc_max']:.3f} "
-            f"[{t['ci'][0]:.2f},{t['ci'][1]:.2f}] & --- & {t['prefix_w8']:.3f} & --- \\\\"
+            f"[{t['ci'][0]:.2f},{t['ci'][1]:.2f}] & --- & {t['prefix_w8']:.3f} & --- & --- \\\\"
         )
         rows.append("\\midrule")
     rows = rows[:-1]
     add_table(
         key,
-        f"Full per-seed detection results, {gname}: {PERSEED_CAPTION}",
-        ("llcccc", "run & signal & max-agg [95\\% CI] & CUSUM & prefix-$W$8 & null excess"),
+        f"Full per-seed detection results, {gname}: {PERSEED_CAPTION} "
+        "$p$ = one-sided permutation $p$-value of the max-agg AUROC against its "
+        "length-preserving null (500 shuffles, add-one corrected; minimum attainable "
+        "$1/501{\\approx}0.002$); uncorrected for multiplicity --- the paper's claims "
+        "rest on within-family replication across seeds, not single cells.",
+        ("llccccc", "run & signal & max-agg [95\\% CI] & CUSUM & prefix-$W$8 & excess & $p$"),
         rows,
         "experiments/make\\_supplement.py + final\\_report.py",
         placement="!htbp",
@@ -185,7 +193,16 @@ for key, gname, members in PERSEED_GROUPS:
     for name in members:
         r = REP["runs"][name]
         for s in PREFIX_SIGS:
-            cells = " & ".join(f"{r['prefix'][f'{s}_W{w}']:.3f}" for w in WS)
+            cics = r.get("prefix_ci", {}).get(s, {})
+
+            def cell(w):
+                v = r["prefix"][f"{s}_W{w}"]
+                ci = cics.get(f"W{w}")
+                return (
+                    f"{v:.2f} [{ci[0]:.2f},{ci[1]:.2f}]" if ci else f"{v:.2f}"
+                )
+
+            cells = " & ".join(cell(w) for w in WS)
             rows.append(f"{pretty_of[name]} & {PRETTY[s]} & {cells} \\\\")
         rows.append("\\midrule")
     rows = rows[:-1]
@@ -193,7 +210,8 @@ for key, gname, members in PERSEED_GROUPS:
         key.replace("supp-perseed", "supp-prefixw"),
         f"Full prefix-conditional sweep, {gname}: AUROC at decision replan "
         "$W\\in\\{4,\\dots,12\\}$ (among episodes still running at $W$, predict the "
-        "eventual outcome from $\\max_{t\\le W}s_t$). Eligible populations per $W$ in "
+        "eventual outcome from $\\max_{t\\le W}s_t$), with episode-level bootstrap "
+        "95\\% CIs. Eligible populations per $W$ in "
         "Table~\\ref{tab:supp-prefixw-meta}. Conclusions are insensitive to the "
         "main paper's choice $W{=}8$.",
         ("llccccc", "run & signal & $W$4 & $W$6 & $W$8 & $W$10 & $W$12"),
@@ -387,6 +405,8 @@ rows = rows[:-1]
 # mid_base_study is the 60k-step mid-strength checkpoint; recovery_square is
 # Square seed A).
 REPAIR_LABEL = {
+    "square_ood_committed_p90": "Square weak (A), committed, $p_{90}$, \\textbf{OOD gate}",
+    "square_ood_consensus_p90": "Square weak (A), consensus, $p_{90}$, \\textbf{OOD gate}",
     "strong1500_committed_p90_ext": "Push-T strong (dev), committed, $p_{90}$ --- extension (frozen $\\tau$, seeds 500--1999)",
     "strong2000_committed_p90_pooled": "Push-T strong (dev), committed, $p_{90}$ --- \\textbf{pooled confirmatory ($n{=}2000$)}",
     "strong_gated_p90_committed(main_compare_v2)": "Push-T strong (dev), committed, $p_{90}$ --- early pilot",
@@ -464,7 +484,7 @@ for name in PUSHT_RUNS:
 rows = rows[:-1]
 add_table(
     "supp-taxonomy",
-    "Automatic failure taxonomy on all six Push-T runs: per-type counts and "
+    "Automatic failure taxonomy on all seven Push-T runs: per-type counts and "
     "per-type detection AUROC (type-vs-success) for three representative signals. "
     "Heuristic labels: near-miss = max coverage $\\ge$0.8; stalled = "
     "bottom-quartile late motion; oscillating = top-quartile mean coherence; "
@@ -472,6 +492,82 @@ add_table(
     ("llcccc", "run & type & $n$ & bound.\\ coh & STAC-MMD & OOD"),
     rows,
     "experiments/audit\\_extras.py \\S taxonomy",
+    placement="!htbp",
+)
+
+# ---------- I2. composition reweighting ----------
+RW = json.loads((ROOT / "results/final/reweight.json").read_text())
+rows = []
+for s in ("bcoh_distmin", "stac_mmd", "ood_knn"):
+    d = RW[s]
+    rows.append(
+        f"{PRETTY[s]} & {d['strong_actual']:.3f} & {d['strong_detect_weak_mix']:.3f} & "
+        f"{d['weak_actual']:.3f} & {d['gap']:+.3f} & "
+        f"{100 * d['composition_share']:.0f}\\% \\\\"
+    )
+mix = RW["mix"]
+mixrow = (
+    "\\multicolumn{6}{l}{\\footnotesize failure mix (near-miss/stalled/oscillating/other): "
+    f"strong {mix['strong']['near_miss']:.2f}/{mix['strong']['stalled']:.2f}/"
+    f"{mix['strong']['oscillating']:.2f}/{mix['strong']['other']:.2f}; "
+    f"crop-ablated {mix['weak']['near_miss']:.2f}/{mix['weak']['stalled']:.2f}/"
+    f"{mix['weak']['oscillating']:.2f}/{mix['weak']['other']:.2f}; "
+    f"undertrained {mix['mid60k']['near_miss']:.2f}/{mix['mid60k']['stalled']:.2f}/"
+    f"{mix['mid60k']['oscillating']:.2f}/{mix['mid60k']['other']:.2f}}} \\\\"
+)
+rows.append("\\midrule")
+rows.append(mixrow)
+add_table(
+    "supp-reweight",
+    "Composition-reweighting decomposition of the strong-vs-degraded Push-T gap, using "
+    "$\\mathrm{AUROC}=\\sum_t w_t\\,\\mathrm{AUROC}_t$ over failure types (success set "
+    "fixed). ``Counterfactual'' holds the strong regime's per-type AUROCs and swaps in "
+    "the crop-ablated regime's failure mix; the composition share is the fraction of the "
+    "actual gap this swap covers. The coherence gap is entirely compositional; the MMD "
+    "and OOD gains on degraded policies mostly reflect per-type detectability change. "
+    "The undertrained 60k checkpoint's mix is nearly identical to the crop-ablated mix.",
+    (
+        "lccccc",
+        "signal & strong actual & counterfactual & degraded actual & gap & comp.\\ share",
+    ),
+    rows,
+    "experiments/composition\\_reweight.py",
+    placement="!htbp",
+)
+
+# ---------- G4. time-priced utility ----------
+UT = json.loads((ROOT / "results/final/utility_time.json").read_text())
+rows = []
+for name, r in UT.items():
+    be = r["breakeven_ct"]
+    g0 = r["grid"]["pfb0.6_ct0.0"]
+    g2 = r["grid"]["pfb0.6_ct0.2"]
+    bes = "/".join(("---" if be[k] is None else f"{be[k]:.2f}") for k in ("0.3", "0.6", "0.9"))
+    rows.append(
+        f"{pretty_of.get(name, name)} & {r['R_ref']:.0f} & "
+        f"{g0['best_timeout']:.3f} & {g0['best_alarm']:.3f} & "
+        f"{g2['best_timeout']:.3f} & {g2['best_alarm']:.3f} & "
+        f"{g2['combined_minus_timeout']:+.3f} & {bes} \\\\"
+    )
+add_table(
+    "supp-utime",
+    "Time-priced utility on every run: best pure timeout vs.\\ best conformal alarm at "
+    "$p_{\\mathrm{fb}}{=}0.6$ under execution cost $c_t\\in\\{0,0.2\\}$; the "
+    "combined-rule column gives best(alarm-or-timeout) minus best timeout at "
+    "$c_t{=}0.2$ (the combined family contains pure timeout, so it is never negative); "
+    "the last column lists the smallest $c_t$ at which the alarm alone overtakes the "
+    "best timeout, per fallback success probability $p_{\\mathrm{fb}}\\in\\{.3,.6,.9\\}$ "
+    "(--- = never, $c_t$ swept to 1). On the strong Push-T runs the alarm never "
+    "overtakes and the combined rule degenerates to the pure timeout; where the alarm "
+    "carries genuine signal (Square, Can at high $p_{\\mathrm{fb}}$), moderate execution "
+    "cost flips the ranking.",
+    (
+        "lccccccc",
+        "run & $R_{\\mathrm{ref}}$ & TO$_{c_t=0}$ & alarm$_{c_t=0}$ & "
+        "TO$_{c_t=.2}$ & alarm$_{c_t=.2}$ & comb$-$TO$_{c_t=.2}$ & break-even $c_t$",
+    ),
+    rows,
+    "experiments/utility\\_time.py",
     placement="!htbp",
 )
 
