@@ -25,7 +25,7 @@ cp results/final/report.json results/final/controls.json \
    results/final/deferral_ci.json results/final/deferral_lift_ci.json \
    results/final/overhead.json results/final/time_aware.json \
    results/final/utility_time.json results/final/reweight.json \
-   results/final/excess_ext.json \
+   results/final/excess_ext.json results/final/taxonomy_sensitivity.json \
    "$PKG/results/final/" 2>/dev/null || true
 # repair-condition source JSONs referenced by the supplement's repair table
 for p in results/guard_sweep_v1/sweep.json results/recovery_power500/compare.json \

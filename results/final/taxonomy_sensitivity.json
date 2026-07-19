@@ -1,0 +1,21 @@
+{
+  "cutoffs": [
+    0.7,
+    0.75,
+    0.8,
+    0.85
+  ],
+  "pooled_near_miss_count": [
+    283,
+    260,
+    255,
+    247
+  ],
+  "pooled_near_miss_bcoh_auroc": [
+    0.683,
+    0.683,
+    0.684,
+    0.685
+  ],
+  "note": "7 Push-T runs pooled; other classes re-derived per cutoff; see supplement Sec. I"
+}

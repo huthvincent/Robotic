@@ -64,7 +64,7 @@ cp results/final/report.json results/final/controls.json results/final/extras.js
    results/final/tide_like.json results/final/deferral_ci.json \
    results/final/deferral_lift_ci.json results/final/overhead.json \
    results/final/time_aware.json results/final/utility_time.json \
-   results/final/reweight.json results/final/excess_ext.json \
+   results/final/reweight.json results/final/excess_ext.json results/final/taxonomy_sensitivity.json \
    "$DST/results/final/"
 cp results/logs_official/rich_logs.pkl "$DST/results/logs_official/"
 for p in results/guard_sweep_v1/sweep.json results/recovery_power500/compare.json \
